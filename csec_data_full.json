@@ -1,0 +1,1551 @@
+{
+  "Data Security": {
+    "summary": "The Data Security knowledge area focuses on the protection of data at rest, during processing, and in transit. This knowledge area requires the application of mathematical and analytical algorithms to fully implement.",
+    "essentials": [
+      "Basic cryptography concepts",
+      "Digital forensics",
+      "Endtoend secure communications",
+      "Data integrity and authentication",
+      "Information storage security"
+    ],
+    "references": [],
+    "outcomes": [
+      {
+        "name": "Basic cryptography concepts",
+        "questions": [
+          "Describe the purpose of cryptography and list ways it is used in data communications",
+          "Describe the following terms: cipher, cryptanalysis, cryptographic algorithm, and cryptology, and describe the two basic methods (ciphers) for transforming plaintext in ciphertext",
+          "Explain how public key infrastructure supports digital signing and encryption and discuss the limitations/vulnerabilities",
+          "Discuss the dangers of inventing one\u2019s own cryptographic methods",
+          "Describe which cryptographic protocols, tools and techniques are appropriate for a given situation"
+        ]
+      },
+      {
+        "name": "End-to-end secure communications",
+        "questions": [
+          "Explain the goals of end-to-end data security"
+        ]
+      },
+      {
+        "name": "Digital forensics",
+        "questions": [
+          "Describe what a digital investigation is, the sources of digital evidence, and the limitations of forensics",
+          "Compare and contrast variety of forensics tools"
+        ]
+      },
+      {
+        "name": "Data integrity and authentication",
+        "questions": [
+          "Explain the concepts of authentication, authorization, access control, and data integrity",
+          "Explain the various authentication techniques and their strengths and weaknesses",
+          "Explain the various possible attacks on passwords"
+        ]
+      }
+    ],
+    "units": [
+      {
+        "name": "Cryptography",
+        "description": "",
+        "Basic concepts": [
+          "Encryption/decryption, sender authentication, data integrity, non-repudiation",
+          "Attack classification (ciphertext-only, known plaintext, chosen plaintext, chosen ciphertext)",
+          "Secret key (symmetric), cryptography and publickey (asymmetric) cryptography, Information-theoretic security (one-time pad, Shannon Theorem)",
+          "Computational security"
+        ],
+        "Advanced concepts": [
+          "Advanced protocols: Zero-knowledge proofs, and protocols, Secret sharing, Commitment, Oblivious transfer, Secure multiparty computation",
+          "Advanced recent developments: fully homomorphic encryption, obfuscation, quantum cryptography, and KLJN scheme"
+        ],
+        "Mathematical background": [
+          "Modular arithmetic",
+          "Fermat, Euler theorems",
+          "Primitive roots, discrete log problem",
+          "Primality testing, factoring large integers",
+          "Elliptic curves, lattices and hard lattice problems",
+          "Abstract algebra, finite fields",
+          "Information theory"
+        ],
+        "Historical ciphers": [
+          "Shift cipher, affine cipher, substitution cipher, Vigenere cipher, ROT-13",
+          "Hill cipher, Enigma machine, and others"
+        ],
+        "Symmetric (private key) ciphers": [
+          "B block ciphers and stream ciphers (pseudorandom permutations, pseudo-random generators)",
+          "Feistel networks, Data Encryption Standard (DES)",
+          "Advanced Encryption Standard (AES)",
+          "Modes of operation for block ciphers",
+          "Differential attack, linear attack",
+          "Stream ciphers, linear feedback shift registers, RC4"
+        ],
+        "Asymmetric (public-key) ciphers": [
+          "Theoretical concepts (Computational complexity, one-way trapdoor functions)",
+          "Naive RSA",
+          "Weakness of Naive RSA, padded RSA",
+          "Diffie-Hellman protocol",
+          "El Gamal cipher",
+          "Other public-key ciphers, including GoldwasserMicali, Rabin, Paillier, McEliece",
+          "Elliptic curves ciphers"
+        ]
+      },
+      {
+        "name": "Digital Forensics",
+        "description": "",
+        "Introduction": [
+          "Definition",
+          "Limits and types of tools (open source versus closed source)"
+        ],
+        "Legal Issues": [
+          "Right to privacy",
+          "Fourth and Fifth Amendments",
+          "Protection of encryption keys under the Fifth Amendment",
+          "Types of legal authority (owner consent, search warrant, FISA, Title III (wiretap), abandonment, exigent circumstances, plain sight, etc.)",
+          "Protection from legal processes (e.g., ISP subscriber information via subpoena, e-mail server transactional data from 2703(d) court order, full content via search warrant, etc.)",
+          "Legal request for preservation of digital evidence (e.g., via 2703(f) preservation letter)",
+          "Affidavits, testimony and testifying"
+        ],
+        "Digital forensic tools": [
+          "Types",
+          "Artifact-focused versus all-in-one tools",
+          "Requirements",
+          "Limitations"
+        ],
+        "Investigatory process": [
+          "Alerts",
+          "Identification of evidence",
+          "Collection and preservation of evidence",
+          "Timelines, reporting, chain of custody",
+          "Authentication of evidence"
+        ],
+        "Acquisition and preservation of evidence": [
+          "Pull-the-plug versus triage",
+          "Write-blocking",
+          "Forensically-prepared destination media",
+          "Imaging procedures",
+          "Acquisition of volatile evidence",
+          "Live forensics analysis",
+          "Chain of custody"
+        ],
+        "Analysis of evidence": [
+          "This topic focuses on knowledge (awareness the artifact exists), attributes (components and possible variations of the artifact), origin/cause (emphasis on why the artifact exists), discoverability (how the artifact is located/viewed with tools), relevance (significance in the context of the specific investigation)",
+          "Includes:",
+          "Sources of digital evidence",
+          "Deleted and undeleted files, temporary files",
+          "Metadata",
+          "Print spool files",
+          "Slack space",
+          "Hibernation files",
+          "Windows registry",
+          "Browser history",
+          "Log files",
+          "File systems",
+          "File recovery",
+          "File carving"
+        ],
+        "Presentation of results": [
+          "Timeline analysis",
+          "Attribution",
+          "Lay versus technical explanations",
+          "Executive summaries",
+          "Detailed reports",
+          "Limitations"
+        ],
+        "Authentication of evidence": [
+          "Hashing algorithms (MD5, SHA-1, etc.)",
+          "Hashing entire media vs individual files",
+          "Pre-exam and post-exam verification hashing"
+        ],
+        "Reporting, incident response and handling": [
+          "Report structures",
+          "Incident detection and analysis",
+          "Containment, eradication and recovery",
+          "Post-incident activities",
+          "Information sharing"
+        ],
+        "Mobile forensics": [
+          "Wireless technologies",
+          "Mobile device technology",
+          "Collection/Isolation of mobile device",
+          "Mobile operating systems (OS) and Apps",
+          "Mobile artifacts"
+        ]
+      },
+      {
+        "name": "Data Integrity and Authentication",
+        "description": "",
+        "Authentication strength": [
+          "Multifactor authentication",
+          "Cryptographic tokens",
+          "Cryptographic devices",
+          "Biometric authentication",
+          "One-time passwords",
+          "Knowledge-based authentication"
+        ],
+        "Password attack techniques": [
+          "Dictionary attack",
+          "Brute force attack",
+          "Rainbow table attack",
+          "Phishing and social engineering",
+          "Malware-based attack",
+          "Spidering",
+          "Off-line analysis",
+          "Password cracking tools"
+        ],
+        "Password storage techniques": [
+          "Cryptographic hash functions (SHA-256, SHA-3, collision resistance)",
+          "Salting",
+          "Iteration count",
+          "Password-based key derivation"
+        ],
+        "Data integrity": [
+          "Message authentication codes (HMAC, CBC-MAC)",
+          "Digital signatures",
+          "Authenticated encryption",
+          "Hash trees"
+        ]
+      },
+      {
+        "name": "Access Control",
+        "description": "",
+        "Physical data security": [
+          "Data center security, including keyed access, man trips, key cards and video surveillance",
+          "Rack-level security",
+          "Data destruction"
+        ],
+        "Logical data access control": [
+          "Access control lists, group policies, passwords",
+          "Discretionary Access Control (DAC)",
+          "Mandatory Access Control (MAC)",
+          "Role-based Access Control (RBAC)",
+          "Attribute-based Access Control (ABAC)",
+          "Rule-based Access Control (RAC)",
+          "History-based Access Control (HBAC)",
+          "Identity-based Access Control (IBAC)",
+          "Organization-based Access Control (OrBAC)",
+          "Federated identities and access control"
+        ],
+        "Secure architecture design": [
+          "Principles of a security architecture",
+          "Protection of information in computer systems"
+        ],
+        "Data leak prevention techniques": [
+          "Controlling authorized boundaries",
+          "Channels",
+          "Destinations",
+          "Methods of data sharing"
+        ]
+      },
+      {
+        "name": "Secure Communication Protocols",
+        "description": "",
+        "Application and transport layer protocols": [
+          "HTTP",
+          "HTTPS",
+          "SSH",
+          "SSL/TLS"
+        ],
+        "Attacks on TLS": [
+          "Downgrade attacks",
+          "Certificate forgery",
+          "Implications of stolen root certificates",
+          "Certificate transparency"
+        ],
+        "Internet/Network layer": [
+          "IPsec and VPN"
+        ],
+        "Privacy preserving protocols": [
+          "Mixnet, Tor, Off-the-record message, and Signal"
+        ],
+        "Data link layer": [
+          "L2TP, PPP and RADIUS"
+        ],
+        "Cryptanalysis": [
+          "Brute-force attack",
+          "Frequency-based attacks",
+          "Attacks on the Enigma machine",
+          "Birthday-paradox attack"
+        ],
+        "Classical attacks": [
+          "Timing attacks",
+          "Power-consumption attacks",
+          "Differential fault analysis"
+        ],
+        "Side-channel attacks": [
+          "Differential attack",
+          "Linear attack",
+          "Meet-in-the-middle attack"
+        ],
+        "Attacks against privatekey ciphers Attacks against publickey ciphers": [
+          "Factoring algorithms (Pollard\u2019s p-1 and rho methods, quadratic sieve, and number field sieve)"
+        ],
+        "Algorithms for solving the Discrete Log Problem": [
+          "Pohlig-Hellman",
+          "Baby Step/Giant Step",
+          "Pollard\u2019s rho method"
+        ],
+        "Attacks on RSA": [
+          "Shared modulus",
+          "Small public exponent",
+          "Partially exposed prime factors"
+        ]
+      },
+      {
+        "name": "Data Privacy",
+        "description": "",
+        "Overview": [
+          "Definitions (Brandeis, Solove)",
+          "Legal (HIPAA, FERPA, GLBA)",
+          "Data collection",
+          "Data aggregation",
+          "Data dissemination",
+          "Privacy invasions",
+          "Social engineering",
+          "Social media"
+        ]
+      }
+    ]
+  },
+  "Software Security": {
+    "summary": "The Software Security knowledge area focuses on the development and use of software that reliably preserves the security properties of the information and systems it protects.The security of a system, and of the data it stores and manages, depends in large part on the security of its software. The security of software depends on how well the requirements match the needs that the software is to address, how well the software is designed, implemented, tested, and deployed and maintained. The documentation is critical for everyone to understand these considerations, and ethical considerations arise throughout the creation, deployment, use, and retirement of software.The Software Security knowledge area addresses these security issues. The knowledge units within this knowledge area are comprised of fundamental principles and practices.",
+    "essentials": [
+      "Fundamental design principles including least privilege, open design, and abstraction",
+      "Security requirements and their role in design",
+      "Implementation issues",
+      "Static and dynamic testing",
+      "Configuring and patching",
+      "Ethics, especially in development, testing and vulnerability disclosure"
+    ],
+    "references": [],
+    "outcomes": [
+      {
+        "name": "Fundamental Design Principles; Least Privilege, Open Design, and Abstraction",
+        "questions": [
+          "Discuss the implications of relying on open design or the secrecy of design for security",
+          "List the three principles of security",
+          "Describe why each principle is important to security",
+          "Identify the needed design principle"
+        ]
+      },
+      {
+        "name": "Security requirements and the roles they play in design",
+        "questions": [
+          "Explain why security requirements are important",
+          "Identify common attack vectors",
+          "Describe the importance of writing secure and robust programs",
+          "Describe the concept of privacy including personally identifiable information"
+        ]
+      },
+      {
+        "name": "Implementation issues",
+        "questions": [
+          "Explain why input validation and data sanitization are necessary",
+          "Explain the difference between pseudorandom numbers and random numbers",
+          "Differentiate between secure coding and patching and explain the advantage of using secure coding techniques",
+          "Describe a buffer overflow and why it is a potential security problem"
+        ]
+      },
+      {
+        "name": "Static, dynamic analysis",
+        "questions": [
+          "Explain the difference between static and dynamic analysis",
+          "Discuss a problem that static analysis cannot reveal",
+          "Discuss a problem that dynamic analysis cannot reveal"
+        ]
+      },
+      {
+        "name": "Configuring, patching",
+        "questions": [
+          "Discuss the need to update software to fix security vulnerabilities",
+          "Explain the need to test software after an update but before the patch is distributed",
+          "Explain the importance of correctly configuring software"
+        ]
+      }
+    ],
+    "units": [
+      {
+        "name": "Fundamental Principles",
+        "description": "This knowledge unit introduces the principles that underlie both design and implementation. The first five are restrictiveness principles, the next three are simplicity principles, and the rest are methodology principles",
+        "Least privilege": [
+          "Software should be given only those privileges that it needs to complete its task"
+        ],
+        "Fail-safe defaults": [
+          "The initial state should be to deny access unless access is explicitly required. Then, unless software is given explicit access to an object, it should be denied access to that object and the protection state of the system should remain unchanged"
+        ],
+        "Complete mediation": [
+          "Software should validate every access to objects to ensure that the access is allowed"
+        ],
+        "Separation": [
+          "Software should not grant access to a resource, or take a security-relevant action, based on a single condition"
+        ],
+        "Minimize trust": [
+          "Software should check all inputs and the results of all security-relevant actions"
+        ],
+        "Economy of mechanism": [
+          "Security features of software should be as simple as possible"
+        ],
+        "Minimize common mechanism": [
+          "The sharing of resources should be reduced as much as possible"
+        ],
+        "Least astonishment": [
+          "Security features of software, and security mechanisms it implements, should be designed so that their operation is as logical and simple as possible"
+        ],
+        "Open design": [
+          "Security of software, and of what that software provides, should not depend on the secrecy of its design or implementation"
+        ],
+        "Layering": [
+          "Organize software in layers so that modules at a given layer interact only with modules in the layers immediately above and below it. This allows you to test the software one layer at a time, using either topdown or bottom-up techniques, and reduces the access points, enforcing the principle of separation"
+        ],
+        "Abstraction": [
+          "Hide the internals of each layer, making only the interfaces available; this enables you to change how a layer carries out its tasks without affecting components at other layers"
+        ],
+        "Modularity": [
+          "Design and implement the software as a collection of co-operating components (modules); indeed, each module interface is an abstraction"
+        ],
+        "Complete linkage": [
+          "Tie software security design and implementation to the security specifications for that software"
+        ],
+        "Design for iteration": [
+          "Plan the design in such a way that it can be changed, if needed. This minimizes the effects with respect to the security of changing the design if the specifications do not match an environment that the software is used in"
+        ]
+      },
+      {
+        "name": "Design",
+        "description": "This knowledge unit describes techniques for including security considerations throughout the design of software",
+        "Derivation of security requirements": [
+          "Beginning with business, mission, or other objectives, determine what security requirements are necessary to succeed. These may also be derived, or changed, as the software evolves"
+        ],
+        "Specification of security requirements": [
+          "Translate the security requirements into a form that can be used (formal specification, informal specifications, specifications for testing)"
+        ],
+        "Software development lifecycle/Security development lifecycle": [
+          "Include the following examples: waterfall model, agile development and security"
+        ],
+        "Programming languages and type-safe languages": [
+          "Discuss the problems that programming languages introduce, what type-safety does, and why it is important"
+        ]
+      },
+      {
+        "name": "Implementation",
+        "description": "This knowledge unit describes techniques for including security considerations throughout the implementation of software",
+        "Validating input and checking its representation": [
+          "Check bounds of buffers and values of integers to be sure they are in range",
+          "Check inputs to make sure they are what is expected and will be processed/interpreted correctly"
+        ],
+        "Using APIs correctly": [
+          "Ensure parameters and environments are validated and controlled so that the API enforces the security policy properly",
+          "Check the results of using the API for problems"
+        ],
+        "Using security features": [
+          "Use cryptographic randomness",
+          "Properly restrict process privileges"
+        ],
+        "Checking time and state relationships": [
+          "Check that the file acted upon is the one for which the relevant attributes are checked",
+          "Check that processes run"
+        ],
+        "Handling exceptions and errors properly": [
+          "Block or queue signals during signal processing, if necessary",
+          "Determine what information should be given to the user, balancing usability with any need to hide some information, and how and to whom to report that information"
+        ],
+        "Programming robustly": [
+          "This topic is sometimes called secure or defensive programming",
+          "Only deallocate allocated memory",
+          "Initialize variables before use",
+          "Don't rely on undefined behavior"
+        ],
+        "Encapsulating structures and modules": [
+          "This topic includes classes and other instantiations",
+          "Example: isolating processes"
+        ],
+        "Taking environment into account": [
+          "Example: don't put sensitive information in the source code"
+        ]
+      },
+      {
+        "name": "Analysis and Testing",
+        "description": "This knowledge unit introduces testing considerations for validating that the software meets stated (and unstated) security requirements and specifications. Unstated requirements include those related to robustness in general",
+        "Static and dynamic analysis": [
+          "The different methods for each of these, includes how static and dynamic analysis work together, and the limits and benefits of each, as well as how to perform these types of analyses on very large software systems"
+        ],
+        "Unit testing": [
+          "How to test component parts of the software, like modules"
+        ],
+        "Integration testing": [
+          "How to test the software components as they are integrated"
+        ],
+        "Software testing": [
+          "How to test the software as a whole, and place unit and integration testing in a proper framework"
+        ]
+      },
+      {
+        "name": "Deployment and Maintenance",
+        "description": "Security considerations in the use of software, and in its deployment, maintenance, and removal",
+        "Configuring": [
+          "This topic covers how to set up the software system to make it function correctly"
+        ],
+        "Patching and the vulnerability lifecycle": [
+          "This topic includes managing vulnerability reports, fixing the vulnerabilities, testing the patch and patch distribution"
+        ],
+        "Checking environment": [
+          "This topic covers ensuring the environment matches the assumptions made in the software, and if not, how to handle the conflict"
+        ],
+        "DevOps": [
+          "This topic combines development and operation, and the automation and monitoring of both"
+        ],
+        "Decommissioning/Retiring": [
+          "What happens when the software is removed, and how to remove it without causing security problems"
+        ]
+      },
+      {
+        "name": "Documentation",
+        "description": "This knowledge unit describes how to introduce and include information about security considerations in configuration, use, and other aspects of using the software and maintaining it (including modifying it when needed)",
+        "Installation documents": [
+          "This topic includes installation and configuration documentation"
+        ],
+        "User guides and manuals": [
+          "This topic includes tutorials and cheat sheets (brief guides); these should emphasize any potential security problems the users can cause"
+        ],
+        "Assurance documentation": [
+          "This topic focuses on how correctness was established, and what correctness means here"
+        ],
+        "Security documentation": [
+          "This topic focuses on potential security problems, how to avoid them, and if they occur, what the effects might be and how to deal with them"
+        ]
+      }
+    ]
+  },
+  "Component Security": {
+    "summary": "The Component Security knowledge area focuses on the design, procurement, testing, analysis and maintenance of components integrated into larger systems.The security of a system depends, in part, on the security of its components. The security of a component depends on how it is designed, fabricated, procured, tested, connected to other components, used and maintained. This knowledge area is primarily concerned with the security aspects of the design, fabrication, procurement, testing and analysis of components. Together with the Connection Security and System Security KAs, the Component Security KA addresses the security issues of connecting components and using them within larger systems.",
+    "essentials": [
+      "Vulnerabilities of system components",
+      "Component lifecycle",
+      "Secure component design principles",
+      "Supply chain management security",
+      "Security testing",
+      "Reverse engineering"
+    ],
+    "references": [],
+    "outcomes": [
+      {
+        "name": "Vulnerabilities of system components",
+        "questions": [
+          "Explain how the security of a system\u2019s components might impact the security of the system",
+          "Describe ways in which the confidentiality of a component\u2019s design may be compromised",
+          "Describe ways to learn information about component\u2019s functionality with limited information about its design and implementation"
+        ]
+      },
+      {
+        "name": "Component lifecycle",
+        "questions": [
+          "List the phases of a component\u2019s lifecycle"
+        ]
+      },
+      {
+        "name": "Secure component design principles",
+        "questions": [
+          "List component design artifacts which may require protection",
+          "Give examples of several secure component design principles and explain how each protects the security of components",
+          "Describe several techniques for protecting the design elements of an integrated circuit"
+        ]
+      },
+      {
+        "name": "Supply chain management",
+        "questions": [
+          "List common points of vulnerability in a component\u2019s supply chain",
+          "Describe security risks in a component supply chain",
+          "Describe ways to mitigate supply chain risks"
+        ]
+      },
+      {
+        "name": "Security testing",
+        "questions": [
+          "Differentiate between unit and system testing",
+          "List several techniques for testing security properties of a component"
+        ]
+      }
+    ],
+    "units": [
+      {
+        "name": "Component Design",
+        "description": "This knowledge unit introduces design principles and techniques which increase the security of components",
+        "Component design security": [
+          "This topic covers threats to the security of component design artifacts (e.g., schematics, netlists, and masks) such as hardware Trojans, intellectual property piracy, reverse engineering, tampering, side-channel analysis and counterfeiting. It also introduces techniques for protecting components from unauthorized access and use"
+        ],
+        "Principles of secure component design": [
+          "This topic covers principles such as establishing a sound security policy, treating security as an integral part of system design, trusted computing platforms, chain of trust, reducing risk, layered security, simplicity of design, minimizing system elements to be trusted, and avoiding unnecessary security mechanisms"
+        ],
+        "Component identification": [
+          "This topic covers techniques such as watermarking, fingerprinting, metering, encrypted IDs, and physical unclonable functions for protecting components against intellectual property theft and ensuring component authenticity"
+        ],
+        "Anti-reverse engineering techniques": [
+          "This topic covers techniques such as design obfuscation and camouflaging for making component designs and implementations difficult to reverse engineer"
+        ],
+        "Side-channel attack mitigation": [
+          "This topic covers techniques for defending against side-channel attacks primarily targeted at cryptographic algorithms. Defensive techniques include leakage reduction, noise injection, frequent key updates, physical random functions, and secure scan chains"
+        ],
+        "Anti-tamper technologies": [
+          "This topic covers techniques for making components resistant to physical and electronic attacks including physical protection techniques, tamper evident systems and tamper responding systems"
+        ]
+      },
+      {
+        "name": "Component Procurement",
+        "description": "This knowledge unit describes techniques for ensuring that the security of system components is maintained throughout the procurement process",
+        "Supply chain risks": [
+          "Security threats and risks to both hardware and software in component procurement"
+        ],
+        "Supply chain security": [
+          "Strategies such as physical security, split manufacturing, traceability, cargo screening and validation, and inspections to detect and prevent compromises of component security during the procurement process"
+        ],
+        "Supplier vetting": [
+          "This topic includes strategies such as supplier credentialing to establish trusted suppliers and transporters of components"
+        ]
+      },
+      {
+        "name": "Component Testing",
+        "description": "This knowledge unit introduces unit testing techniques and describes tools and techniques used to test the security properties of a component",
+        "Principles of unit testing": [
+          "Unit testing tools and techniques as distinguished from system-level testing"
+        ],
+        "Security testing": [
+          "Tools and techniques such as fuzz testing for testing the security properties of a component beyond its functional correctness"
+        ]
+      }
+    ]
+  },
+  "Connection Security": {
+    "summary": "The Connection Security knowledge area focuses on the security of the connections between components including both physical and logical connections.It is critical that every cybersecurity professional have a basic knowledge of digital communications and networking. Connections are how components interact. Much of this material could be introduced through examples, and then abstracting to the essentials and introducing the appropriate vocabulary. Together with the Component Security and System Security KAs, the Connection Security KA addresses the security issues of connecting components and using them within larger systems.",
+    "essentials": [
+      "Systems, architecture, models, and standards",
+      "Physical component interfaces",
+      "Software component interfaces",
+      "Connection attacks",
+      "Transmission attacks"
+    ],
+    "references": [],
+    "outcomes": [
+      {
+        "name": "Systems, architecture, models, and standards",
+        "questions": [
+          "Discuss the need for common models and architectures in order to describe systems",
+          "Describe a model of systems that consists of components and interfaces for connections",
+          "Explain why a component requires at least one interface",
+          "List several standards that define models consisting of systems of components and interfaces",
+          "Describe the components and interfaces of a networking standard provided"
+        ]
+      },
+      {
+        "name": "Physical component interfaces",
+        "questions": [
+          "Explain why a hardware device is always modeled a physical component",
+          "List several examples of physical component interfaces with their associated vulnerabilities",
+          "Describe an exploit for a vulnerability of a physical interface provided",
+          "Explain why every physical interface has a corresponding software component to provide a corresponding software interface"
+        ]
+      },
+      {
+        "name": "Software component interfaces",
+        "questions": [
+          "Explain how software components are organized to represent logical layers in a standard model",
+          "Discuss how the Internet 5 layer model can be viewed as software components and interfaces that represent levels of services encapsulated by lower-level services",
+          "Discuss how TCP/IP as a service is represented by different interfaces in different software systems"
+        ]
+      },
+      {
+        "name": "Connection attacks",
+        "questions": [
+          "Explain how connection attacks can be understood in terms of attacks on software component interfaces",
+          "Describe how a specified standard interface could expose vulnerabilities in a software component that implements the interface",
+          "Describe how an implementation could protect itself from a specified vulnerability in a specified standard interface"
+        ]
+      }
+    ],
+    "units": [
+      {
+        "name": "Physical Media",
+        "description": "This knowledge unit introduces the concepts of physical signaling and transmission. These general concepts could be introduced through presenting the history of Ethernet protocols and 802.11 wirelessStarting with a coax broadcast domain and CSMA/CD, moving to hubs and then switches without changing the addressing and payload. The introduction of switching required simulating broadcast behavior to simulate the coax broadcast behavior. Wireless is a shared medium but physical characteristics of the medium required different collision avoidance mechanisms than coax",
+        "Transmission in a medium": [
+          "This topic covers signals in coax, twisted pair, optical fiber, and air"
+        ],
+        "Shared and point-to-point media": [
+          "This topic discusses the communication characteristic of the media"
+        ],
+        "Sharing models": [
+          "The various schemes for sharing media between multiple clients. For example: 802.1 MAC addressing and PPP"
+        ],
+        "Common technologies": [
+          "This topic examines various implementations of the models covered above. IEEE 802.3 (Ethernet), IEEE 802.11 (Wi-Fi), IEEE 802.16 (fixed wireless broadband)"
+        ]
+      },
+      {
+        "name": "Physical Interfaces and Connectors",
+        "description": "This knowledge unit describes the characteristics of connectors, their materials, and standards that define the characteristics of the connectors. Different materials have different characteristics and signal transmission capability. Even non-technical security people need to understand that optical fiber is different than twisted pair and that each has different standards and specific standard connectors",
+        "Hardware characteristics and materials": [
+          "This topic introduces the connection characteristics of various media and the requirements for physical connections"
+        ],
+        "Standards": [
+          "This topic examines various standards for connectors"
+        ],
+        "Common connectors": [
+          "RJ 11, Rj 45, ST, SC, MTRJ, SFF ISA Buss, etc"
+        ]
+      },
+      {
+        "name": "Hardware Architecture",
+        "description": "This knowledge unit introduces the advantages and potential vulnerabilities of standard hardware architectures",
+        "Standard architectures": [
+          "This topic should introduce the idea of standard architectures and the advantages of standardization",
+          "The history of PC motherboards could be used as an example showing the evolution from ISA through PCI and beyond. The ability for cards to add functionality without changing the base architecture is important. Adding Multiport Ethernet ports in a card allows a PC to become a router"
+        ],
+        "Hardware interface standards": [
+          "This topic introduces various hardware interface standards starting with IC package design, through busses such as ISA and PCI for integration platforms and on to networking standards like IEEE 802.3"
+        ],
+        "Common architectures": [
+          "This topic should examine the current technologies learners will face (CPU chips, PC motherboard, Ethernet standards)"
+        ]
+      },
+      {
+        "name": "Distributed Systems Architecture interconnection",
+        "description": "This knowledge unit introduces the general concepts of distributed systems and how they are connected together. The Internet is not the only network and TCP/IP is not the only protocol for system. Each implementation has specific characteristics and different potential vulnerabilities. The focus of the curriculum should be on similarities, differences, and why design choices are made. Each architecture has advantages and disadvantages for particular use cases and each has particular vulnerabilities and strengths from a security perspective. One cannot assume that a mitigation strategy for the Internet will be appropriate for a supercomputer infrastructure",
+        "General concepts": [
+          "This topic should start with the idea of a process in and operating system and then introduce the various architectures for running processes and enabling their communication. Symmetric multiprocessing and shared memory, network based with an interprocess communication model"
+        ],
+        "World-wide-web": [
+          "This topic covers the HTTP/HTTPS protocol and demonstrates how it is an example of a distributed processing standard"
+        ],
+        "The Internet": [
+          "This topic covers the evolution of the Internet as a distributed processing platform. Learners should be clear as to why the world-wide-web and the Internet are not equivalent"
+        ],
+        "Protocols and layering": [
+          "This topic covers the 7 layer OSI model along with the 5 layer Internet model and compares them as an example of encapsulation and layering to enable services that build on each other"
+        ],
+        "High performance computing (supercomputers)": [
+          "This topic introduces HPC and use cases that distinguish HPC from the standard Internet"
+        ],
+        "Hypervisors and cloud computing implementations": [
+          "This topic introduces the concepts of providing infrastructure as a service (IaaS), Software as a Service (SaaS), Platform as a Service (PaaS), and all of their relatives relevant to the learners should be covered"
+        ],
+        "Vulnerabilities and example exploits": [
+          "This topic examines the attack surfaces of the various distributed computing models emphasizing the fact that every interface introduces potential vulnerabilities. The hypervisor, virtual networking, physical network, and interprocess communication should all be covered"
+        ]
+      },
+      {
+        "name": "Network Architecture",
+        "description": "This knowledge unit introduces the concepts typically covered in a computer networking course. It provides the foundation for the more specialized KUs",
+        "General concepts": [
+          "This topic should cover the ideas of nodes and edges with the names of the various topologies and the transmission characteristics of the topologies"
+        ],
+        "Common architectures": [
+          "This topic covers the IEEE 802 network architecture and how the various networks are named based on the physical characteristics (LANs, MANs, etc.)"
+        ],
+        "Forwarding": [
+          "This topic covers packet forwarding in general. Since similar switching silicone is now used in routers and switches, and SDN treats forwarding separate from building the forwarding table, this is its own topic"
+        ],
+        "Routing": [
+          "This topic covers routing algorithms and explains how forwarding tables are built using graph analysis algorithms such as link-state and distance vector"
+        ],
+        "Switching/Bridging": [
+          "This topic covers learning algorithms and IEEE 802.1 bridging along with Spanning Tree Protocol and its relationship to routing. It is not currently clear how this topic will evolve with STP being replaced through the emergence of Trill and STP"
+        ],
+        "Emerging trends": [
+          "This topic covers emerging technologies and their impact as they emerge. Currently the impact of SDN and adding routing to layer 2 with enhanced learning bridges would be the content. This is evolving rapidly"
+        ],
+        "Virtualization and virtual hypervisor architecture": [
+          "Virtualization has provided ways to design architecture using either native virtualization (type 1) or virtualization under the control of a host operating system (type 2)"
+        ]
+      },
+      {
+        "name": "Network Implementations",
+        "description": "This knowledge unit explores specific technologies that implement the general concepts of networking. Network architecture concepts may be illustrated by specific implementations but it should be made clear that there are other possibilities. It should be emphasized that vulnerabilities are exploited in implementations. Often an architecture can be proven correct theoretically, but implemented in a way that has vulnerabilities. Also seams between technologies often open vulnerabilities. ARP poisoning is a perfect example of how a seam between technologies opens vulnerabilities",
+        "IEEE 802/ISO networks": [
+          "This topic is a deep dive into the ISO standards. It is expected that this topic will be introduced other places"
+        ],
+        "IETF networks and TCP/IP": [
+          "This is a deep dive into the basic infrastructure of the Internet and TCP"
+        ],
+        "Practical integration and glue protocols": [
+          "This topic looks at the problem of integrating technologies through the implementation of what could be called interface shims or glue code. ARP is the obvious example. A mechanism was required to map the IP addresses of the IETF internetworking model to the MAC addresses of the underlying networks. ARP is the glue. Similarly, Infiniband needs a shim to carry IP traffic. Other examples abound"
+        ],
+        "Vulnerabilities and example exploits": [
+          "This topic should provide examples from the technologies important to the program. If ARP is chosen as an example, ARP poisoning as a MitM attach works well. USB and other serial connections could also provide examples"
+        ]
+      },
+      {
+        "name": "Network Services",
+        "description": "This knowledge unit explores different models used to implement connectivity between the consumer of a service and the provider of a service. Each topic can be explored at many levels with many examples (e.g., wireless issues surrounding biomedical devices). This area is broken out because the service models can be implemented in so many ways with so many different architectures. Remote procedure calls (RPC) are implemented over many different connection technologies varying from process-toprocess in a single processor to across the InternetThe security concerns are different and the design tradeoffs change based on implementations and requirements",
+        "Concept of a service": [
+          "This topic is a network-centric dive into one model of distributed computing. A service is a process that provides something to another process based on a request"
+        ],
+        "Service models (client-server, peer-to-peer)": [
+          "This topic is a network-centric look at how services are modelled. From a network perspective, the client initiates a connection and a server responds. With P2P either side can initiate the request"
+        ],
+        "Service protocol concepts (IPC, APIs, IDLs)": [
+          "All of the ways components connect. Procedure calls, IPC requests, Interface Definition Languages with stub code, private protocols over a socket, everything"
+        ],
+        "Common service communication architectures": [
+          "This topic looks at specific services and how their protocols are implemented. Examples are SMTP, HTTP, SNMP, REST, CORBA, etc. Specialty connections such as wireless control of implanted medical devices can also be examined"
+        ],
+        "Service virtualization": [
+          "This topic covers service virtualization as a method to emulate the behavior of specific components such as cloud-based applications and service-oriented architecture"
+        ],
+        "Vulnerabilities and example exploits": [
+          "This topic looks at the vulnerabilities and exploits of client-server, peer-to-peer, and virtualization network services. Common service signatures are often used for vulnerability profiling"
+        ]
+      }
+    ]
+  },
+  "System Security": {
+    "summary": "The System Security knowledge area focuses on the security aspects of systems that are composed of components and connections, and use software. Understanding the security of a system requires viewing it not only as a set of components and connections, but also as a complete unit in and of itself. This requires a holistic view of the system. Together with the Component Security and Connection Security KAs, the System Security KA addresses the security issues of connecting components and using them within larger systems ",
+    "essentials": [
+      "Holistic approach",
+      "Security policy",
+      "Authentication",
+      "Access control",
+      "Monitoring",
+      "Recovery",
+      "Testing",
+      "Documentation"
+    ],
+    "references": [],
+    "outcomes": [
+      {
+        "name": "Holistic approach",
+        "questions": [
+          "Explain the concepts of trust and trustworthiness",
+          "Explain what is meant by confidentiality, integrity, and availability",
+          "Explain what a security policy is, and its role in protecting data and resources"
+        ]
+      },
+      {
+        "name": "Security policy",
+        "questions": [
+          "Discuss the importance of a security policy",
+          "Explain why different sites have different security policies",
+          "Explain the relationship among a security group, system configuration, and procedures to maintain the security of the system"
+        ]
+      },
+      {
+        "name": "Authentication",
+        "questions": [
+          "Explain three properties commonly used for authentication",
+          "Explain the importance of multifactor authentication",
+          "Explain the advantages of pass phrases over passwords"
+        ]
+      },
+      {
+        "name": "Access control",
+        "questions": [
+          "Describe an access control list",
+          "Describe physical and logical access control, and compare and contrast them",
+          "Distinguish between authorization and authentication"
+        ]
+      },
+      {
+        "name": "Monitoring",
+        "questions": [
+          "Discuss how intrusion detection systems contribute to security",
+          "Describe the limits of anti-malware software such as antivirus programs",
+          "Discuss uses of system monitoring"
+        ]
+      },
+      {
+        "name": "Recovery",
+        "questions": [
+          "Explain what resilience is and identify an environment in which it is important",
+          "Discuss the basics of a disaster recovery plan",
+          "Explain why backups pose a potential security risk"
+        ]
+      },
+      {
+        "name": "Testing",
+        "questions": [
+          "Describe what a penetration test is and why it is valuable",
+          "Discuss how to document a test that reveals a vulnerability",
+          "Discuss the importance of validating requirements"
+        ]
+      }
+    ],
+    "units": [
+      {
+        "name": "System Thinking",
+        "description": "This knowledge unit introduces the student to thinking of the system as a whole, rather than simply a number of connected components",
+        "What is a system?": [
+          "This topic discusses the definition of system and how it depends on context"
+        ],
+        "What is systems engineering?": [
+          "This topic focuses on the value of having good systems engineering artifacts in order to inform security risk management"
+        ],
+        "Holistic approaches": [
+          "This topic covers viewing the system as a whole rather than as simply a collection of interconnected components. For example, viewing the human, organizational and environmental considerations of the whole as opposed to viewing each individual component and connection and how they affect the view of risk"
+        ],
+        "Security of general-purpose systems": [
+          "This topic covers the security considerations of computing and of systems in general"
+        ],
+        "Security of special-purposes systems": [
+          "This topic covers security considerations derived from the purposes to which the system is put"
+        ],
+        "Threat models": [
+          "This topic covers what security problems can arise and how they might be realized, detected, and mitigated"
+        ],
+        "Requirements analysis": [
+          "This topic presents requirements derivation and validation throughout the system lifecycle, including in various methodologies such as the waterfall and agile development methodologies"
+        ],
+        "Fundamental principles": [
+          "The Software Security knowledge area covers these principles in detail, but they also apply here"
+        ],
+        "Development for testing": [
+          "This topic covers designing systems for ease and effectiveness of testing"
+        ]
+      },
+      {
+        "name": "System Management",
+        "description": "This knowledge unit describes techniques for including security considerations throughout the management of the system",
+        "Policy models": [
+          "This topic includes examples such as BellLaPadula, Clark-Wilson, Chinese Wall, and Clinical Information Systems Security"
+        ],
+        "Policy composition": [
+          "This topic covers restrictiveness"
+        ],
+        "Use of automation": [
+          "This topic includes data mining, machine learning and related techniques, and their benefits and limitations"
+        ],
+        "Patching and the vulnerability life cycle": [
+          "This topic includes the security issues patching raises such as whether to patch a system, and patching a running system, as well as how to handle vulnerability reports"
+        ],
+        "Operation": [
+          "This topic includes security in operation, and the importance of usability considerations"
+        ],
+        "Commissioning and decommissioning": [
+          "The security considerations when installing and removing a system"
+        ],
+        "Insider threat": [
+          "This topic includes examples of insider threats such as data exfiltration and sabotage, and covers countermeasures"
+        ],
+        "Documentation": [
+          "This topic covers security and assurance documentation as well as installation and user guides focused on the system itself"
+        ],
+        "Systems and procedures": [
+          "This topic discusses procedures that are used to manage systems"
+        ]
+      },
+      {
+        "name": "System Access",
+        "description": "This knowledge unit introduces security considerations about controlling access to systemsIt deals with the identification of entities, and confirmation of that identification to the desired level of granularity. Topics overlap with the Human Security knowledge area, but the focus here is on the system elements and not the human ones",
+        "Authentication methods": [
+          "Authentication methods refers to human-to-system or system-to-system authentication; examples include passwords, biometrics, dongles, and single sign-on"
+        ],
+        "Identity": [
+          "How is identity represented to the system? This topic includes roles as well as names, etc"
+        ],
+        "System Control": [
+          "This knowledge unit examines the security considerations involved in controlling the system itself. It includes detecting, compensating for, defending against, and preventing attacks"
+        ],
+        "Access control": [
+          "This topic focuses on controlling access to resources, and the integrity of the controls, rather than their controlling access to data, which is covered in the Data Security knowledge area"
+        ],
+        "Authorization models": [
+          "This topic covers the management of authorization across many systems, and the distinction between authentication and authorization"
+        ],
+        "Intrusion detection": [
+          "This topic covers anomaly, misuse (rule-based, signature-based) and specification-based techniques"
+        ],
+        "Attacks": [
+          "This topic covers attack models (such as attack trees and graphs) and specific attacks"
+        ],
+        "Defenses": [
+          "This topic includes examples such as ASLR, IP hopping, and intrusion tolerance"
+        ],
+        "Audit": [
+          "This topic covers logging, log analysis, and relationship to intrusion detection"
+        ],
+        "Malware": [
+          "This topic includes examples such as computer viruses, worms, ransomware, and other forms of malware"
+        ],
+        "Vulnerabilities models": [
+          "This topic includes examples such as RISOS and PA; and enumerations such as CVE and CWE"
+        ],
+        "Penetration testing": [
+          "This topic covers the Flaw Hypothesis Methodology and other forms (ISSAF, OSSTMM, GISTA, PTES, etc.)"
+        ],
+        "Forensics": [
+          "This topic focuses on the system requirements for forensics"
+        ],
+        "Recovery, resilience": [
+          "This topic includes availability mechanisms"
+        ]
+      },
+      {
+        "name": "System Retirement",
+        "description": "This knowledge unit examines how retiring a system at or before its end of life may affect the security of other systems, or of the organization that used the system",
+        "Decommissioning": [
+          "This topic examines how retiring a system at or before its end of life may affect the security of other systems, or of the organization that used the system. The student should understand the effects of removing a system, or components or connections within a system, upon the security of the system as a whole"
+        ],
+        "Disposal": [
+          "This topic includes wiping media and other forms of destruction to prevent sensitive information (such as PII) from being recovered"
+        ]
+      },
+      {
+        "name": "System Testing",
+        "description": "This knowledge unit covers considerations of testing systems to ensure they meet security requirements",
+        "Validating requirements": [
+          "Methodologies to show that requirements meet objectives"
+        ],
+        "Validating composition of components": [
+          "This topic covers how to test a system as a whole"
+        ],
+        "Unit versus system testing": [
+          "This topic covers how system testing differs from component and connection testing"
+        ],
+        "Formal verification of systems": [
+          "This topic covers languages, theorem provers, and hierarchical decomposition"
+        ]
+      }
+    ]
+  },
+  "Human Security": {
+    "summary": "The Human Security knowledge area focuses on protecting individuals\u2019 data and privacy in the context of organizations (i.e., as employees) and personal life, in addition to the study of human behavior as it relates to cybersecurity.",
+    "essentials": [
+      "Identity management",
+      "Social engineering",
+      "Awareness and understanding",
+      "Social behavioral privacy and security",
+      "Personal data privacy and security"
+    ],
+    "references": [],
+    "outcomes": [
+      {
+        "name": "Identity Management",
+        "questions": [
+          "Explain the difference between identification, authentication, and access authorization of people and devices",
+          "Discuss the importance of audit trails and logging in identification and authentication",
+          "Demonstrate the ability to implement the concept of least privilege and segregation of duties",
+          "Demonstrate the overall understanding of access control attacks and mitigation measures"
+        ]
+      },
+      {
+        "name": "Social Engineering",
+        "questions": [
+          "Demonstrate overall understanding of the types of social engineering attacks, psychology of social engineering attacks, and misleading users",
+          "Demonstrate the ability to identify types of social engineering attacks",
+          "Demonstrate the ability to implement approaches for detection and mitigation of social engineering attacks"
+        ]
+      },
+      {
+        "name": "Awareness and understanding",
+        "questions": [
+          "Discuss the importance of cyber hygiene, cybersecurity user education, as well as cyber vulnerabilities and threats awareness",
+          "Describe the major topics within Security Education, Training, and Awareness (SETA) programs",
+          "Discuss the importance of SETA as countermeasures",
+          "Discuss the importance of risk perception and communication in the context of mental models of cybersecurity and privacy"
+        ]
+      },
+      {
+        "name": "Social behavioral privacy and security",
+        "questions": [
+          "Compare and contrast various theories of privacy from social psychology and social science",
+          "Describe the concepts of privacy tradeoffs and risks in the social context, control and awareness of data consent, personal information monitoring, regulatory protections and concerns on maintaining social privacy",
+          "Discuss the importance of social media privacy and security"
+        ]
+      }
+    ],
+    "units": [
+      {
+        "name": "Identity Management",
+        "description": "",
+        "Identification and authentication of people and devices": [
+          "This topic provides an overview of various access control methods to demonstrate the benefits and challenges of each. Topics include an overview of Network Access Control (NAC), Identity Access Management (IAM), roles, multi-method identification and authentication systems, biometric authentication systems (including issues such as accuracy/FAR/FRR, resistance, privacy, etc.), as well as usability and tolerability of the methods"
+        ],
+        "Physical and logical assets control": [
+          "This topic covers various access controls to physical assets including system hardware, network assets, backup/storage devices, etc. Examples are Network Access Control (NAC), Identity Access Management (IAM), Rules-based Access Control (RAC), Rolesbased Access Control (RBAC), inventory tracking methods, and identity creation methods (what type of user ID helps increase security with access control, for example, abc1234, first name and last name, first initial and last name)"
+        ],
+        "Identity as a Service (IaaS)": [
+          "This topic cover identity management as a service (e.g., Cloud identity) brings forward issues such as the system being out of the user\u2019s control with no way to know what has happened to the information in the system, auditing access, ensuring compliance and flexibility to quickly revoke permissions"
+        ],
+        "Third-party identity services": [
+          "This topic provides an overview of the authentication infrastructure used to build, host, and manage thirdparty identity services. Topics include on-premises, cloud, centralized identity services/password management tools, end-point privilege management, etc"
+        ],
+        "Access control attacks and mitigation measures": [
+          "This topic provides an overview of various types of access control attacks to steal data or user credentials, and mitigation measures for combating them. Topics include password, dictionary, brute force, and spoofing attacks; multifactor authentication; strong password policy; secure password files; restrict access to systems; etc"
+        ]
+      },
+      {
+        "name": "Social Engineering",
+        "description": "",
+        "Types of social engineering attacks": [
+          "This topic provides an overview of the different ways that cybercriminals or malicious groups exploit weaknesses in organizations, systems, networks, and personal information used to enable a later cyberattack. Proposed topics included: phishing and spear phishing attacks, physical/impersonation, vishing (phone phishing), email compromise, and baiting"
+        ],
+        "Psychology of social engineering attacks": [
+          "This topic provides an overview of the psychological and behavioral factors related to individuals falling for social engineering attacks. Proposed topics include adversarial thinking, how emotional responses impact decision-making, cognitive biases of risks and rewards, and trust building"
+        ],
+        "Misleading users": [
+          "This topic provides an overview of message systems\u2019 and browsers\u2019 interfaces and/or user interaction that can be exploited to mislead users. Proposed topics include spoofing message senders, misleading URLs, how users judge and trust webpages and emails, as well as user behaviors with phishing and other browser warnings"
+        ],
+        "Detection and mitigation of social engineering attacks": [
+          "This topic provides scenario-based, hands-on activities via simulation or virtual tools to create an environment of various social engineering attacks",
+          "Hands-on experience on the use of tools and technical approaches to detect and/or mitigate different social engineering threats. Proposed tools such as email filtering, blacklist, security information and event management (SIEM) tools, and IDS/IPS"
+        ]
+      },
+      {
+        "name": "Personal Compliance with Cybersecurity Rules/Policy/ Ethical Norms",
+        "description": "",
+        "System misuse and user misbehavior": [
+          "This topic provides overview of intentional and unintentional system misuse, cyberbullying, cyber hacking, naive behavior, and ethical dilemmas related to system security decisions"
+        ],
+        "Enforcement and rules of behavior": [
+          "This topic provides an overview of methods and techniques to get people to follow the rules/policies/ethical norms (e.g., driving!). Topics include consequences for not following cybersecurity rules/policy/ethical norms, documentation and audit trail (evidence of compliance to prove that the cybersecurity rules/policy/ethical norms were followed), and knowledge of accountability for not following security rule/policy/ethical norms",
+          "Incentives to keep the job (especially after being educated and trained for the proper rules/policy/ethical norms, individuals are legally liable for not following the rules as an employee), and individuals may lose their identity/access in personal life due to a lack of adherence"
+        ],
+        "Proper behavior under uncertainty": [
+          "This topic provides an overview of the methods and techniques to adhere to when uncertain about how to respond to a cybersecurity situation. Topics include CyberIQ, intellectual adaptability, critical thinking, understanding the right versus wrong choices, how to make those choices under uncertainty, rational versus irrational thinking, ethical thinking/decisions, and behavior when there is no clear process to follow (reporting/point of contact/etc.), and human error mitigation"
+        ]
+      },
+      {
+        "name": "Awareness and Understanding",
+        "description": "This topic covers how users perceive and respond to cybersecurity risks, cognitive biases in judging risks, metaphors for communicating particular security risks, and how to frame messages regarding risks",
+        "Risk perception and communication": [
+          "Definition of a mental model, how mental models impact user behavior, as well as common mental models (folk models) of cybersecurity and privacy"
+        ],
+        "Cyber hygiene": [
+          "This topic provides a discussion and activities focused on the individual responsibilities (not the organization) to protect and mitigate against cyberthreats and cyberattacks. Topics include password creation, password storage, mitigation tools, (i.e., anti-virus software), how to identify safe websites, identifying levels of privacy settings, etc.)"
+        ],
+        "Cybersecurity user education": [
+          "Methods for educating end-users on various cybersecurity/privacy threats and behaviors. Topics include methods for raising user awareness (PreK-12, employees, public, etc.), delivery methods of cybersecurity education and training (e.g., posters, leaflets, computer-based training, gamification, communication styles, message framing, how to reach different audiences and user communities, individuals with disabilities and/or cognitive impairments), timing and reinforcement of education, as well as impact of training on users\u2019 knowledge and behaviors"
+        ],
+        "Cyber vulnerabilities and threats awareness": [
+          "This topic provides an overview of end-user-facing threats as well as Fear, Uncertainty, and Doubt (FUD). Proposed topics include warning signs of internal employee vulnerabilities and threats, awareness of identity theft, business email compromise, threat of free/open Wi-Fi networks, and malware, spyware, and ransomware"
+        ]
+      },
+      {
+        "name": "Social and Behavioral Privacy",
+        "description": "",
+        "Social theories of privacy": [
+          "This topic provides an overview of various theories of privacy from social psychology and social science, emphasizing privacy that involves interacting with other people as opposed to organizations. Proposed topics include privacy tradeoffs and risks in the social context, control and awareness of data consent, personal information monitoring, regulatory protections and concerns on maintaining social privacy"
+        ],
+        "Social media privacy and security": [
+          "This topic provides overview of privacy behaviors and concerns of users in protecting personal information when using social media. Proposed topics include users\u2019 online disclosure decisions and behaviors, personas and identity management, determining audience and social access controls, interface and coping mechanisms for managing privacy on various social media sites, challenges of managing time boundaries, as well as personal/workplace boundaries of social media"
+        ]
+      },
+      {
+        "name": "Personal Data Privacy and Security",
+        "description": "",
+        "Sensitive personal data (SPD)": [
+          "This topic provides overview of the types of Personal Data (PD), including Personally Identifiable Information (PII), which are especially sensitive due to the risk that such information could be misused to significantly harm an individual in a financial, employment or social way. Proposed topics include examples of data elements of Sensitive Personal Data (SPD) (social security number, social insurance number or other government issued identification number such as a driver\u2019s license or passport number; bank account number; credit card numbers; health and medical information; biometric or genetic data, etc.), regulations governing the collection, use and distribution of SPD, and possibilities for inference of SPD"
+        ],
+        "Personal tracking and digital footprint": [
+          "Location tracking, Web traffic tracking, network tracking, personal device tracking, digital assistants recordings (Siri, Alexa, etc.). Topics include users\u2019 behaviors and concerns with each of these kinds of tracking, as well as current methods for limiting tracking and protecting privacy"
+        ]
+      }
+    ]
+  },
+  "Organizational Security": {
+    "summary": "The Organizational Security knowledge area focuses on protecting organizations from cybersecurity threats and managing risk to support the successful accomplishment of the organization\u2019s mission. Organizations have responsibility to meet the needs of many constituencies and those needs must inform each of these knowledge units.",
+    "essentials": [
+      "Students should be able to identify the types of security laws, regulations, and standards within which an organization operates. A government organization has a set of security profiles while a corporate entity has other focuses. A security policy needs to fit the current organization and be able to grow with the organization. A security professional should understand current governances and how they convey compliances to their respective business verticals such as healthcare and Ecommerce",
+      "Risk management",
+      "Governance and policy",
+      "Laws, ethics, and compliance",
+      "Strategy and planning"
+    ],
+    "references": [],
+    "outcomes": [
+      {
+        "name": "Risk Management",
+        "questions": [
+          "Describe risk management and its role in the organization",
+          "Describe risk management techniques to identify and prioritize risk factors for information assets and how risk is assessed",
+          "Discuss the strategy options used to treat risk and be prepared to select from them when given background information",
+          "Describe popular methodologies used in the industry to manage risk"
+        ]
+      },
+      {
+        "name": "Governance and policy",
+        "questions": [
+          "Discuss the importance, benefits, and desired outcomes of cybersecurity governance and how such a program would be implemented",
+          "Describe information security policy and its role in a successful information security program",
+          "Describe the major types of information security policy and the major components of each",
+          "Explain what is necessary to develop, implement, and maintain effective policy and what consequences the organization may face if it does not do so"
+        ]
+      },
+      {
+        "name": "Laws, ethics, and compliance",
+        "questions": [
+          "Differentiate between law and ethics",
+          "Describe why ethical codes of conduct are important to cybersecurity professionals and their organizations",
+          "Identify significant national and international laws that relate to cybersecurity",
+          "Explain how organizations achieve compliance with national and international laws and regulations, and specific industry standards"
+        ]
+      }
+    ],
+    "units": [
+      {
+        "name": "Risk Management",
+        "description": "Risk management is finding and controlling risks to organizational information assets",
+        "Risk identification": [
+          "Asset identification is the cataloging of information assets in an organization, such as databases or hardware, to aid in the determination of risk should the assets be compromised or lost. Threats include any event leveraging a vulnerability that has the potential to cause loss or damage for the organization. Threat intelligence (threat modeling) is increasingly used by organizations to maintain awareness and reactive capacity for existing and emerging threats"
+        ],
+        "Risk assessment and analysis": [
+          "Risk analysis is the organizational process to determine and deal with possible accidental or intentional losses, and designing and implementing procedures to minimize the impact of these losses. This can also encompass Threat Analysis and Threat Intelligence"
+        ],
+        "Insider threats": [
+          "This topic covers malicious human behavioral factors that might cause harm as a result of a conscious violation of trust, or best-use, or inadvertent error",
+          "An insider is defined as any person with authorized access to an organization\u2019s resources including personnel, facilities, information, equipment, networks, and systems",
+          "An insider threat is defined as the risk that an insider will use their authorized access, wittingly or unwittingly, to do harm to their organization. This can include theft of proprietary information and technology; damage to company facilities, systems, or equipment; actual or threatened harm to employees; or, other actions that would prevent the company from carrying out its normal business practices",
+          "This topic covers motive-means-opportunity behaviors: motivation and discipline factors, accountability, awareness and quality control",
+          "The FBI has developed materials including indicators useful in identifying potential insider threat risks"
+        ],
+        "Risk measurement and evaluation models and methodologies": [
+          "Risk models are used to explain how assets encounter risk. In addition, there a number of industry-accepted methodologies to measure, evaluate, and communicate risk to stakeholders",
+          "This topic includes both quantitative and qualitative approaches to risk assessment, application of models and methods for various business contexts (e.g., HIPAA for healthcare facilities). Tools of interest might include the Cyber Resilience Review self-assessment, Cybersecurity Evaluation Tool (CSET) as well as Security Risk Assessment tool from HSS"
+        ],
+        "Risk control": [
+          "Risk control is defined as the act of lessening the consequences of a cyber event, and as a result lessening the amount of risk. Each approach should include the means to communicate risk to decision makers including the residual risk. Topics covered should include assessment and ranking of risk and the Avoid, Reduce, Transfer, Accept categories",
+          "Curricular content should include widely-used risk control methodologies that are available for exposure and practice"
+        ]
+      },
+      {
+        "name": "Security Governance and Policy",
+        "description": "Each organization addresses its operating environment, internal and external, through policy and governanceGovernance is the responsibility of the senior management of an organization to assure the effective implementation of strategic planning, risk management, and regulatory compliance usually by means of comprehensive managerial policy, plans, programs, and budgetary controls so as to secure the information of the organizationThe implementation of security governance and policy should be framed within global, national, and local laws, regulations and standardsThis knowledge unit focuses on an understanding of the security policy development cycle, from initial research to implementation and maintenance as well as giving exposure to real-world examples of security policies and practices",
+        "Organizational context": [
+          "Many factors influence how security is operationalized in organizations. These contexts are critical when designing a curriculum and should inform the entire process",
+          "This topic covers how internal versus external contextual differences have a major impact on the coverage of policy, regulation, and statute (or jurisdiction). Also, location- or country-specific issues and concerns should be evaluated. Applicable standards and guidelines for compliance to industry/sector should also be evaluated",
+          "The variance between governments versus private organizations is a factor as is the need to include international aspects including but not limited to import/export restrictions. Further, there is significant difference between organizations in various business vertical industry segments such as energy versus agriculture"
+        ],
+        "Privacy": [
+          "Privacy is a concept with cultural and national variations in its definition. At its core, privacy is based on the right to be forgotten, and various levels of choice and consent for the collection, use, and distribution of an individual\u2019s information",
+          "This topic addresses social and localized variances in privacy. Jurisdictional variance in privacy definitions should be explored. The relationships between individuals, organizations, or governmental privacy requirements should also be addressed. The impact of privacy settings in new tools/software, identifying a need for tools and techniques to be covered in most areas",
+          "Additional consideration should be given to privacy in the context of consumer protection and health care regulations",
+          "Organizations with international engagement must consider variances in privacy laws, regulations, and standards across the jurisdictions in which they operate"
+        ],
+        "Laws, ethics, and compliance": [
+          "Laws, regulations, standards as well as ethical values are derived from the social context and how organizations meet requirements to comply with them",
+          "This topic includes how laws and technology intersect in the context of the judicial structures that are presentinternational, national and local - as organizations safeguard information systems from cyberattacks",
+          "Ethical instruction should also be an element",
+          "Professional codes of conduct and ethical standards should be addressed. Compliance efforts should include those efforts to conform to laws, regulations, and standards, and to include breach notification requirements by state, national, and international governing authorities. Examples of international laws and standards include GDPR and ISO/IEC 27000 et al. National laws of importance for U.S. organizations include HIPAA, Sarbanes-Oxley, GLBA, etc"
+        ],
+        "Security governance": [
+          "The principles of corporate governance are applicable to the information security function. Governance is the responsibility of the senior management of an organization to assure the effective implementation of strategic planning, risk management, and regulatory compliance usually by means of comprehensive managerial policy, plans, programs, and budgetary controls to secure the information of the organization",
+          "This topic should frame the implementation of security governance and policy within global, national, and local laws, regulations and standards, and programs of instruction should seek to convey the concepts with clarity and sound examples"
+        ],
+        "Executive and board level communication": [
+          "Delivering information to executives and external decision makers is a critical skill for information security leaders",
+          "This topic includes communication skills that are taught and practiced with rehearsals that include critical analysis and meaningful feedback"
+        ],
+        "Managerial policy": [
+          "Organizational guidelines that dictate certain behavior within an organization",
+          "This topic content should seeks to convey the concepts with clarity and sound examples including security program policy, issue-specific policy and systemspecific policy as per NIST SP 800-12 Rev 1. This should also cover an understanding of the security policy development cycle, from initial research to implementation and maintenance, as well as giving exposure to real-world examples of security policies and practices"
+        ]
+      },
+      {
+        "name": "Analytical Tools",
+        "description": "This knowledge unit is a set of techniques using data analytics to recognize, block, divert, and respond to cyberattacks. Monitoring real-time network activities enables agile decision making, detection of suspected malicious activities, utilization of real-time visualization dashboard and employment of a set of hardware and software to manage such detected suspicious activities",
+        "Performance measurements (metrics)": [
+          "A process of designing, implementing, and managing the use of specific measurements to determine the effectiveness of the overall security program. Built on metrics, a term used to describe any detailed statistical analysis technique on performance, but now commonly synonymous with performance measurement",
+          "Curricular content should include approaches and techniques to define and evaluate the utility of performance measurements should be explained to students"
+        ],
+        "Data analytics": [
+          "Data analytics is a set of techniques used to manipulate (often) large volumes of data to recognize, block, divert, and respond to cyberattacks. Monitoring real-time network activities enables agile decision making, detection of suspected malicious activities, utilization of a real-time visualization dashboard, and employment of a set of hardware and software to manage such detected suspicious activities",
+          "This topic includes definitions; the differences between security control and security analytic software and tools; the type and classifications of analytic tools and techniques (with examples such as OpenSOC); collect, filter, integrate and link diverse types of security event information; how security analytics tools work; the relationship between analytic software and tools and forensics; differences between forensic tools and analytic tool; network forensics (to include packet analysis, tools, Windows, Linux, UNIX, Mobile); differences between cyber forensics (social media for example) and network forensics"
+        ],
+        "Security intelligence": [
+          "Collection, analysis, and dissemination of security information including but not limited to threats and adversary capabilities",
+          "In this topic, tools and techniques should be explored to include data collection and aggregation, data mining, data analytics, statistical analysis. Examples of sources for security intelligence include SIEM for internal data, and public and private intelligence services for external data. Dissemination includes an understanding of the Information Sharing and Analysis Center approach as well organizations like InfraGard"
+        ],
+        "Systems Administration": [
+          "System administration works behind the scenes to configure, operate, maintain, and troubleshoot the technical system infrastructure that supports much of modern life",
+          "Prerequisite knowledge: Basic understanding of computer systems (Windows/Linux), networks (OSI Model), software, and database (Oracle/SQL)"
+        ],
+        "Operating system administration": [
+          "This topic covers the upkeep, reliable operation, configuration, and troubleshooting of technical systems, especially multi-user systems and servers",
+          "This topic includes but not be limited to account management, disk administrations, system process administration, system task automation, performance monitoring, optimization, administration of tools for security and backup of disks and process"
+        ],
+        "Database system administration": [
+          "This topic covers managing and maintaining databases by utilizing available and applicable management system software",
+          "This topic includes but not be limited to installation and configuration of database servers, creation and manipulation of schemas, tables, indexes, views, constraints, stored procedures, functions, user account creation and administration, and tools for database backup and recovery. Coverage should include the data storage technologies in wide use as well as emerging data management technologies"
+        ],
+        "Network administration": [
+          "Network administration relates to installation, and supporting various network system architectures (LANs, WANs, MANs, intranets, extranets, perimeter networks",
+          "This topic includes but is not limited to the OSI Model, securing of network traffic, and tools for configuration of services"
+        ],
+        "Cloud administration": [
+          "Cloud administration refers to the upkeep and reliable access to a dynamic pool of configurable remote resources (e.g., networks, servers, storage, applications and services) that can be rapidly configured, provisioned and released with minimal oversight",
+          "This topic includes but is not limited to configuring and deploying applications and users in cloud infrastructures, analyzing performance, resource scaling, availability of cloud platforms, identifying security and privacy issues and mitigating risks"
+        ],
+        "Cyber-physical system administration": [
+          "Cyber-physical systems (CPS) are engineered systems that are built from, and depend upon, the seamless integration of computational algorithms and physical components. CPS administration refers to installation and upkeep by ensuring safety, capability, adaptability, scalability, resiliency, security, and usability",
+          "This topic includes but is not limited to the architecture of cyber-physical systems, underlying communication standards (Zigbee), middleware, service-oriented architecture, tools supporting real-time control and application of real-world examples (power grid, nuclear facility, IoT, SCADA)"
+        ],
+        "System hardening": [
+          "This topic covers securing a system by finding and remediating risks. This may include hardening or securing configuration, system software, firmware, and application",
+          "This topic includes but is not limited to identifying risks, threats, and vulnerabilities in commonly used systems (operating systems, database systems, networks); defining and administering procedures and practices to safeguard against threats; hardening through suitable tools (firewall, anti-virus, IDS, honeypot)"
+        ],
+        "Availability": [
+          "Sound system operation requires all systems sustain targeted levels of availability by having their current state recoverable from failure through redundancy and backup and recovery",
+          "This topic includes but is not limited to identifying key assets and administering tools to have validated system backup and recovery"
+        ]
+      },
+      {
+        "name": "Cybersecurity Planning",
+        "description": "",
+        "Strategic planning": [
+          "The process of defining an organization\u2019s cybersecurity strategy - or direction - and determining the actions needed and resources to be allocated in order to implement such a strategy",
+          "This topic covers concepts such as determining the current organization\u2019s position; performing Strengths, Weaknesses, Opportunities, and Threats (SWOT) analysis; developing a strategy that fulfills the mission, values, and vision of the organization; determining longterm objectives; selecting key performance indicators (KPIs) to track progress; allocating the necessary budget; rolling out the strategy to the organization; and updating and adapting yearly"
+        ],
+        "Operational and tactical management": [
+          "The organization ability to securely operate organizational technical infrastructure",
+          "This topic includes a discussion of data protection and privacy by default and design, and cover basic concepts, issues, and techniques for efficient and effective operations. Special emphasis is placed on process improvement and supply chain management. Topics include operations strategy; tactical strategy; product and service design; process design and analysis; capacity planning; lean production systems; materials and inventory management; quality management and six sigma; project management; and supply chain management"
+        ],
+        "Business Continuity, Disaster Recovery, and Incident Management": [
+          "Description of the role disaster recovery (DR) plays within business continuity (BC). BC planning includes contingency planning, incident response, emergency response, and backup and recovery efforts of an organization to ensure the availability of critical resources during an emergency situation while the disaster recovery refers to the recovery of the systems in the event of a disaster. Continuity of organizations in the wake of major events is also a component",
+          "This topic includes creation and use of the IR/DR/BP BC plans, organization of the plans, occasions to review/rewrite plans, examination of sanitized plans, opportunities should be given for students to write casebased or actual plans to gain some experience"
+        ],
+        "Incident response": [
+          "Incident response (IR) refers to the actions taken by senior management to specify the organization\u2019s processes and procedures to anticipate, detect, and mitigate the effects of an incident",
+          "This topic includes the creation and use of the IR plans, organization of the plans, occasions to review/rewrite plans, and examination of sanitized plans. Opportunities should be given for students to write case-based or actual plans to gain some experience"
+        ],
+        "Disaster recovery": [
+          "Disaster recovery (DR) refers to the actions taken by senior management to specify the organization\u2019s efforts in preparation for and recovery from a disaster. Specifically, DR refers to the recovery of the systems in the event of a disaster",
+          "This topic includes the creation and use of the DR plans, organization of the plans, occasions to review/rewrite plans, and examination of sanitized plans. Opportunities should be given for students to write case-based or actual plans to gain some experience"
+        ],
+        "Business continuity": [
+          "Business continuity refers to the actions taken by senior management to specify the organization\u2019s efforts if a disaster renders the organization\u2019s primary operating location unusable. Business continuity (BC) planning includes contingency planning, incident response, emergency response, and backup and recovery efforts of an organization to ensure the availability of critical resources during an emergency situation. Continuity of organizations in the wake of major events is also a component",
+          "Curricular content should include the creation and use of the BC plans, organization of the plans, occasions to review/rewrite plans, and examination of sanitized plans. Opportunities should be given for students to write casebased or actual plans to gain some experience"
+        ]
+      },
+      {
+        "name": "Security Program Management",
+        "description": "",
+        "Project management": [
+          "Project management is the application of knowledge, skills, tools, and techniques to project activities to meet the project requirements",
+          "This topic includes project integration; project scope management; project time and cost management; quality management; human resource considerations; communications; risk management; and procurement management"
+        ],
+        "Resource management": [
+          "Resource management is the efficient and effective deployment and allocation of an organization\u2019s resources when and where they are needed. Such resources may include financial resources, inventory, human skills, production resources, or information technology",
+          "This topic explains and develops current practices in resource management, specifically in the context of projects typical of cybersecurity"
+        ],
+        "Security metrics": [
+          "Metrics, often described as measures, are effective tools to discern the effectiveness of the components of their security programs and drive actions taken to improve a security program",
+          "This topic includes the elements of security metrics, and how to design, develop, validate and organize them. The use of metrics in various contexts should be included such as:",
+          "Use of security metrics in decision making",
+          "Use of security metrics in strategic, tactical and operational planning",
+          "Use of security metrics in security program evaluation, audition, and performance"
+        ],
+        "Quality assurance and quality control": [
+          "Quality assurance (QA) and quality control (QC) are methods used to prevent mistakes which might impact the character of a deliverable such as a software system; control specifically refers to methods used to increase the quality of these systems",
+          "This topic explains and develop current practices in QA/QC, specifically in the context of projects typical of cybersecurity"
+        ]
+      },
+      {
+        "name": "Personnel Security",
+        "description": "",
+        "This topic covers the avoidance and/or proper use of Fear Uncertainty, and Doubt (FUD) as a tool for awareness": [],
+        "This topic includes physical security; desktop security; password security; wireless networks; security phishing; file sharing and copyright; browsing; encryption; insider threat; international travel; social networking and social engineering": [],
+        "Security hiring practices": [
+          "The practices, governed by policies, used by organizations to recruit, hire and train employees across the organization",
+          "This topic includes the principles of this topic, and students should gain experience with a review of fictional resumes, fictional background checks, fictional acted-out interview techniques, fingerprint analysis results, and financial review"
+        ],
+        "Security termination practices": [
+          "The practices, governed by policies, used by organizations to terminate employees across the organization including assigned asset recovery, removal of credentials and proactive prevention of data exfiltration",
+          "Students should gain experience with practice sets and simulations"
+        ],
+        "Third-party security": [
+          "Those practices of firms to manage the risks from contractors, consultants and the staff of key business partners",
+          "This topic includes the principles of this topic, and students should gain experience with practice sets and simulations"
+        ],
+        "Security in review processes": [
+          "Those practices of firms to manage the periodic review of staff members",
+          "This topic includes the principles of this topic, and students should gain experience with practice sets and simulations"
+        ],
+        "Special issue in privacy of employee personal information": [
+          "Those practices of firms to secure the personal information of employees and other stakeholders",
+          "This topic includes the principles of this topic, and students should gain experience with practice sets and simulations"
+        ]
+      }
+    ]
+  },
+  "Societal Security": {
+    "summary": "The Societal Security knowledge area focuses on aspects of cybersecurity that broadly impact society as a whole for better or for worse. Cybercrime, law, ethics, policy, privacy and their relation to each other are the key concepts of this knowledge area. The threat of cybercrime across the global society is incredibly serious and growing. Laws, ethics and policies are vital to the security of corporate and government secrets and assets, as well as to the protection of individual privacy and identity.",
+    "essentials": [
+      "Cybercrime",
+      "Cyber law",
+      "Cyber ethics",
+      "Cyber policy",
+      "Privacy"
+    ],
+    "references": [],
+    "outcomes": [
+      {
+        "name": "Cybercrime",
+        "questions": [
+          "Discuss various motives for cybercrime behavior",
+          "Summarize terror activities in cyberspace geared toward generating societal fear and certainty",
+          "Describe methods for investigating both domestic and international crimes",
+          "Explain why preserving the chain of digital evidence is necessary in prosecuting cybercrimes"
+        ]
+      },
+      {
+        "name": "Cyber law",
+        "questions": [
+          "Describe the constitutional foundations of cyber law",
+          "Describe international data security and computer hacking laws",
+          "Interpret intellectual property laws related to security",
+          "Summarize laws governing online privacy"
+        ]
+      },
+      {
+        "name": "Cyber ethics",
+        "questions": [
+          "Distinguish among virtue ethics, utilitarian ethics and deontological ethics",
+          "Paraphrase professional ethics and codes of conduct from prominent professional societies, such as ACM, IEEE-CS, AIS and (ISC)",
+          "Describe ways in which decision-making algorithms could overrepresent or under-represent majority and minority groups in society"
+        ]
+      },
+      {
+        "name": "Cyber policy",
+        "questions": [
+          "Describe major international public policy positions and the impact they have on organizations and individuals",
+          "Summarize nation-specific cybersecurity public policy with respect to the protection of sensitive information and protection of critical infrastructure",
+          "Explain global impact of cybersecurity to culture including areas such as the economy, social issues, policy and laws"
+        ]
+      }
+    ],
+    "units": [
+      {
+        "name": "Cybercrime",
+        "description": "This knowledge unit aims to provide students with an understanding of the scope, cost and legal environment relating to cyber-based intellectual property theft. This includes both national and international environmentsStudents should have a strong understanding of the basic property-rights legislation and be able to help others navigate the complex legal and ethical world of intellectual property rights",
+        "Cybercriminal behavior": [
+          "Behavior that attacks individual / companies compute device or computer infrastructure to perform malicious activities, such as spreading viruses, data theft, and identity theft"
+        ],
+        "Cyber terrorism": [
+          "Activities in cyberspace geared to generate societal fear and uncertainty"
+        ],
+        "Cybercriminal investigations": [
+          "Methods for investigating cyberattacks by criminals, cybercriminal organizations, overseas adversaries, and terrorists"
+        ],
+        "Economics of cybercrime": [
+          "Risks of cybercrime are too low, while the rewards are too high",
+          "The use of (untraceable) cryptocurrencies in committing cybercrimes online and in the Dark Web (bitcoin)"
+        ]
+      },
+      {
+        "name": "Cyber Law",
+        "description": "This knowledge unit aims to provide students with a broad understanding of the current legal environment in relation to cyberspace. This includes both domestic and international laws as well as the application of jurisdictional boundaries in cyber-based legal cases. Students should have a strong understanding of current applicable legislation and a strong background in the formation of these legal tools",
+        "Constitutional foundations of cyber law": [
+          "Executive power",
+          "Legislative power",
+          "First amendment",
+          "Fourth amendment",
+          "Tenth amendment"
+        ],
+        "Intellectual property related to cybersecurity": [
+          "The scope, cost and legal environment relating to cyberbased intellectual property theft",
+          "The specific content will be driven by the country of focus",
+          "In the U.S., cover Section 1201 of the Digital Millennium Copyright Act",
+          "Anti-circumvention - Digital Millennium Copyright Act (DMCA 1201)"
+        ],
+        "Privacy laws": [
+          "Laws governing Internet privacy",
+          "Laws governing social media privacy",
+          "Electronic surveillance laws, such as Wiretap Act, Stored Communications Act, and Pen Register Act"
+        ],
+        "Data security law": [
+          "Section 5 of the U.S. Federal Trade Commission",
+          "State data security laws",
+          "State data-breach notification laws",
+          "Health Insurance Portability Accountability Act (HIPAA)",
+          "Gramm Leach Bliley Act (GLBA)",
+          "Information sharing through US-CERT, Cybersecurity Act of 2015"
+        ],
+        "Computer hacking laws": [
+          "U.S. Federal computer crime laws, such as Computer Fraud and Abuse Act. Most computer hacking offenses are prosecuted under the Computer Fraud and Abuse Act in the U.S",
+          "International framework and cooperation needed to prosecute overseas hackers"
+        ],
+        "Digital evidence": [
+          "Forensically-sound collection of digital evidence",
+          "Preserving the chain of custody"
+        ],
+        "Digital contracts": [
+          "Distinction among browse-wrap, click-wrap, and shrink wrap agreements",
+          "The Electronic Signatures in Global and International Commerce Act (ESGICA) of 2000; digital contracts and electronic signatures are just as legal and enforceable as traditional paper contracts signed in ink"
+        ],
+        "Multinational conventions (accords)": [
+          "This topic covers jurisdictional limitations of multinational accords",
+          "Examples: Budapest Convention on cybercrime and the G-7 Cybersecurity Accord on financial institutions"
+        ],
+        "Cross-border privacy and data security laws": [
+          "Requirements of the General Data Protection Regulation (GDPR). Privacy Shield agreement between countries, such as the United States and the United Kingdom, allowing the transfer of personal data"
+        ],
+        "Cyber Ethics": [
+          "This knowledge unit aims to give students a foundation for both understanding and applying moral reasoning models to addressing current and emerging ethical dilemmas on an individual and group (professional) level. It also sensitizes students to debates about whether ethics in computing is a unique problem or part of a larger phenomenon, and helps students to think through how their nation&#x27;s culture and legal framework impact their understanding and implementation of ethics in their society"
+        ],
+        "Defining ethics": [
+          "Compare and contrast major ethical stances, including virtue ethics, utilitarian ethics and deontological ethics",
+          "Apply the three different ethical stances in thinking through the ethical consequences of a particular problem or action"
+        ],
+        "Professional ethics and codes of conduct": [
+          "Major professional societies, such as ACM, IEEE-CS, AIS, and (ISC) 2",
+          "Professional responsibility",
+          "Ethical responsibility in relation to surveillance"
+        ],
+        "Ethics and equity/diversity": [
+          "Describe the ways in which decision-making algorithms may over-represent or underrepresent majority and minority groups in society",
+          "Analyze the ways in which algorithms may implicitly include social, gender and class biases"
+        ],
+        "Ethics and law": [
+          "Understand that ethical practices and legal codes may not always align exactly",
+          "Ethical practices can be seen as universal while laws may be nation- or region-specific (e.g., European Union)",
+          "Laws may evolve but ethical values can be described as unchanging"
+        ],
+        "Autonomy/robot ethics": [
+          "Define autonomous decision-making",
+          "Define artificial intelligence and describe ethical dilemmas presented by the use or employment of artificial intelligence (AI)",
+          "Describe legislative advances which have defined personhood and digital personhood",
+          "Describe the conflict created by legal notions of responsibility and the use of unmanned or autonomous decision-making programs"
+        ],
+        "Ethics and conflict": [
+          "Just War Principles to cyberspace in relation to conflict initiation, behaviors in conflict, conflict cessation/post conflict situation;",
+          "Ethical problems created in conduct of cyber espionage;",
+          "Norm and rule violation as it relates to cyber terrorism"
+        ],
+        "Ethical hacking": [
+          "Ethical penetration testing versus unethical hacking",
+          "Ethical hacking principles and conditions",
+          "Distinguish among nuisance hacking, activist hacking, criminal hacking, and acts of war"
+        ],
+        "Ethical frameworks and normative theories": [
+          "Common ethical frameworks and normative theories related to cybersecurity from individual and societal perspectives"
+        ]
+      },
+      {
+        "name": "Cyber Policy",
+        "description": "The Cyber Policy knowledge unit is intended to help students understand and analyze cyber issues as they relate to the national interest generally, and to national (and national security) policy more specifically. Students are expected to gain an understanding of questions relating to the use of cyber as an instrument of war, and to distinguish between the uses of cyber as such an instrument and the possibility of cyberwar itself occurring. Students will be given an opportunity to grapple with questions regarding how the use of cyber can be signaled to other countries, as well as the challenges associated with its deterrenceStudents are also expected to grasp the historical trends that have made cyber important to national policy and the development of a national cyber policy architectureStudents will be expected to demonstrate original thinking about how cyber affects the national interest, including economic, and the policy implications for national policy arising from cyber",
+        "International Cyber Policy": [
+          "International cyber policy challenges",
+          "Oversight Act of 2015",
+          "Department of State international cyberspace policy International cyber policy strategy"
+        ],
+        "U.S. federal cyber policy": [
+          "Federal Information Security Modernization Act, an update to the Federal Government's cybersecurity policies and guidance;",
+          "Relationship to the nation\u2019s critical infrastructure; and",
+          "Managing risk at a national level"
+        ],
+        "Global impact": [
+          "Effects of cybersecurity on the international system generally and on international security specifically",
+          "How cyber has become and will continue to become an instrument of power, and how this power might change the balance of power between stronger and weaker countries",
+          "Global governance of cyber. Also examine the possibilities of the development of normative behavior related to the use of cyber",
+          "Effects of cyber on the global economy"
+        ],
+        "Cybersecurity policy and national security": [
+          "How a country defines its cybersecurity policy, doctrine and execution responsibility, including national cybersecurity policy, architecture, signals and narratives, and coercion and brandishing; and",
+          "A nation\u2019s cybersecurity messaging; how it signals its intentions to gain other nation\u2019s attention and cooperation"
+        ],
+        "National economic implications of cybersecurity": [
+          "The cost of cybersecurity to a nation",
+          "The losses and gains of cybersecurity to a nation",
+          "The investment to keep a nation protected from cyberthreats and cyberattacks"
+        ],
+        "New adjacencies to diplomacy": [
+          "The \"delicate dance\" of cyber diplomacy",
+          "Aspects of cybersecurity that have become part of the relationships between countries, including the covert collection of information alongside the practice of diplomacy, and the covert application of cyberforce in cyberspace and physical space"
+        ]
+      }
+    ]
+  }
+}
