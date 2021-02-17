@@ -13,5 +13,13 @@
         </library>
       </libraries>
     </data-source>
+    <data-source source="LOCAL" name="postgres@localhost" uuid="f6436329-f058-4258-a422-9a1437769805">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <remarks>start the server with &quot;podman run --name postgres_db -e POSTGRES_PASSWORD=graphs4life -p 5432:5432 -d postgres:latest&quot;</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/postgres</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
