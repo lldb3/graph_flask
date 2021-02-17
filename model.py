@@ -1,6 +1,13 @@
 from sqlalchemy import *
 from sqlalchemy.orm import relationship
-from base import Base
+from sqlalchemy import create_engine
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker
+
+engine = create_engine('postgresql://postgres@localhost:5432/postgres', echo=True)
+Session = sessionmaker(bind=engine)
+
+Base = declarative_base()
 
 
 class KA(Base):
@@ -8,7 +15,7 @@ class KA(Base):
     name = Column(String, unique=True)
     description = Column(String)
     id = Column(Integer, primary_key=True)
-    essentials = Column(String)
+    essentials = Column(ARRAY(String))
 
     def __init__(self, name, description, essentials):
         self.name = name
@@ -19,7 +26,7 @@ class KA(Base):
 class KU(Base):
     __tablename__ = "knowledge_unit"
     name = Column(String)
-    description = Column(String)
+    description = Column(ARRAY(String))
     id = Column(Integer, primary_key=True)
     ka_id = Column(Integer, ForeignKey("knowledge_area.id"))
     ka = relationship("KA")
@@ -68,3 +75,5 @@ class Outcomes(Base):
 
 class Reference(Base):
     __tablename__ = 'reference'
+    id = Column(Integer, primary_key=True)
+    type = Column(String)

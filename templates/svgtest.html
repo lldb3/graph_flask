@@ -2,9 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <script src="https://d3js.org/d3.v5.js"></script>
     <title>Title</title>
 </head>
 <body>
-<embed type="image/svg+xml" src={{ chart_output|safe }} />
+
+<script type="module">
+
+    import define from "../static/js/index.js";
+    import {Runtime, Library, Inspector} from "../static/js/runtime.js";
+
+    const runtime = new Runtime();
+    const main = runtime.module(define, Inspector.into(document.body));
+
+</script>
+
+{#<embed type="image/svg+xml" src={{ chart_output|safe }} />#}
 </body>
 </html>
+
