@@ -1,0 +1,1235 @@
+{
+  "name": "root",
+  "children": [
+    {
+      "name": "Data Security",
+      "children": [
+        {
+          "name": "Cryptography",
+          "children": [
+            {
+              "name": "Basic concepts",
+              "value": 10
+            },
+            {
+              "name": "Advanced concepts",
+              "value": 5
+            },
+            {
+              "name": "Mathematical background",
+              "value": 27
+            },
+            {
+              "name": "Historical ciphers",
+              "value": 15
+            },
+            {
+              "name": "Symmetric (private key) ciphers",
+              "value": 3
+            },
+            {
+              "name": "Asymmetric (public-key) ciphers",
+              "value": 53
+            }
+          ]
+        },
+        {
+          "name": "Digital Forensics",
+          "children": [
+            {
+              "name": "Introduction",
+              "value": 7
+            },
+            {
+              "name": "Legal Issues",
+              "value": 1
+            },
+            {
+              "name": "Digital forensic tools",
+              "value": 36
+            },
+            {
+              "name": "Investigatory process",
+              "value": 8
+            },
+            {
+              "name": "Acquisition and preservation of evidence",
+              "value": 54
+            },
+            {
+              "name": "Analysis of evidence",
+              "value": 55
+            },
+            {
+              "name": "Presentation of results",
+              "value": 9
+            },
+            {
+              "name": "Authentication of evidence",
+              "value": 24
+            },
+            {
+              "name": "Reporting, incident response and handling",
+              "value": 20
+            },
+            {
+              "name": "Mobile forensics",
+              "value": 44
+            }
+          ]
+        },
+        {
+          "name": "Data Integrity and Authentication",
+          "children": [
+            {
+              "name": "Authentication strength",
+              "value": 25
+            },
+            {
+              "name": "Password attack techniques",
+              "value": 38
+            },
+            {
+              "name": "Password storage techniques",
+              "value": 52
+            },
+            {
+              "name": "Data integrity",
+              "value": 42
+            }
+          ]
+        },
+        {
+          "name": "Access Control",
+          "children": [
+            {
+              "name": "Physical data security",
+              "value": 11
+            },
+            {
+              "name": "Logical data access control",
+              "value": 52
+            },
+            {
+              "name": "Secure architecture design",
+              "value": 23
+            },
+            {
+              "name": "Data leak prevention techniques",
+              "value": 28
+            }
+          ]
+        },
+        {
+          "name": "Secure Communication Protocols",
+          "children": [
+            {
+              "name": "Application and transport layer protocols",
+              "value": 53
+            },
+            {
+              "name": "Attacks on TLS",
+              "value": 32
+            },
+            {
+              "name": "Internet/Network layer",
+              "value": 28
+            },
+            {
+              "name": "Privacy preserving protocols",
+              "value": 49
+            },
+            {
+              "name": "Data link layer",
+              "value": 24
+            },
+            {
+              "name": "Cryptanalysis",
+              "value": 26
+            },
+            {
+              "name": "Classical attacks",
+              "value": 33
+            },
+            {
+              "name": "Side-channel attacks",
+              "value": 53
+            },
+            {
+              "name": "Attacks against privatekey ciphers Attacks against publickey ciphers",
+              "value": 32
+            },
+            {
+              "name": "Algorithms for solving the Discrete Log Problem",
+              "value": 17
+            },
+            {
+              "name": "Attacks on RSA",
+              "value": 37
+            }
+          ]
+        },
+        {
+          "name": "Data Privacy",
+          "children": [
+            {
+              "name": "Overview",
+              "value": 32
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Software Security",
+      "children": [
+        {
+          "name": "Fundamental Principles",
+          "children": [
+            {
+              "name": "Least privilege",
+              "value": 40
+            },
+            {
+              "name": "Fail-safe defaults",
+              "value": 2
+            },
+            {
+              "name": "Complete mediation",
+              "value": 22
+            },
+            {
+              "name": "Separation",
+              "value": 49
+            },
+            {
+              "name": "Minimize trust",
+              "value": 49
+            },
+            {
+              "name": "Economy of mechanism",
+              "value": 5
+            },
+            {
+              "name": "Minimize common mechanism",
+              "value": 26
+            },
+            {
+              "name": "Least astonishment",
+              "value": 51
+            },
+            {
+              "name": "Open design",
+              "value": 7
+            },
+            {
+              "name": "Layering",
+              "value": 42
+            },
+            {
+              "name": "Abstraction",
+              "value": 42
+            },
+            {
+              "name": "Modularity",
+              "value": 4
+            },
+            {
+              "name": "Complete linkage",
+              "value": 26
+            },
+            {
+              "name": "Design for iteration",
+              "value": 13
+            }
+          ]
+        },
+        {
+          "name": "Design",
+          "children": [
+            {
+              "name": "Derivation of security requirements",
+              "value": 22
+            },
+            {
+              "name": "Specification of security requirements",
+              "value": 34
+            },
+            {
+              "name": "Software development lifecycle/Security development lifecycle",
+              "value": 40
+            },
+            {
+              "name": "Programming languages and type-safe languages",
+              "value": 24
+            }
+          ]
+        },
+        {
+          "name": "Implementation",
+          "children": [
+            {
+              "name": "Validating input and checking its representation",
+              "value": 41
+            },
+            {
+              "name": "Using APIs correctly",
+              "value": 10
+            },
+            {
+              "name": "Using security features",
+              "value": 48
+            },
+            {
+              "name": "Checking time and state relationships",
+              "value": 38
+            },
+            {
+              "name": "Handling exceptions and errors properly",
+              "value": 33
+            },
+            {
+              "name": "Programming robustly",
+              "value": 31
+            },
+            {
+              "name": "Encapsulating structures and modules",
+              "value": 26
+            },
+            {
+              "name": "Taking environment into account",
+              "value": 40
+            }
+          ]
+        },
+        {
+          "name": "Analysis and Testing",
+          "children": [
+            {
+              "name": "Static and dynamic analysis",
+              "value": 27
+            },
+            {
+              "name": "Unit testing",
+              "value": 6
+            },
+            {
+              "name": "Integration testing",
+              "value": 24
+            },
+            {
+              "name": "Software testing",
+              "value": 38
+            }
+          ]
+        },
+        {
+          "name": "Deployment and Maintenance",
+          "children": [
+            {
+              "name": "Configuring",
+              "value": 54
+            },
+            {
+              "name": "Patching and the vulnerability lifecycle",
+              "value": 35
+            },
+            {
+              "name": "Checking environment",
+              "value": 30
+            },
+            {
+              "name": "DevOps",
+              "value": 19
+            },
+            {
+              "name": "Decommissioning/Retiring",
+              "value": 53
+            }
+          ]
+        },
+        {
+          "name": "Documentation",
+          "children": [
+            {
+              "name": "Installation documents",
+              "value": 38
+            },
+            {
+              "name": "User guides and manuals",
+              "value": 6
+            },
+            {
+              "name": "Assurance documentation",
+              "value": 17
+            },
+            {
+              "name": "Security documentation",
+              "value": 44
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Component Security",
+      "children": [
+        {
+          "name": "Component Design",
+          "children": [
+            {
+              "name": "Component design security",
+              "value": 33
+            },
+            {
+              "name": "Principles of secure component design",
+              "value": 16
+            },
+            {
+              "name": "Component identification",
+              "value": 54
+            },
+            {
+              "name": "Anti-reverse engineering techniques",
+              "value": 4
+            },
+            {
+              "name": "Side-channel attack mitigation",
+              "value": 14
+            },
+            {
+              "name": "Anti-tamper technologies",
+              "value": 11
+            }
+          ]
+        },
+        {
+          "name": "Component Procurement",
+          "children": [
+            {
+              "name": "Supply chain risks",
+              "value": 51
+            },
+            {
+              "name": "Supply chain security",
+              "value": 9
+            },
+            {
+              "name": "Supplier vetting",
+              "value": 28
+            }
+          ]
+        },
+        {
+          "name": "Component Testing",
+          "children": [
+            {
+              "name": "Principles of unit testing",
+              "value": 23
+            },
+            {
+              "name": "Security testing",
+              "value": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Connection Security",
+      "children": [
+        {
+          "name": "Physical Media",
+          "children": [
+            {
+              "name": "Transmission in a medium",
+              "value": 52
+            },
+            {
+              "name": "Shared and point-to-point media",
+              "value": 48
+            },
+            {
+              "name": "Sharing models",
+              "value": 3
+            },
+            {
+              "name": "Common technologies",
+              "value": 18
+            }
+          ]
+        },
+        {
+          "name": "Physical Interfaces and Connectors",
+          "children": [
+            {
+              "name": "Hardware characteristics and materials",
+              "value": 35
+            },
+            {
+              "name": "Standards",
+              "value": 7
+            },
+            {
+              "name": "Common connectors",
+              "value": 21
+            }
+          ]
+        },
+        {
+          "name": "Hardware Architecture",
+          "children": [
+            {
+              "name": "Standard architectures",
+              "value": 35
+            },
+            {
+              "name": "Hardware interface standards",
+              "value": 16
+            },
+            {
+              "name": "Common architectures",
+              "value": 17
+            }
+          ]
+        },
+        {
+          "name": "Distributed Systems Architecture interconnection",
+          "children": [
+            {
+              "name": "General concepts",
+              "value": 13
+            },
+            {
+              "name": "World-wide-web",
+              "value": 10
+            },
+            {
+              "name": "The Internet",
+              "value": 36
+            },
+            {
+              "name": "Protocols and layering",
+              "value": 5
+            },
+            {
+              "name": "High performance computing (supercomputers)",
+              "value": 54
+            },
+            {
+              "name": "Hypervisors and cloud computing implementations",
+              "value": 21
+            },
+            {
+              "name": "Vulnerabilities and example exploits",
+              "value": 29
+            }
+          ]
+        },
+        {
+          "name": "Network Architecture",
+          "children": [
+            {
+              "name": "General concepts",
+              "value": 51
+            },
+            {
+              "name": "Common architectures",
+              "value": 8
+            },
+            {
+              "name": "Forwarding",
+              "value": 13
+            },
+            {
+              "name": "Routing",
+              "value": 54
+            },
+            {
+              "name": "Switching/Bridging",
+              "value": 31
+            },
+            {
+              "name": "Emerging trends",
+              "value": 46
+            },
+            {
+              "name": "Virtualization and virtual hypervisor architecture",
+              "value": 6
+            }
+          ]
+        },
+        {
+          "name": "Network Implementations",
+          "children": [
+            {
+              "name": "IEEE 802/ISO networks",
+              "value": 38
+            },
+            {
+              "name": "IETF networks and TCP/IP",
+              "value": 5
+            },
+            {
+              "name": "Practical integration and glue protocols",
+              "value": 33
+            },
+            {
+              "name": "Vulnerabilities and example exploits",
+              "value": 28
+            }
+          ]
+        },
+        {
+          "name": "Network Services",
+          "children": [
+            {
+              "name": "Concept of a service",
+              "value": 39
+            },
+            {
+              "name": "Service models (client-server, peer-to-peer)",
+              "value": 13
+            },
+            {
+              "name": "Service protocol concepts (IPC, APIs, IDLs)",
+              "value": 24
+            },
+            {
+              "name": "Common service communication architectures",
+              "value": 26
+            },
+            {
+              "name": "Service virtualization",
+              "value": 48
+            },
+            {
+              "name": "Vulnerabilities and example exploits",
+              "value": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "System Security",
+      "children": [
+        {
+          "name": "System Thinking",
+          "children": [
+            {
+              "name": "What is a system?",
+              "value": 12
+            },
+            {
+              "name": "What is systems engineering?",
+              "value": 45
+            },
+            {
+              "name": "Holistic approaches",
+              "value": 12
+            },
+            {
+              "name": "Security of general-purpose systems",
+              "value": 18
+            },
+            {
+              "name": "Security of special-purposes systems",
+              "value": 30
+            },
+            {
+              "name": "Threat models",
+              "value": 42
+            },
+            {
+              "name": "Requirements analysis",
+              "value": 29
+            },
+            {
+              "name": "Fundamental principles",
+              "value": 9
+            },
+            {
+              "name": "Development for testing",
+              "value": 7
+            }
+          ]
+        },
+        {
+          "name": "System Management",
+          "children": [
+            {
+              "name": "Policy models",
+              "value": 48
+            },
+            {
+              "name": "Policy composition",
+              "value": 8
+            },
+            {
+              "name": "Use of automation",
+              "value": 48
+            },
+            {
+              "name": "Patching and the vulnerability life cycle",
+              "value": 18
+            },
+            {
+              "name": "Operation",
+              "value": 52
+            },
+            {
+              "name": "Commissioning and decommissioning",
+              "value": 11
+            },
+            {
+              "name": "Insider threat",
+              "value": 27
+            },
+            {
+              "name": "Documentation",
+              "value": 13
+            },
+            {
+              "name": "Systems and procedures",
+              "value": 19
+            }
+          ]
+        },
+        {
+          "name": "System Access",
+          "children": [
+            {
+              "name": "Authentication methods",
+              "value": 42
+            },
+            {
+              "name": "Identity",
+              "value": 13
+            },
+            {
+              "name": "System Control",
+              "value": 36
+            },
+            {
+              "name": "Access control",
+              "value": 15
+            },
+            {
+              "name": "Authorization models",
+              "value": 50
+            },
+            {
+              "name": "Intrusion detection",
+              "value": 55
+            },
+            {
+              "name": "Attacks",
+              "value": 21
+            },
+            {
+              "name": "Defenses",
+              "value": 6
+            },
+            {
+              "name": "Audit",
+              "value": 4
+            },
+            {
+              "name": "Malware",
+              "value": 7
+            },
+            {
+              "name": "Vulnerabilities models",
+              "value": 55
+            },
+            {
+              "name": "Penetration testing",
+              "value": 35
+            },
+            {
+              "name": "Forensics",
+              "value": 39
+            },
+            {
+              "name": "Recovery, resilience",
+              "value": 18
+            }
+          ]
+        },
+        {
+          "name": "System Retirement",
+          "children": [
+            {
+              "name": "Decommissioning",
+              "value": 5
+            },
+            {
+              "name": "Disposal",
+              "value": 23
+            }
+          ]
+        },
+        {
+          "name": "System Testing",
+          "children": [
+            {
+              "name": "Validating requirements",
+              "value": 2
+            },
+            {
+              "name": "Validating composition of components",
+              "value": 55
+            },
+            {
+              "name": "Unit versus system testing",
+              "value": 38
+            },
+            {
+              "name": "Formal verification of systems",
+              "value": 29
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Human Security",
+      "children": [
+        {
+          "name": "Identity Management",
+          "children": [
+            {
+              "name": "Identification and authentication of people and devices",
+              "value": 40
+            },
+            {
+              "name": "Physical and logical assets control",
+              "value": 52
+            },
+            {
+              "name": "Identity as a Service (IaaS)",
+              "value": 22
+            },
+            {
+              "name": "Third-party identity services",
+              "value": 34
+            },
+            {
+              "name": "Access control attacks and mitigation measures",
+              "value": 51
+            }
+          ]
+        },
+        {
+          "name": "Social Engineering",
+          "children": [
+            {
+              "name": "Types of social engineering attacks",
+              "value": 15
+            },
+            {
+              "name": "Psychology of social engineering attacks",
+              "value": 25
+            },
+            {
+              "name": "Misleading users",
+              "value": 42
+            },
+            {
+              "name": "Detection and mitigation of social engineering attacks",
+              "value": 51
+            }
+          ]
+        },
+        {
+          "name": "Personal Compliance with Cybersecurity Rules/Policy/ Ethical Norms",
+          "children": [
+            {
+              "name": "System misuse and user misbehavior",
+              "value": 35
+            },
+            {
+              "name": "Enforcement and rules of behavior",
+              "value": 51
+            },
+            {
+              "name": "Proper behavior under uncertainty",
+              "value": 46
+            }
+          ]
+        },
+        {
+          "name": "Awareness and Understanding",
+          "children": [
+            {
+              "name": "Risk perception and communication",
+              "value": 38
+            },
+            {
+              "name": "Cyber hygiene",
+              "value": 21
+            },
+            {
+              "name": "Cybersecurity user education",
+              "value": 38
+            },
+            {
+              "name": "Cyber vulnerabilities and threats awareness",
+              "value": 34
+            }
+          ]
+        },
+        {
+          "name": "Social and Behavioral Privacy",
+          "children": [
+            {
+              "name": "Social theories of privacy",
+              "value": 38
+            },
+            {
+              "name": "Social media privacy and security",
+              "value": 34
+            }
+          ]
+        },
+        {
+          "name": "Personal Data Privacy and Security",
+          "children": [
+            {
+              "name": "Sensitive personal data (SPD)",
+              "value": 11
+            },
+            {
+              "name": "Personal tracking and digital footprint",
+              "value": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Organizational Security",
+      "children": [
+        {
+          "name": "Risk Management",
+          "children": [
+            {
+              "name": "Risk identification",
+              "value": 40
+            },
+            {
+              "name": "Risk assessment and analysis",
+              "value": 22
+            },
+            {
+              "name": "Insider threats",
+              "value": 3
+            },
+            {
+              "name": "Risk measurement and evaluation models and methodologies",
+              "value": 29
+            },
+            {
+              "name": "Risk control",
+              "value": 33
+            }
+          ]
+        },
+        {
+          "name": "Security Governance and Policy",
+          "children": [
+            {
+              "name": "Organizational context",
+              "value": 47
+            },
+            {
+              "name": "Privacy",
+              "value": 11
+            },
+            {
+              "name": "Laws, ethics, and compliance",
+              "value": 1
+            },
+            {
+              "name": "Security governance",
+              "value": 51
+            },
+            {
+              "name": "Executive and board level communication",
+              "value": 39
+            },
+            {
+              "name": "Managerial policy",
+              "value": 51
+            }
+          ]
+        },
+        {
+          "name": "Analytical Tools",
+          "children": [
+            {
+              "name": "Performance measurements (metrics)",
+              "value": 3
+            },
+            {
+              "name": "Data analytics",
+              "value": 52
+            },
+            {
+              "name": "Security intelligence",
+              "value": 24
+            },
+            {
+              "name": "Systems Administration",
+              "value": 19
+            },
+            {
+              "name": "Operating system administration",
+              "value": 39
+            },
+            {
+              "name": "Database system administration",
+              "value": 27
+            },
+            {
+              "name": "Network administration",
+              "value": 31
+            },
+            {
+              "name": "Cloud administration",
+              "value": 38
+            },
+            {
+              "name": "Cyber-physical system administration",
+              "value": 11
+            },
+            {
+              "name": "System hardening",
+              "value": 40
+            },
+            {
+              "name": "Availability",
+              "value": 41
+            }
+          ]
+        },
+        {
+          "name": "Cybersecurity Planning",
+          "children": [
+            {
+              "name": "Strategic planning",
+              "value": 29
+            },
+            {
+              "name": "Operational and tactical management",
+              "value": 2
+            },
+            {
+              "name": "Business Continuity, Disaster Recovery, and Incident Management",
+              "value": 18
+            },
+            {
+              "name": "Incident response",
+              "value": 29
+            },
+            {
+              "name": "Disaster recovery",
+              "value": 41
+            },
+            {
+              "name": "Business continuity",
+              "value": 17
+            }
+          ]
+        },
+        {
+          "name": "Security Program Management",
+          "children": [
+            {
+              "name": "Project management",
+              "value": 31
+            },
+            {
+              "name": "Resource management",
+              "value": 8
+            },
+            {
+              "name": "Security metrics",
+              "value": 12
+            },
+            {
+              "name": "Quality assurance and quality control",
+              "value": 26
+            }
+          ]
+        },
+        {
+          "name": "Personnel Security",
+          "children": [
+            {
+              "name": "This topic covers the avoidance and/or proper use of Fear Uncertainty, and Doubt (FUD) as a tool for awareness",
+              "value": 3
+            },
+            {
+              "name": "This topic includes physical security; desktop security; password security; wireless networks; security phishing; file sharing and copyright; browsing; encryption; insider threat; international travel; social networking and social engineering",
+              "value": 26
+            },
+            {
+              "name": "Security hiring practices",
+              "value": 19
+            },
+            {
+              "name": "Security termination practices",
+              "value": 3
+            },
+            {
+              "name": "Third-party security",
+              "value": 38
+            },
+            {
+              "name": "Security in review processes",
+              "value": 19
+            },
+            {
+              "name": "Special issue in privacy of employee personal information",
+              "value": 44
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Societal Security",
+      "children": [
+        {
+          "name": "Cybercrime",
+          "children": [
+            {
+              "name": "Cybercriminal behavior",
+              "value": 1
+            },
+            {
+              "name": "Cyber terrorism",
+              "value": 18
+            },
+            {
+              "name": "Cybercriminal investigations",
+              "value": 40
+            },
+            {
+              "name": "Economics of cybercrime",
+              "value": 52
+            }
+          ]
+        },
+        {
+          "name": "Cyber Law",
+          "children": [
+            {
+              "name": "Constitutional foundations of cyber law",
+              "value": 1
+            },
+            {
+              "name": "Intellectual property related to cybersecurity",
+              "value": 31
+            },
+            {
+              "name": "Privacy laws",
+              "value": 17
+            },
+            {
+              "name": "Data security law",
+              "value": 18
+            },
+            {
+              "name": "Computer hacking laws",
+              "value": 41
+            },
+            {
+              "name": "Digital evidence",
+              "value": 55
+            },
+            {
+              "name": "Digital contracts",
+              "value": 32
+            },
+            {
+              "name": "Multinational conventions (accords)",
+              "value": 17
+            },
+            {
+              "name": "Cross-border privacy and data security laws",
+              "value": 3
+            },
+            {
+              "name": "Cyber Ethics",
+              "value": 30
+            },
+            {
+              "name": "Defining ethics",
+              "value": 38
+            },
+            {
+              "name": "Professional ethics and codes of conduct",
+              "value": 3
+            },
+            {
+              "name": "Ethics and equity/diversity",
+              "value": 38
+            },
+            {
+              "name": "Ethics and law",
+              "value": 4
+            },
+            {
+              "name": "Autonomy/robot ethics",
+              "value": 51
+            },
+            {
+              "name": "Ethics and conflict",
+              "value": 40
+            },
+            {
+              "name": "Ethical hacking",
+              "value": 6
+            },
+            {
+              "name": "Ethical frameworks and normative theories",
+              "value": 18
+            }
+          ]
+        },
+        {
+          "name": "Cyber Policy",
+          "children": [
+            {
+              "name": "International Cyber Policy",
+              "value": 9
+            },
+            {
+              "name": "U.S. federal cyber policy",
+              "value": 24
+            },
+            {
+              "name": "Global impact",
+              "value": 12
+            },
+            {
+              "name": "Cybersecurity policy and national security",
+              "value": 19
+            },
+            {
+              "name": "National economic implications of cybersecurity",
+              "value": 22
+            },
+            {
+              "name": "New adjacencies to diplomacy",
+              "value": 46
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

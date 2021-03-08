@@ -4,7 +4,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-engine = create_engine('postgresql://postgres@localhost:5432/csec', echo=True)
+engine = create_engine('postgresql://postgres:graphs4life@localhost:5432/postgres', echo=True)
 Session = sessionmaker(bind=engine)
 
 Base = declarative_base()
