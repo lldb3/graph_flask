@@ -1,0 +1,367 @@
+digraph {
+	graph [compound=true];
+	node [fillcolor=blue];
+	subgraph "cluster_Software Security" {
+		subgraph "cluster_Least privilege" {
+			"cluster_Least privilege"	[label="Least privilege",
+				shape=box];
+			"Least privilege_Software should be given only those privileges that it needs to complete its task"	[label="Software should be given only those privileges that it needs to complete its task"];
+			"cluster_Least privilege" -> "Least privilege_Software should be given only those privileges that it needs to complete its task"	[minlen=1];
+		}
+		subgraph "cluster_Fail-safe defaults" {
+			"cluster_Fail-safe defaults"	[label="Fail-safe defaults",
+				shape=box];
+			"Fail-safe defaults_The initial state should be to deny access unless access is explicitly required. Then, unless software is given \
+explicit access to an object, it should be denied access to that object and the protection state of the system should remain unchanged"	[label="The initial state should be to deny access unless access is explicitly required. Then, unless software is given explicit access \
+to an object, it should be denied access to that object and the protection state of the system should remain unchanged"];
+			"cluster_Fail-safe defaults" -> "Fail-safe defaults_The initial state should be to deny access unless access is explicitly required. Then, unless software is given \
+explicit access to an object, it should be denied access to that object and the protection state of the system should remain unchanged"	[minlen=1];
+		}
+		subgraph "cluster_Complete mediation" {
+			"cluster_Complete mediation"	[label="Complete mediation",
+				shape=box];
+			"Complete mediation_Software should validate every access to objects to ensure that the access is allowed"	[label="Software should validate every access to objects to ensure that the access is allowed"];
+			"cluster_Complete mediation" -> "Complete mediation_Software should validate every access to objects to ensure that the access is allowed"	[minlen=1];
+		}
+		subgraph cluster_Separation {
+			cluster_Separation	[label=Separation,
+				shape=box];
+			"Separation_Software should not grant access to a resource, or take a security-relevant action, based on a single condition"	[label="Software should not grant access to a resource, or take a security-relevant action, based on a single condition"];
+			cluster_Separation -> "Separation_Software should not grant access to a resource, or take a security-relevant action, based on a single condition"	[minlen=1];
+		}
+		subgraph "cluster_Minimize trust" {
+			"cluster_Minimize trust"	[label="Minimize trust",
+				shape=box];
+			"Minimize trust_Software should check all inputs and the results of all security-relevant actions"	[label="Software should check all inputs and the results of all security-relevant actions"];
+			"cluster_Minimize trust" -> "Minimize trust_Software should check all inputs and the results of all security-relevant actions"	[minlen=1];
+		}
+		subgraph "cluster_Economy of mechanism" {
+			"cluster_Economy of mechanism"	[label="Economy of mechanism",
+				shape=box];
+			"Economy of mechanism_Security features of software should be as simple as possible"	[label="Security features of software should be as simple as possible"];
+			"cluster_Economy of mechanism" -> "Economy of mechanism_Security features of software should be as simple as possible"	[minlen=1];
+		}
+		subgraph "cluster_Minimize common mechanism" {
+			"cluster_Minimize common mechanism"	[label="Minimize common mechanism",
+				shape=box];
+			"Minimize common mechanism_The sharing of resources should be reduced as much as possible"	[label="The sharing of resources should be reduced as much as possible"];
+			"cluster_Minimize common mechanism" -> "Minimize common mechanism_The sharing of resources should be reduced as much as possible"	[minlen=1];
+		}
+		subgraph "cluster_Least astonishment" {
+			"cluster_Least astonishment"	[label="Least astonishment",
+				shape=box];
+			"Least astonishment_Security features of software, and security mechanisms it implements, should be designed so that their operation \
+is as logical and simple as possible"	[label="Security features of software, and security mechanisms it implements, should be designed so that their operation is as logical and \
+simple as possible"];
+			"cluster_Least astonishment" -> "Least astonishment_Security features of software, and security mechanisms it implements, should be designed so that their operation \
+is as logical and simple as possible"	[minlen=1];
+		}
+		subgraph "cluster_Open design" {
+			"cluster_Open design"	[label="Open design",
+				shape=box];
+			"Open design_Security of software, and of what that software provides, should not depend on the secrecy of its design or implementation"	[label="Security of software, and of what that software provides, should not depend on the secrecy of its design or implementation"];
+			"cluster_Open design" -> "Open design_Security of software, and of what that software provides, should not depend on the secrecy of its design or implementation"	[minlen=1];
+		}
+		subgraph cluster_Layering {
+			cluster_Layering	[label=Layering,
+				shape=box];
+			"Layering_Organize software in layers so that modules at a given layer interact only with modules in the layers immediately above \
+and below it. This allows you to test the software one layer at a time, using either topdown or bottom-up techniques, and reduces \
+the access points, enforcing the principle of separation"	[label="Organize software in layers so that modules at a given layer interact only with modules in the layers immediately above and below \
+it. This allows you to test the software one layer at a time, using either topdown or bottom-up techniques, and reduces the access \
+points, enforcing the principle of separation"];
+			cluster_Layering -> "Layering_Organize software in layers so that modules at a given layer interact only with modules in the layers immediately above \
+and below it. This allows you to test the software one layer at a time, using either topdown or bottom-up techniques, and reduces \
+the access points, enforcing the principle of separation"	[minlen=1];
+		}
+		subgraph cluster_Abstraction {
+			cluster_Abstraction	[label=Abstraction,
+				shape=box];
+			"Abstraction_Hide the internals of each layer, making only the interfaces available; this enables you to change how a layer carries \
+out its tasks without affecting components at other layers"	[label="Hide the internals of each layer, making only the interfaces available; this enables you to change how a layer carries out its tasks \
+without affecting components at other layers"];
+			cluster_Abstraction -> "Abstraction_Hide the internals of each layer, making only the interfaces available; this enables you to change how a layer carries \
+out its tasks without affecting components at other layers"	[minlen=1];
+		}
+		subgraph cluster_Modularity {
+			cluster_Modularity	[label=Modularity,
+				shape=box];
+			"Modularity_Design and implement the software as a collection of co-operating components (modules); indeed, each module interface \
+is an abstraction"	[label="Design and implement the software as a collection of co-operating components (modules); indeed, each module interface is an abstraction"];
+			cluster_Modularity -> "Modularity_Design and implement the software as a collection of co-operating components (modules); indeed, each module interface \
+is an abstraction"	[minlen=1];
+		}
+		subgraph "cluster_Complete linkage" {
+			"cluster_Complete linkage"	[label="Complete linkage",
+				shape=box];
+			"Complete linkage_Tie software security design and implementation to the security specifications for that software"	[label="Tie software security design and implementation to the security specifications for that software"];
+			"cluster_Complete linkage" -> "Complete linkage_Tie software security design and implementation to the security specifications for that software"	[minlen=1];
+		}
+		subgraph "cluster_Design for iteration" {
+			"cluster_Design for iteration"	[label="Design for iteration",
+				shape=box];
+			"Design for iteration_Plan the design in such a way that it can be changed, if needed. This minimizes the effects with respect to \
+the security of changing the design if the specifications do not match an environment that the software is used in"	[label="Plan the design in such a way that it can be changed, if needed. This minimizes the effects with respect to the security of changing \
+the design if the specifications do not match an environment that the software is used in"];
+			"cluster_Design for iteration" -> "Design for iteration_Plan the design in such a way that it can be changed, if needed. This minimizes the effects with respect to \
+the security of changing the design if the specifications do not match an environment that the software is used in"	[minlen=1];
+		}
+		subgraph "cluster_Derivation of security requirements" {
+			"cluster_Derivation of security requirements"	[label="Derivation of security requirements",
+				shape=box];
+			"Derivation of security requirements_Beginning with business, mission, or other objectives, determine what security requirements \
+are necessary to succeed. These may also be derived, or changed, as the software evolves"	[label="Beginning with business, mission, or other objectives, determine what security requirements are necessary to succeed. These may \
+also be derived, or changed, as the software evolves"];
+			"cluster_Derivation of security requirements" -> "Derivation of security requirements_Beginning with business, mission, or other objectives, determine what security requirements \
+are necessary to succeed. These may also be derived, or changed, as the software evolves"	[minlen=1];
+		}
+		subgraph "cluster_Specification of security requirements" {
+			"cluster_Specification of security requirements"	[label="Specification of security requirements",
+				shape=box];
+			"Specification of security requirements_Translate the security requirements into a form that can be used (formal specification, informal \
+specifications, specifications for testing)"	[label="Translate the security requirements into a form that can be used (formal specification, informal specifications, specifications \
+for testing)"];
+			"cluster_Specification of security requirements" -> "Specification of security requirements_Translate the security requirements into a form that can be used (formal specification, informal \
+specifications, specifications for testing)"	[minlen=1];
+		}
+		subgraph "cluster_Software development lifecycle/Security development lifecycle" {
+			"cluster_Software development lifecycle/Security development lifecycle"	[label="Software development lifecycle/Security development lifecycle",
+				shape=box];
+			"Software development lifecycle/Security development lifecycle_Include the following examples- waterfall model, agile development \
+and security"	[label="Include the following examples- waterfall model, agile development and security"];
+			"cluster_Software development lifecycle/Security development lifecycle" -> "Software development lifecycle/Security development lifecycle_Include the following examples- waterfall model, agile development \
+and security"	[minlen=1];
+		}
+		subgraph "cluster_Programming languages and type-safe languages" {
+			"cluster_Programming languages and type-safe languages"	[label="Programming languages and type-safe languages",
+				shape=box];
+			"Programming languages and type-safe languages_Discuss the problems that programming languages introduce, what type-safety does, \
+and why it is important"	[label="Discuss the problems that programming languages introduce, what type-safety does, and why it is important"];
+			"cluster_Programming languages and type-safe languages" -> "Programming languages and type-safe languages_Discuss the problems that programming languages introduce, what type-safety does, \
+and why it is important"	[minlen=1];
+		}
+		subgraph "cluster_Validating input and checking its representation" {
+			"cluster_Validating input and checking its representation"	[label="Validating input and checking its representation",
+				shape=box];
+			"Validating input and checking its representation_Check bounds of buffers and values of integers to be sure they are in range"	[label="Check bounds of buffers and values of integers to be sure they are in range"];
+			"cluster_Validating input and checking its representation" -> "Validating input and checking its representation_Check bounds of buffers and values of integers to be sure they are in range"	[minlen=1];
+			"Validating input and checking its representation_Check inputs to make sure they are what is expected and will be processed/interpreted \
+correctly"	[label="Check inputs to make sure they are what is expected and will be processed/interpreted correctly"];
+			"cluster_Validating input and checking its representation" -> "Validating input and checking its representation_Check inputs to make sure they are what is expected and will be processed/interpreted \
+correctly"	[minlen=2];
+		}
+		subgraph "cluster_Using APIs correctly" {
+			"cluster_Using APIs correctly"	[label="Using APIs correctly",
+				shape=box];
+			"Using APIs correctly_Ensure parameters and environments are validated and controlled so that the API enforces the security policy \
+properly"	[label="Ensure parameters and environments are validated and controlled so that the API enforces the security policy properly"];
+			"cluster_Using APIs correctly" -> "Using APIs correctly_Ensure parameters and environments are validated and controlled so that the API enforces the security policy \
+properly"	[minlen=1];
+			"Using APIs correctly_Check the results of using the API for problems"	[label="Check the results of using the API for problems"];
+			"cluster_Using APIs correctly" -> "Using APIs correctly_Check the results of using the API for problems"	[minlen=2];
+		}
+		subgraph "cluster_Using security features" {
+			"cluster_Using security features"	[label="Using security features",
+				shape=box];
+			"Using security features_Use cryptographic randomness"	[label="Use cryptographic randomness"];
+			"cluster_Using security features" -> "Using security features_Use cryptographic randomness"	[minlen=1];
+			"Using security features_Properly restrict process privileges"	[label="Properly restrict process privileges"];
+			"cluster_Using security features" -> "Using security features_Properly restrict process privileges"	[minlen=2];
+		}
+		subgraph "cluster_Checking time and state relationships" {
+			"cluster_Checking time and state relationships"	[label="Checking time and state relationships",
+				shape=box];
+			"Checking time and state relationships_Check that the file acted upon is the one for which the relevant attributes are checked"	[label="Check that the file acted upon is the one for which the relevant attributes are checked"];
+			"cluster_Checking time and state relationships" -> "Checking time and state relationships_Check that the file acted upon is the one for which the relevant attributes are checked"	[minlen=1];
+			"Checking time and state relationships_Check that processes run"	[label="Check that processes run"];
+			"cluster_Checking time and state relationships" -> "Checking time and state relationships_Check that processes run"	[minlen=2];
+		}
+		subgraph "cluster_Handling exceptions and errors properly" {
+			"cluster_Handling exceptions and errors properly"	[label="Handling exceptions and errors properly",
+				shape=box];
+			"Handling exceptions and errors properly_Block or queue signals during signal processing, if necessary"	[label="Block or queue signals during signal processing, if necessary"];
+			"cluster_Handling exceptions and errors properly" -> "Handling exceptions and errors properly_Block or queue signals during signal processing, if necessary"	[minlen=1];
+			"Handling exceptions and errors properly_Determine what information should be given to the user, balancing usability with any need \
+to hide some information, and how and to whom to report that information"	[label="Determine what information should be given to the user, balancing usability with any need to hide some information, and how and \
+to whom to report that information"];
+			"cluster_Handling exceptions and errors properly" -> "Handling exceptions and errors properly_Determine what information should be given to the user, balancing usability with any need \
+to hide some information, and how and to whom to report that information"	[minlen=2];
+		}
+		subgraph "cluster_Programming robustly" {
+			"cluster_Programming robustly"	[label="Programming robustly",
+				shape=box];
+			"Programming robustly_This topic is sometimes called secure or defensive programming"	[label="This topic is sometimes called secure or defensive programming"];
+			"cluster_Programming robustly" -> "Programming robustly_This topic is sometimes called secure or defensive programming"	[minlen=1];
+			"Programming robustly_Only deallocate allocated memory"	[label="Only deallocate allocated memory"];
+			"cluster_Programming robustly" -> "Programming robustly_Only deallocate allocated memory"	[minlen=2];
+			"Programming robustly_Initialize variables before use"	[label="Initialize variables before use"];
+			"cluster_Programming robustly" -> "Programming robustly_Initialize variables before use"	[minlen=3];
+			"Programming robustly_Don't rely on undefined behavior"	[label="Don't rely on undefined behavior"];
+			"cluster_Programming robustly" -> "Programming robustly_Don't rely on undefined behavior"	[minlen=4];
+		}
+		subgraph "cluster_Encapsulating structures and modules" {
+			"cluster_Encapsulating structures and modules"	[label="Encapsulating structures and modules",
+				shape=box];
+			"Encapsulating structures and modules_This topic includes classes and other instantiations"	[label="This topic includes classes and other instantiations"];
+			"cluster_Encapsulating structures and modules" -> "Encapsulating structures and modules_This topic includes classes and other instantiations"	[minlen=1];
+			"Encapsulating structures and modules_Example- isolating processes"	[label="Example- isolating processes"];
+			"cluster_Encapsulating structures and modules" -> "Encapsulating structures and modules_Example- isolating processes"	[minlen=2];
+		}
+		subgraph "cluster_Taking environment into account" {
+			"cluster_Taking environment into account"	[label="Taking environment into account",
+				shape=box];
+			"Taking environment into account_Example- don't put sensitive information in the source code"	[label="Example- don't put sensitive information in the source code"];
+			"cluster_Taking environment into account" -> "Taking environment into account_Example- don't put sensitive information in the source code"	[minlen=1];
+		}
+		subgraph "cluster_Static and dynamic analysis" {
+			"cluster_Static and dynamic analysis"	[label="Static and dynamic analysis",
+				shape=box];
+			"Static and dynamic analysis_The different methods for each of these, includes how static and dynamic analysis work together, and \
+the limits and benefits of each, as well as how to perform these types of analyses on very large software systems"	[label="The different methods for each of these, includes how static and dynamic analysis work together, and the limits and benefits of \
+each, as well as how to perform these types of analyses on very large software systems"];
+			"cluster_Static and dynamic analysis" -> "Static and dynamic analysis_The different methods for each of these, includes how static and dynamic analysis work together, and \
+the limits and benefits of each, as well as how to perform these types of analyses on very large software systems"	[minlen=1];
+		}
+		subgraph "cluster_Unit testing" {
+			"cluster_Unit testing"	[label="Unit testing",
+				shape=box];
+			"Unit testing_How to test component parts of the software, like modules"	[label="How to test component parts of the software, like modules"];
+			"cluster_Unit testing" -> "Unit testing_How to test component parts of the software, like modules"	[minlen=1];
+		}
+		subgraph "cluster_Integration testing" {
+			"cluster_Integration testing"	[label="Integration testing",
+				shape=box];
+			"Integration testing_How to test the software components as they are integrated"	[label="How to test the software components as they are integrated"];
+			"cluster_Integration testing" -> "Integration testing_How to test the software components as they are integrated"	[minlen=1];
+		}
+		subgraph "cluster_Software testing" {
+			"cluster_Software testing"	[label="Software testing",
+				shape=box];
+			"Software testing_How to test the software as a whole, and place unit and integration testing in a proper framework"	[label="How to test the software as a whole, and place unit and integration testing in a proper framework"];
+			"cluster_Software testing" -> "Software testing_How to test the software as a whole, and place unit and integration testing in a proper framework"	[minlen=1];
+		}
+		subgraph cluster_Configuring {
+			cluster_Configuring	[label=Configuring,
+				shape=box];
+			"Configuring_This topic covers how to set up the software system to make it function correctly"	[label="This topic covers how to set up the software system to make it function correctly"];
+			cluster_Configuring -> "Configuring_This topic covers how to set up the software system to make it function correctly"	[minlen=1];
+		}
+		subgraph "cluster_Patching and the vulnerability lifecycle" {
+			"cluster_Patching and the vulnerability lifecycle"	[label="Patching and the vulnerability lifecycle",
+				shape=box];
+			"Patching and the vulnerability lifecycle_This topic includes managing vulnerability reports, fixing the vulnerabilities, testing \
+the patch and patch distribution"	[label="This topic includes managing vulnerability reports, fixing the vulnerabilities, testing the patch and patch distribution"];
+			"cluster_Patching and the vulnerability lifecycle" -> "Patching and the vulnerability lifecycle_This topic includes managing vulnerability reports, fixing the vulnerabilities, testing \
+the patch and patch distribution"	[minlen=1];
+		}
+		subgraph "cluster_Checking environment" {
+			"cluster_Checking environment"	[label="Checking environment",
+				shape=box];
+			"Checking environment_This topic covers ensuring the environment matches the assumptions made in the software, and if not, how to \
+handle the conflict"	[label="This topic covers ensuring the environment matches the assumptions made in the software, and if not, how to handle the conflict"];
+			"cluster_Checking environment" -> "Checking environment_This topic covers ensuring the environment matches the assumptions made in the software, and if not, how to \
+handle the conflict"	[minlen=1];
+		}
+		subgraph cluster_DevOps {
+			cluster_DevOps	[label=DevOps,
+				shape=box];
+			"DevOps_This topic combines development and operation, and the automation and monitoring of both"	[label="This topic combines development and operation, and the automation and monitoring of both"];
+			cluster_DevOps -> "DevOps_This topic combines development and operation, and the automation and monitoring of both"	[minlen=1];
+		}
+		subgraph "cluster_Decommissioning/Retiring" {
+			"cluster_Decommissioning/Retiring"	[label="Decommissioning/Retiring",
+				shape=box];
+			"Decommissioning/Retiring_What happens when the software is removed, and how to remove it without causing security problems"	[label="What happens when the software is removed, and how to remove it without causing security problems"];
+			"cluster_Decommissioning/Retiring" -> "Decommissioning/Retiring_What happens when the software is removed, and how to remove it without causing security problems"	[minlen=1];
+		}
+		subgraph "cluster_Installation documents" {
+			"cluster_Installation documents"	[label="Installation documents",
+				shape=box];
+			"Installation documents_This topic includes installation and configuration documentation"	[label="This topic includes installation and configuration documentation"];
+			"cluster_Installation documents" -> "Installation documents_This topic includes installation and configuration documentation"	[minlen=1];
+		}
+		subgraph "cluster_User guides and manuals" {
+			"cluster_User guides and manuals"	[label="User guides and manuals",
+				shape=box];
+			"User guides and manuals_This topic includes tutorials and cheat sheets (brief guides); these should emphasize any potential security \
+problems the users can cause"	[label="This topic includes tutorials and cheat sheets (brief guides); these should emphasize any potential security problems the users \
+can cause"];
+			"cluster_User guides and manuals" -> "User guides and manuals_This topic includes tutorials and cheat sheets (brief guides); these should emphasize any potential security \
+problems the users can cause"	[minlen=1];
+		}
+		subgraph "cluster_Assurance documentation" {
+			"cluster_Assurance documentation"	[label="Assurance documentation",
+				shape=box];
+			"Assurance documentation_This topic focuses on how correctness was established, and what correctness means here"	[label="This topic focuses on how correctness was established, and what correctness means here"];
+			"cluster_Assurance documentation" -> "Assurance documentation_This topic focuses on how correctness was established, and what correctness means here"	[minlen=1];
+		}
+		subgraph "cluster_Security documentation" {
+			"cluster_Security documentation"	[label="Security documentation",
+				shape=box];
+			"Security documentation_This topic focuses on potential security problems, how to avoid them, and if they occur, what the effects \
+might be and how to deal with them"	[label="This topic focuses on potential security problems, how to avoid them, and if they occur, what the effects might be and how to deal \
+with them"];
+			"cluster_Security documentation" -> "Security documentation_This topic focuses on potential security problems, how to avoid them, and if they occur, what the effects \
+might be and how to deal with them"	[minlen=1];
+		}
+		"cluster_Fundamental Principles"	[label="Fundamental Principles",
+			shape=diamond];
+		"cluster_Fundamental Principles" -> "cluster_Least privilege";
+		"cluster_Fundamental Principles" -> "cluster_Fail-safe defaults";
+		"cluster_Fundamental Principles" -> "cluster_Complete mediation";
+		"cluster_Fundamental Principles" -> cluster_Separation;
+		"cluster_Fundamental Principles" -> "cluster_Minimize trust";
+		"cluster_Fundamental Principles" -> "cluster_Economy of mechanism";
+		"cluster_Fundamental Principles" -> "cluster_Minimize common mechanism";
+		"cluster_Fundamental Principles" -> "cluster_Least astonishment";
+		"cluster_Fundamental Principles" -> "cluster_Open design";
+		"cluster_Fundamental Principles" -> cluster_Layering;
+		"cluster_Fundamental Principles" -> cluster_Abstraction;
+		"cluster_Fundamental Principles" -> cluster_Modularity;
+		"cluster_Fundamental Principles" -> "cluster_Complete linkage";
+		"cluster_Fundamental Principles" -> "cluster_Design for iteration";
+		cluster_Design	[label=Design,
+			shape=diamond];
+		cluster_Design -> "cluster_Derivation of security requirements";
+		cluster_Design -> "cluster_Specification of security requirements";
+		cluster_Design -> "cluster_Software development lifecycle/Security development lifecycle";
+		cluster_Design -> "cluster_Programming languages and type-safe languages";
+		cluster_Implementation	[label=Implementation,
+			shape=diamond];
+		cluster_Implementation -> "cluster_Validating input and checking its representation";
+		cluster_Implementation -> "cluster_Using APIs correctly";
+		cluster_Implementation -> "cluster_Using security features";
+		cluster_Implementation -> "cluster_Checking time and state relationships";
+		cluster_Implementation -> "cluster_Handling exceptions and errors properly";
+		cluster_Implementation -> "cluster_Programming robustly";
+		cluster_Implementation -> "cluster_Encapsulating structures and modules";
+		cluster_Implementation -> "cluster_Taking environment into account";
+		"cluster_Analysis and Testing"	[label="Analysis and Testing",
+			shape=diamond];
+		"cluster_Analysis and Testing" -> "cluster_Static and dynamic analysis";
+		"cluster_Analysis and Testing" -> "cluster_Unit testing";
+		"cluster_Analysis and Testing" -> "cluster_Integration testing";
+		"cluster_Analysis and Testing" -> "cluster_Software testing";
+		"cluster_Deployment and Maintenance"	[label="Deployment and Maintenance",
+			shape=diamond];
+		"cluster_Deployment and Maintenance" -> cluster_Configuring;
+		"cluster_Deployment and Maintenance" -> "cluster_Patching and the vulnerability lifecycle";
+		"cluster_Deployment and Maintenance" -> "cluster_Checking environment";
+		"cluster_Deployment and Maintenance" -> cluster_DevOps;
+		"cluster_Deployment and Maintenance" -> "cluster_Decommissioning/Retiring";
+		cluster_Documentation	[label=Documentation,
+			shape=diamond];
+		cluster_Documentation -> "cluster_Installation documents";
+		cluster_Documentation -> "cluster_User guides and manuals";
+		cluster_Documentation -> "cluster_Assurance documentation";
+		cluster_Documentation -> "cluster_Security documentation";
+	}
+	"Software Security"	[label="Software Security",
+		shape=square];
+	"Software Security" -> "cluster_Fundamental Principles";
+	"Software Security" -> cluster_Design;
+	"Software Security" -> cluster_Implementation;
+	"Software Security" -> "cluster_Analysis and Testing";
+	"Software Security" -> "cluster_Deployment and Maintenance";
+	"Software Security" -> cluster_Documentation;
+}

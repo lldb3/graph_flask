@@ -1,6 +1,5 @@
 from flask import Flask, render_template
-from graphmaker import *
-from graphviz import Graph
+# from graphmaker import *
 
 app = Flask(__name__)
 
@@ -21,6 +20,7 @@ def hello_world():
     # chart_output = graph.pipe(format='svg')
 
     return render_template('svgtest.html')
+
 
 if __name__ == '__main__':
     app.run()

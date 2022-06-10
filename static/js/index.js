@@ -6,7 +6,7 @@ export default function define(runtime, observer) {
     main.variable(observer()).define(["md"], function (md) {
         return (
             md`# Collapsible Tree
-Click a black node to expand or collapse [the tree](/@d3/tidy-tree).`
+                Click a black node to expand or collapse [the tree](/@d3/tidy-tree).`
         )
     });
     main.variable(observer("chart")).define("chart", ["d3", "data", "dy", "margin", "width", "dx", "tree", "diagonal"], function (d3, data, dy, margin, width, dx, tree, diagonal) {

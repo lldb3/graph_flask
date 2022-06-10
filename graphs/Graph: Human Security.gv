@@ -1,0 +1,324 @@
+digraph {
+	graph [compound=true];
+	node [fillcolor=blue];
+	subgraph "cluster_Human Security" {
+		subgraph "cluster_Identification and authentication of people and devices" {
+			"cluster_Identification and authentication of people and devices"	[label="Identification and authentication of people and devices",
+				shape=box];
+			"Identification and authentication of people and devices_This topic provides an overview of various access control methods to demonstrate \
+the benefits and challenges of each. Topics include an overview of Network Access Control (NAC), Identity Access Management (IAM), \
+roles, multi-method identification and authentication systems, biometric authentication systems (including issues such as accuracy/\
+FAR/FRR, resistance, privacy, etc.), as well as usability and tolerability of the methods"	[label="This topic provides an overview of various access control methods to demonstrate the benefits and challenges of each. Topics include \
+an overview of Network Access Control (NAC), Identity Access Management (IAM), roles, multi-method identification and authentication \
+systems, biometric authentication systems (including issues such as accuracy/FAR/FRR, resistance, privacy, etc.), as well as usability \
+and tolerability of the methods"];
+			"cluster_Identification and authentication of people and devices" -> "Identification and authentication of people and devices_This topic provides an overview of various access control methods to demonstrate \
+the benefits and challenges of each. Topics include an overview of Network Access Control (NAC), Identity Access Management (IAM), \
+roles, multi-method identification and authentication systems, biometric authentication systems (including issues such as accuracy/\
+FAR/FRR, resistance, privacy, etc.), as well as usability and tolerability of the methods"	[minlen=1];
+		}
+		subgraph "cluster_Physical and logical assets control" {
+			"cluster_Physical and logical assets control"	[label="Physical and logical assets control",
+				shape=box];
+			"Physical and logical assets control_This topic covers various access controls to physical assets including system hardware, network \
+assets, backup/storage devices, etc. Examples are Network Access Control (NAC), Identity Access Management (IAM), Rules-based Access \
+Control (RAC), Rolesbased Access Control (RBAC), inventory tracking methods, and identity creation methods (what type of user ID \
+helps increase security with access control, for example, abc1234, first name and last name, first initial and last name)"	[label="This topic covers various access controls to physical assets including system hardware, network assets, backup/storage devices, \
+etc. Examples are Network Access Control (NAC), Identity Access Management (IAM), Rules-based Access Control (RAC), Rolesbased Access \
+Control (RBAC), inventory tracking methods, and identity creation methods (what type of user ID helps increase security with access \
+control, for example, abc1234, first name and last name, first initial and last name)"];
+			"cluster_Physical and logical assets control" -> "Physical and logical assets control_This topic covers various access controls to physical assets including system hardware, network \
+assets, backup/storage devices, etc. Examples are Network Access Control (NAC), Identity Access Management (IAM), Rules-based Access \
+Control (RAC), Rolesbased Access Control (RBAC), inventory tracking methods, and identity creation methods (what type of user ID \
+helps increase security with access control, for example, abc1234, first name and last name, first initial and last name)"	[minlen=1];
+		}
+		subgraph "cluster_Identity as a Service (IaaS)" {
+			"cluster_Identity as a Service (IaaS)"	[label="Identity as a Service (IaaS)",
+				shape=box];
+			"Identity as a Service (IaaS)_This topic cover identity management as a service (e.g., Cloud identity) brings forward issues such \
+as the system being out of the user’s control with no way to know what has happened to the information in the system, auditing \
+access, ensuring compliance and flexibility to quickly revoke permissions"	[label="This topic cover identity management as a service (e.g., Cloud identity) brings forward issues such as the system being out of the \
+user’s control with no way to know what has happened to the information in the system, auditing access, ensuring compliance and \
+flexibility to quickly revoke permissions"];
+			"cluster_Identity as a Service (IaaS)" -> "Identity as a Service (IaaS)_This topic cover identity management as a service (e.g., Cloud identity) brings forward issues such \
+as the system being out of the user’s control with no way to know what has happened to the information in the system, auditing \
+access, ensuring compliance and flexibility to quickly revoke permissions"	[minlen=1];
+		}
+		subgraph "cluster_Third-party identity services" {
+			"cluster_Third-party identity services"	[label="Third-party identity services",
+				shape=box];
+			"Third-party identity services_This topic provides an overview of the authentication infrastructure used to build, host, and manage \
+thirdparty identity services. Topics include on-premises, cloud, centralized identity services/password management tools, end-point \
+privilege management, etc"	[label="This topic provides an overview of the authentication infrastructure used to build, host, and manage thirdparty identity services. \
+Topics include on-premises, cloud, centralized identity services/password management tools, end-point privilege management, etc"];
+			"cluster_Third-party identity services" -> "Third-party identity services_This topic provides an overview of the authentication infrastructure used to build, host, and manage \
+thirdparty identity services. Topics include on-premises, cloud, centralized identity services/password management tools, end-point \
+privilege management, etc"	[minlen=1];
+		}
+		subgraph "cluster_Access control attacks and mitigation measures" {
+			"cluster_Access control attacks and mitigation measures"	[label="Access control attacks and mitigation measures",
+				shape=box];
+			"Access control attacks and mitigation measures_This topic provides an overview of various types of access control attacks to steal \
+data or user credentials, and mitigation measures for combating them. Topics include password, dictionary, brute force, and spoofing \
+attacks; multifactor authentication; strong password policy; secure password files; restrict access to systems; etc"	[label="This topic provides an overview of various types of access control attacks to steal data or user credentials, and mitigation measures \
+for combating them. Topics include password, dictionary, brute force, and spoofing attacks; multifactor authentication; strong password \
+policy; secure password files; restrict access to systems; etc"];
+			"cluster_Access control attacks and mitigation measures" -> "Access control attacks and mitigation measures_This topic provides an overview of various types of access control attacks to steal \
+data or user credentials, and mitigation measures for combating them. Topics include password, dictionary, brute force, and spoofing \
+attacks; multifactor authentication; strong password policy; secure password files; restrict access to systems; etc"	[minlen=1];
+		}
+		subgraph "cluster_Types of social engineering attacks" {
+			"cluster_Types of social engineering attacks"	[label="Types of social engineering attacks",
+				shape=box];
+			"Types of social engineering attacks_This topic provides an overview of the different ways that cybercriminals or malicious groups \
+exploit weaknesses in organizations, systems, networks, and personal information used to enable a later cyberattack. Proposed topics \
+included- phishing and spear phishing attacks, physical/impersonation, vishing (phone phishing), email compromise, and baiting"	[label="This topic provides an overview of the different ways that cybercriminals or malicious groups exploit weaknesses in organizations, \
+systems, networks, and personal information used to enable a later cyberattack. Proposed topics included- phishing and spear phishing \
+attacks, physical/impersonation, vishing (phone phishing), email compromise, and baiting"];
+			"cluster_Types of social engineering attacks" -> "Types of social engineering attacks_This topic provides an overview of the different ways that cybercriminals or malicious groups \
+exploit weaknesses in organizations, systems, networks, and personal information used to enable a later cyberattack. Proposed topics \
+included- phishing and spear phishing attacks, physical/impersonation, vishing (phone phishing), email compromise, and baiting"	[minlen=1];
+		}
+		subgraph "cluster_Psychology of social engineering attacks" {
+			"cluster_Psychology of social engineering attacks"	[label="Psychology of social engineering attacks",
+				shape=box];
+			"Psychology of social engineering attacks_This topic provides an overview of the psychological and behavioral factors related to \
+individuals falling for social engineering attacks. Proposed topics include adversarial thinking, how emotional responses impact \
+decision-making, cognitive biases of risks and rewards, and trust building"	[label="This topic provides an overview of the psychological and behavioral factors related to individuals falling for social engineering \
+attacks. Proposed topics include adversarial thinking, how emotional responses impact decision-making, cognitive biases of risks \
+and rewards, and trust building"];
+			"cluster_Psychology of social engineering attacks" -> "Psychology of social engineering attacks_This topic provides an overview of the psychological and behavioral factors related to \
+individuals falling for social engineering attacks. Proposed topics include adversarial thinking, how emotional responses impact \
+decision-making, cognitive biases of risks and rewards, and trust building"	[minlen=1];
+		}
+		subgraph "cluster_Misleading users" {
+			"cluster_Misleading users"	[label="Misleading users",
+				shape=box];
+			"Misleading users_This topic provides an overview of message systems’ and browsers’ interfaces and/or user interaction that can \
+be exploited to mislead users. Proposed topics include spoofing message senders, misleading URLs, how users judge and trust webpages \
+and emails, as well as user behaviors with phishing and other browser warnings"	[label="This topic provides an overview of message systems’ and browsers’ interfaces and/or user interaction that can be exploited to \
+mislead users. Proposed topics include spoofing message senders, misleading URLs, how users judge and trust webpages and emails, \
+as well as user behaviors with phishing and other browser warnings"];
+			"cluster_Misleading users" -> "Misleading users_This topic provides an overview of message systems’ and browsers’ interfaces and/or user interaction that can \
+be exploited to mislead users. Proposed topics include spoofing message senders, misleading URLs, how users judge and trust webpages \
+and emails, as well as user behaviors with phishing and other browser warnings"	[minlen=1];
+		}
+		subgraph "cluster_Detection and mitigation of social engineering attacks" {
+			"cluster_Detection and mitigation of social engineering attacks"	[label="Detection and mitigation of social engineering attacks",
+				shape=box];
+			"Detection and mitigation of social engineering attacks_This topic provides scenario-based, hands-on activities via simulation or \
+virtual tools to create an environment of various social engineering attacks"	[label="This topic provides scenario-based, hands-on activities via simulation or virtual tools to create an environment of various social \
+engineering attacks"];
+			"cluster_Detection and mitigation of social engineering attacks" -> "Detection and mitigation of social engineering attacks_This topic provides scenario-based, hands-on activities via simulation or \
+virtual tools to create an environment of various social engineering attacks"	[minlen=1];
+			"Detection and mitigation of social engineering attacks_Hands-on experience on the use of tools and technical approaches to detect \
+and/or mitigate different social engineering threats. Proposed tools such as email filtering, blacklist, security information and \
+event management (SIEM) tools, and IDS/IPS"	[label="Hands-on experience on the use of tools and technical approaches to detect and/or mitigate different social engineering threats. \
+Proposed tools such as email filtering, blacklist, security information and event management (SIEM) tools, and IDS/IPS"];
+			"cluster_Detection and mitigation of social engineering attacks" -> "Detection and mitigation of social engineering attacks_Hands-on experience on the use of tools and technical approaches to detect \
+and/or mitigate different social engineering threats. Proposed tools such as email filtering, blacklist, security information and \
+event management (SIEM) tools, and IDS/IPS"	[minlen=2];
+		}
+		subgraph "cluster_System misuse and user misbehavior" {
+			"cluster_System misuse and user misbehavior"	[label="System misuse and user misbehavior",
+				shape=box];
+			"System misuse and user misbehavior_This topic provides overview of intentional and unintentional system misuse, cyberbullying, cyber \
+hacking, naive behavior, and ethical dilemmas related to system security decisions"	[label="This topic provides overview of intentional and unintentional system misuse, cyberbullying, cyber hacking, naive behavior, and ethical \
+dilemmas related to system security decisions"];
+			"cluster_System misuse and user misbehavior" -> "System misuse and user misbehavior_This topic provides overview of intentional and unintentional system misuse, cyberbullying, cyber \
+hacking, naive behavior, and ethical dilemmas related to system security decisions"	[minlen=1];
+		}
+		subgraph "cluster_Enforcement and rules of behavior" {
+			"cluster_Enforcement and rules of behavior"	[label="Enforcement and rules of behavior",
+				shape=box];
+			"Enforcement and rules of behavior_This topic provides an overview of methods and techniques to get people to follow the rules/policies/\
+ethical norms (e.g., driving!). Topics include consequences for not following cybersecurity rules/policy/ethical norms, documentation \
+and audit trail (evidence of compliance to prove that the cybersecurity rules/policy/ethical norms were followed), and knowledge \
+of accountability for not following security rule/policy/ethical norms"	[label="This topic provides an overview of methods and techniques to get people to follow the rules/policies/ethical norms (e.g., driving!)\
+. Topics include consequences for not following cybersecurity rules/policy/ethical norms, documentation and audit trail (evidence \
+of compliance to prove that the cybersecurity rules/policy/ethical norms were followed), and knowledge of accountability for not \
+following security rule/policy/ethical norms"];
+			"cluster_Enforcement and rules of behavior" -> "Enforcement and rules of behavior_This topic provides an overview of methods and techniques to get people to follow the rules/policies/\
+ethical norms (e.g., driving!). Topics include consequences for not following cybersecurity rules/policy/ethical norms, documentation \
+and audit trail (evidence of compliance to prove that the cybersecurity rules/policy/ethical norms were followed), and knowledge \
+of accountability for not following security rule/policy/ethical norms"	[minlen=1];
+			"Enforcement and rules of behavior_Incentives to keep the job (especially after being educated and trained for the proper rules/policy/\
+ethical norms, individuals are legally liable for not following the rules as an employee), and individuals may lose their identity/\
+access in personal life due to a lack of adherence"	[label="Incentives to keep the job (especially after being educated and trained for the proper rules/policy/ethical norms, individuals are \
+legally liable for not following the rules as an employee), and individuals may lose their identity/access in personal life due \
+to a lack of adherence"];
+			"cluster_Enforcement and rules of behavior" -> "Enforcement and rules of behavior_Incentives to keep the job (especially after being educated and trained for the proper rules/policy/\
+ethical norms, individuals are legally liable for not following the rules as an employee), and individuals may lose their identity/\
+access in personal life due to a lack of adherence"	[minlen=2];
+		}
+		subgraph "cluster_Proper behavior under uncertainty" {
+			"cluster_Proper behavior under uncertainty"	[label="Proper behavior under uncertainty",
+				shape=box];
+			"Proper behavior under uncertainty_This topic provides an overview of the methods and techniques to adhere to when uncertain about \
+how to respond to a cybersecurity situation. Topics include CyberIQ, intellectual adaptability, critical thinking, understanding \
+the right versus wrong choices, how to make those choices under uncertainty, rational versus irrational thinking, ethical thinking/\
+decisions, and behavior when there is no clear process to follow (reporting/point of contact/etc.), and human error mitigation"	[label="This topic provides an overview of the methods and techniques to adhere to when uncertain about how to respond to a cybersecurity \
+situation. Topics include CyberIQ, intellectual adaptability, critical thinking, understanding the right versus wrong choices, how \
+to make those choices under uncertainty, rational versus irrational thinking, ethical thinking/decisions, and behavior when there \
+is no clear process to follow (reporting/point of contact/etc.), and human error mitigation"];
+			"cluster_Proper behavior under uncertainty" -> "Proper behavior under uncertainty_This topic provides an overview of the methods and techniques to adhere to when uncertain about \
+how to respond to a cybersecurity situation. Topics include CyberIQ, intellectual adaptability, critical thinking, understanding \
+the right versus wrong choices, how to make those choices under uncertainty, rational versus irrational thinking, ethical thinking/\
+decisions, and behavior when there is no clear process to follow (reporting/point of contact/etc.), and human error mitigation"	[minlen=1];
+		}
+		subgraph "cluster_Risk perception and communication" {
+			"cluster_Risk perception and communication"	[label="Risk perception and communication",
+				shape=box];
+			"Risk perception and communication_Definition of a mental model, how mental models impact user behavior, as well as common mental \
+models (folk models) of cybersecurity and privacy"	[label="Definition of a mental model, how mental models impact user behavior, as well as common mental models (folk models) of cybersecurity \
+and privacy"];
+			"cluster_Risk perception and communication" -> "Risk perception and communication_Definition of a mental model, how mental models impact user behavior, as well as common mental \
+models (folk models) of cybersecurity and privacy"	[minlen=1];
+		}
+		subgraph "cluster_Cyber hygiene" {
+			"cluster_Cyber hygiene"	[label="Cyber hygiene",
+				shape=box];
+			"Cyber hygiene_This topic provides a discussion and activities focused on the individual responsibilities (not the organization) \
+to protect and mitigate against cyberthreats and cyberattacks. Topics include password creation, password storage, mitigation tools, (\
+i.e., anti-virus software), how to identify safe websites, identifying levels of privacy settings, etc.)"	[label="This topic provides a discussion and activities focused on the individual responsibilities (not the organization) to protect and \
+mitigate against cyberthreats and cyberattacks. Topics include password creation, password storage, mitigation tools, (i.e., anti-virus \
+software), how to identify safe websites, identifying levels of privacy settings, etc.)"];
+			"cluster_Cyber hygiene" -> "Cyber hygiene_This topic provides a discussion and activities focused on the individual responsibilities (not the organization) \
+to protect and mitigate against cyberthreats and cyberattacks. Topics include password creation, password storage, mitigation tools, (\
+i.e., anti-virus software), how to identify safe websites, identifying levels of privacy settings, etc.)"	[minlen=1];
+		}
+		subgraph "cluster_Cybersecurity user education" {
+			"cluster_Cybersecurity user education"	[label="Cybersecurity user education",
+				shape=box];
+			"Cybersecurity user education_Methods for educating end-users on various cybersecurity/privacy threats and behaviors. Topics include \
+methods for raising user awareness (PreK-12, employees, public, etc.), delivery methods of cybersecurity education and training (\
+e.g., posters, leaflets, computer-based training, gamification, communication styles, message framing, how to reach different audiences \
+and user communities, individuals with disabilities and/or cognitive impairments), timing and reinforcement of education, as well \
+as impact of training on users’ knowledge and behaviors"	[label="Methods for educating end-users on various cybersecurity/privacy threats and behaviors. Topics include methods for raising user \
+awareness (PreK-12, employees, public, etc.), delivery methods of cybersecurity education and training (e.g., posters, leaflets, \
+computer-based training, gamification, communication styles, message framing, how to reach different audiences and user communities, \
+individuals with disabilities and/or cognitive impairments), timing and reinforcement of education, as well as impact of training \
+on users’ knowledge and behaviors"];
+			"cluster_Cybersecurity user education" -> "Cybersecurity user education_Methods for educating end-users on various cybersecurity/privacy threats and behaviors. Topics include \
+methods for raising user awareness (PreK-12, employees, public, etc.), delivery methods of cybersecurity education and training (\
+e.g., posters, leaflets, computer-based training, gamification, communication styles, message framing, how to reach different audiences \
+and user communities, individuals with disabilities and/or cognitive impairments), timing and reinforcement of education, as well \
+as impact of training on users’ knowledge and behaviors"	[minlen=1];
+		}
+		subgraph "cluster_Cyber vulnerabilities and threats awareness" {
+			"cluster_Cyber vulnerabilities and threats awareness"	[label="Cyber vulnerabilities and threats awareness",
+				shape=box];
+			"Cyber vulnerabilities and threats awareness_This topic provides an overview of end-user-facing threats as well as Fear, Uncertainty, \
+and Doubt (FUD). Proposed topics include warning signs of internal employee vulnerabilities and threats, awareness of identity theft, \
+business email compromise, threat of free/open Wi-Fi networks, and malware, spyware, and ransomware"	[label="This topic provides an overview of end-user-facing threats as well as Fear, Uncertainty, and Doubt (FUD). Proposed topics include \
+warning signs of internal employee vulnerabilities and threats, awareness of identity theft, business email compromise, threat of \
+free/open Wi-Fi networks, and malware, spyware, and ransomware"];
+			"cluster_Cyber vulnerabilities and threats awareness" -> "Cyber vulnerabilities and threats awareness_This topic provides an overview of end-user-facing threats as well as Fear, Uncertainty, \
+and Doubt (FUD). Proposed topics include warning signs of internal employee vulnerabilities and threats, awareness of identity theft, \
+business email compromise, threat of free/open Wi-Fi networks, and malware, spyware, and ransomware"	[minlen=1];
+		}
+		subgraph "cluster_Social theories of privacy" {
+			"cluster_Social theories of privacy"	[label="Social theories of privacy",
+				shape=box];
+			"Social theories of privacy_This topic provides an overview of various theories of privacy from social psychology and social science, \
+emphasizing privacy that involves interacting with other people as opposed to organizations. Proposed topics include privacy tradeoffs \
+and risks in the social context, control and awareness of data consent, personal information monitoring, regulatory protections \
+and concerns on maintaining social privacy"	[label="This topic provides an overview of various theories of privacy from social psychology and social science, emphasizing privacy that \
+involves interacting with other people as opposed to organizations. Proposed topics include privacy tradeoffs and risks in the social \
+context, control and awareness of data consent, personal information monitoring, regulatory protections and concerns on maintaining \
+social privacy"];
+			"cluster_Social theories of privacy" -> "Social theories of privacy_This topic provides an overview of various theories of privacy from social psychology and social science, \
+emphasizing privacy that involves interacting with other people as opposed to organizations. Proposed topics include privacy tradeoffs \
+and risks in the social context, control and awareness of data consent, personal information monitoring, regulatory protections \
+and concerns on maintaining social privacy"	[minlen=1];
+		}
+		subgraph "cluster_Social media privacy and security" {
+			"cluster_Social media privacy and security"	[label="Social media privacy and security",
+				shape=box];
+			"Social media privacy and security_This topic provides overview of privacy behaviors and concerns of users in protecting personal \
+information when using social media. Proposed topics include users’ online disclosure decisions and behaviors, personas and identity \
+management, determining audience and social access controls, interface and coping mechanisms for managing privacy on various social \
+media sites, challenges of managing time boundaries, as well as personal/workplace boundaries of social media"	[label="This topic provides overview of privacy behaviors and concerns of users in protecting personal information when using social media. \
+Proposed topics include users’ online disclosure decisions and behaviors, personas and identity management, determining audience \
+and social access controls, interface and coping mechanisms for managing privacy on various social media sites, challenges of managing \
+time boundaries, as well as personal/workplace boundaries of social media"];
+			"cluster_Social media privacy and security" -> "Social media privacy and security_This topic provides overview of privacy behaviors and concerns of users in protecting personal \
+information when using social media. Proposed topics include users’ online disclosure decisions and behaviors, personas and identity \
+management, determining audience and social access controls, interface and coping mechanisms for managing privacy on various social \
+media sites, challenges of managing time boundaries, as well as personal/workplace boundaries of social media"	[minlen=1];
+		}
+		subgraph "cluster_Sensitive personal data (SPD)" {
+			"cluster_Sensitive personal data (SPD)"	[label="Sensitive personal data (SPD)",
+				shape=box];
+			"Sensitive personal data (SPD)_This topic provides overview of the types of Personal Data (PD), including Personally Identifiable \
+Information (PII), which are especially sensitive due to the risk that such information could be misused to significantly harm an \
+individual in a financial, employment or social way. Proposed topics include examples of data elements of Sensitive Personal Data (\
+SPD) (social security number, social insurance number or other government issued identification number such as a driver’s license \
+or passport number; bank account number; credit card numbers; health and medical information; biometric or genetic data, etc.), \
+regulations governing the collection, use and distribution of SPD, and possibilities for inference of SPD"	[label="This topic provides overview of the types of Personal Data (PD), including Personally Identifiable Information (PII), which are \
+especially sensitive due to the risk that such information could be misused to significantly harm an individual in a financial, \
+employment or social way. Proposed topics include examples of data elements of Sensitive Personal Data (SPD) (social security number, \
+social insurance number or other government issued identification number such as a driver’s license or passport number; bank account \
+number; credit card numbers; health and medical information; biometric or genetic data, etc.), regulations governing the collection, \
+use and distribution of SPD, and possibilities for inference of SPD"];
+			"cluster_Sensitive personal data (SPD)" -> "Sensitive personal data (SPD)_This topic provides overview of the types of Personal Data (PD), including Personally Identifiable \
+Information (PII), which are especially sensitive due to the risk that such information could be misused to significantly harm an \
+individual in a financial, employment or social way. Proposed topics include examples of data elements of Sensitive Personal Data (\
+SPD) (social security number, social insurance number or other government issued identification number such as a driver’s license \
+or passport number; bank account number; credit card numbers; health and medical information; biometric or genetic data, etc.), \
+regulations governing the collection, use and distribution of SPD, and possibilities for inference of SPD"	[minlen=1];
+		}
+		subgraph "cluster_Personal tracking and digital footprint" {
+			"cluster_Personal tracking and digital footprint"	[label="Personal tracking and digital footprint",
+				shape=box];
+			"Personal tracking and digital footprint_Location tracking, Web traffic tracking, network tracking, personal device tracking, digital \
+assistants recordings (Siri, Alexa, etc.). Topics include users’ behaviors and concerns with each of these kinds of tracking, \
+as well as current methods for limiting tracking and protecting privacy"	[label="Location tracking, Web traffic tracking, network tracking, personal device tracking, digital assistants recordings (Siri, Alexa, \
+etc.). Topics include users’ behaviors and concerns with each of these kinds of tracking, as well as current methods for limiting \
+tracking and protecting privacy"];
+			"cluster_Personal tracking and digital footprint" -> "Personal tracking and digital footprint_Location tracking, Web traffic tracking, network tracking, personal device tracking, digital \
+assistants recordings (Siri, Alexa, etc.). Topics include users’ behaviors and concerns with each of these kinds of tracking, \
+as well as current methods for limiting tracking and protecting privacy"	[minlen=1];
+		}
+		"cluster_Identity Management"	[label="Identity Management",
+			shape=diamond];
+		"cluster_Identity Management" -> "cluster_Identification and authentication of people and devices";
+		"cluster_Identity Management" -> "cluster_Physical and logical assets control";
+		"cluster_Identity Management" -> "cluster_Identity as a Service (IaaS)";
+		"cluster_Identity Management" -> "cluster_Third-party identity services";
+		"cluster_Identity Management" -> "cluster_Access control attacks and mitigation measures";
+		"cluster_Social Engineering"	[label="Social Engineering",
+			shape=diamond];
+		"cluster_Social Engineering" -> "cluster_Types of social engineering attacks";
+		"cluster_Social Engineering" -> "cluster_Psychology of social engineering attacks";
+		"cluster_Social Engineering" -> "cluster_Misleading users";
+		"cluster_Social Engineering" -> "cluster_Detection and mitigation of social engineering attacks";
+		"cluster_Personal Compliance with Cybersecurity Rules/Policy/ Ethical Norms"	[label="Personal Compliance with Cybersecurity Rules/Policy/ Ethical Norms",
+			shape=diamond];
+		"cluster_Personal Compliance with Cybersecurity Rules/Policy/ Ethical Norms" -> "cluster_System misuse and user misbehavior";
+		"cluster_Personal Compliance with Cybersecurity Rules/Policy/ Ethical Norms" -> "cluster_Enforcement and rules of behavior";
+		"cluster_Personal Compliance with Cybersecurity Rules/Policy/ Ethical Norms" -> "cluster_Proper behavior under uncertainty";
+		"cluster_Awareness and Understanding"	[label="Awareness and Understanding",
+			shape=diamond];
+		"cluster_Awareness and Understanding" -> "cluster_Risk perception and communication";
+		"cluster_Awareness and Understanding" -> "cluster_Cyber hygiene";
+		"cluster_Awareness and Understanding" -> "cluster_Cybersecurity user education";
+		"cluster_Awareness and Understanding" -> "cluster_Cyber vulnerabilities and threats awareness";
+		"cluster_Social and Behavioral Privacy"	[label="Social and Behavioral Privacy",
+			shape=diamond];
+		"cluster_Social and Behavioral Privacy" -> "cluster_Social theories of privacy";
+		"cluster_Social and Behavioral Privacy" -> "cluster_Social media privacy and security";
+		"cluster_Personal Data Privacy and Security"	[label="Personal Data Privacy and Security",
+			shape=diamond];
+		"cluster_Personal Data Privacy and Security" -> "cluster_Sensitive personal data (SPD)";
+		"cluster_Personal Data Privacy and Security" -> "cluster_Personal tracking and digital footprint";
+	}
+	"Human Security"	[label="Human Security",
+		shape=square];
+	"Human Security" -> "cluster_Identity Management";
+	"Human Security" -> "cluster_Social Engineering";
+	"Human Security" -> "cluster_Personal Compliance with Cybersecurity Rules/Policy/ Ethical Norms";
+	"Human Security" -> "cluster_Awareness and Understanding";
+	"Human Security" -> "cluster_Social and Behavioral Privacy";
+	"Human Security" -> "cluster_Personal Data Privacy and Security";
+}

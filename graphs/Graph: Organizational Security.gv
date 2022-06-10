@@ -1,0 +1,723 @@
+digraph {
+	graph [compound=true];
+	node [fillcolor=blue];
+	subgraph "cluster_Organizational Security" {
+		subgraph "cluster_Risk identification" {
+			"cluster_Risk identification"	[label="Risk identification",
+				shape=box];
+			"Risk identification_Asset identification is the cataloging of information assets in an organization, such as databases or hardware, \
+to aid in the determination of risk should the assets be compromised or lost. Threats include any event leveraging a vulnerability \
+that has the potential to cause loss or damage for the organization. Threat intelligence (threat modeling) is increasingly used \
+by organizations to maintain awareness and reactive capacity for existing and emerging threats"	[label="Asset identification is the cataloging of information assets in an organization, such as databases or hardware, to aid in the determination \
+of risk should the assets be compromised or lost. Threats include any event leveraging a vulnerability that has the potential to \
+cause loss or damage for the organization. Threat intelligence (threat modeling) is increasingly used by organizations to maintain \
+awareness and reactive capacity for existing and emerging threats"];
+			"cluster_Risk identification" -> "Risk identification_Asset identification is the cataloging of information assets in an organization, such as databases or hardware, \
+to aid in the determination of risk should the assets be compromised or lost. Threats include any event leveraging a vulnerability \
+that has the potential to cause loss or damage for the organization. Threat intelligence (threat modeling) is increasingly used \
+by organizations to maintain awareness and reactive capacity for existing and emerging threats"	[minlen=1];
+		}
+		subgraph "cluster_Risk assessment and analysis" {
+			"cluster_Risk assessment and analysis"	[label="Risk assessment and analysis",
+				shape=box];
+			"Risk assessment and analysis_Risk analysis is the organizational process to determine and deal with possible accidental or intentional \
+losses, and designing and implementing procedures to minimize the impact of these losses. This can also encompass Threat Analysis \
+and Threat Intelligence"	[label="Risk analysis is the organizational process to determine and deal with possible accidental or intentional losses, and designing \
+and implementing procedures to minimize the impact of these losses. This can also encompass Threat Analysis and Threat Intelligence"];
+			"cluster_Risk assessment and analysis" -> "Risk assessment and analysis_Risk analysis is the organizational process to determine and deal with possible accidental or intentional \
+losses, and designing and implementing procedures to minimize the impact of these losses. This can also encompass Threat Analysis \
+and Threat Intelligence"	[minlen=1];
+		}
+		subgraph "cluster_Insider threats" {
+			"cluster_Insider threats"	[label="Insider threats",
+				shape=box];
+			"Insider threats_This topic covers malicious human behavioral factors that might cause harm as a result of a conscious violation \
+of trust, or best-use, or inadvertent error"	[label="This topic covers malicious human behavioral factors that might cause harm as a result of a conscious violation of trust, or best-use, \
+or inadvertent error"];
+			"cluster_Insider threats" -> "Insider threats_This topic covers malicious human behavioral factors that might cause harm as a result of a conscious violation \
+of trust, or best-use, or inadvertent error"	[minlen=1];
+			"Insider threats_An insider is defined as any person with authorized access to an organization’s resources including personnel, \
+facilities, information, equipment, networks, and systems"	[label="An insider is defined as any person with authorized access to an organization’s resources including personnel, facilities, information, \
+equipment, networks, and systems"];
+			"cluster_Insider threats" -> "Insider threats_An insider is defined as any person with authorized access to an organization’s resources including personnel, \
+facilities, information, equipment, networks, and systems"	[minlen=2];
+			"Insider threats_An insider threat is defined as the risk that an insider will use their authorized access, wittingly or unwittingly, \
+to do harm to their organization. This can include theft of proprietary information and technology; damage to company facilities, \
+systems, or equipment; actual or threatened harm to employees; or, other actions that would prevent the company from carrying out \
+its normal business practices"	[label="An insider threat is defined as the risk that an insider will use their authorized access, wittingly or unwittingly, to do harm \
+to their organization. This can include theft of proprietary information and technology; damage to company facilities, systems, \
+or equipment; actual or threatened harm to employees; or, other actions that would prevent the company from carrying out its normal \
+business practices"];
+			"cluster_Insider threats" -> "Insider threats_An insider threat is defined as the risk that an insider will use their authorized access, wittingly or unwittingly, \
+to do harm to their organization. This can include theft of proprietary information and technology; damage to company facilities, \
+systems, or equipment; actual or threatened harm to employees; or, other actions that would prevent the company from carrying out \
+its normal business practices"	[minlen=3];
+			"Insider threats_This topic covers motive-means-opportunity behaviors- motivation and discipline factors, accountability, awareness \
+and quality control"	[label="This topic covers motive-means-opportunity behaviors- motivation and discipline factors, accountability, awareness and quality control"];
+			"cluster_Insider threats" -> "Insider threats_This topic covers motive-means-opportunity behaviors- motivation and discipline factors, accountability, awareness \
+and quality control"	[minlen=4];
+			"Insider threats_The FBI has developed materials including indicators useful in identifying potential insider threat risks"	[label="The FBI has developed materials including indicators useful in identifying potential insider threat risks"];
+			"cluster_Insider threats" -> "Insider threats_The FBI has developed materials including indicators useful in identifying potential insider threat risks"	[minlen=5];
+		}
+		subgraph "cluster_Risk measurement and evaluation models and methodologies" {
+			"cluster_Risk measurement and evaluation models and methodologies"	[label="Risk measurement and evaluation models and methodologies",
+				shape=box];
+			"Risk measurement and evaluation models and methodologies_Risk models are used to explain how assets encounter risk. In addition, \
+there a number of industry-accepted methodologies to measure, evaluate, and communicate risk to stakeholders"	[label="Risk models are used to explain how assets encounter risk. In addition, there a number of industry-accepted methodologies to measure, \
+evaluate, and communicate risk to stakeholders"];
+			"cluster_Risk measurement and evaluation models and methodologies" -> "Risk measurement and evaluation models and methodologies_Risk models are used to explain how assets encounter risk. In addition, \
+there a number of industry-accepted methodologies to measure, evaluate, and communicate risk to stakeholders"	[minlen=1];
+			"Risk measurement and evaluation models and methodologies_This topic includes both quantitative and qualitative approaches to risk \
+assessment, application of models and methods for various business contexts (e.g., HIPAA for healthcare facilities). Tools of interest \
+might include the Cyber Resilience Review self-assessment, Cybersecurity Evaluation Tool (CSET) as well as Security Risk Assessment \
+tool from HSS"	[label="This topic includes both quantitative and qualitative approaches to risk assessment, application of models and methods for various \
+business contexts (e.g., HIPAA for healthcare facilities). Tools of interest might include the Cyber Resilience Review self-assessment, \
+Cybersecurity Evaluation Tool (CSET) as well as Security Risk Assessment tool from HSS"];
+			"cluster_Risk measurement and evaluation models and methodologies" -> "Risk measurement and evaluation models and methodologies_This topic includes both quantitative and qualitative approaches to risk \
+assessment, application of models and methods for various business contexts (e.g., HIPAA for healthcare facilities). Tools of interest \
+might include the Cyber Resilience Review self-assessment, Cybersecurity Evaluation Tool (CSET) as well as Security Risk Assessment \
+tool from HSS"	[minlen=2];
+		}
+		subgraph "cluster_Risk control" {
+			"cluster_Risk control"	[label="Risk control",
+				shape=box];
+			"Risk control_Risk control is defined as the act of lessening the consequences of a cyber event, and as a result lessening the amount \
+of risk. Each approach should include the means to communicate risk to decision makers including the residual risk. Topics covered \
+should include assessment and ranking of risk and the Avoid, Reduce, Transfer, Accept categories"	[label="Risk control is defined as the act of lessening the consequences of a cyber event, and as a result lessening the amount of risk. \
+Each approach should include the means to communicate risk to decision makers including the residual risk. Topics covered should \
+include assessment and ranking of risk and the Avoid, Reduce, Transfer, Accept categories"];
+			"cluster_Risk control" -> "Risk control_Risk control is defined as the act of lessening the consequences of a cyber event, and as a result lessening the amount \
+of risk. Each approach should include the means to communicate risk to decision makers including the residual risk. Topics covered \
+should include assessment and ranking of risk and the Avoid, Reduce, Transfer, Accept categories"	[minlen=1];
+			"Risk control_Curricular content should include widely-used risk control methodologies that are available for exposure and practice"	[label="Curricular content should include widely-used risk control methodologies that are available for exposure and practice"];
+			"cluster_Risk control" -> "Risk control_Curricular content should include widely-used risk control methodologies that are available for exposure and practice"	[minlen=2];
+		}
+		subgraph "cluster_Organizational context" {
+			"cluster_Organizational context"	[label="Organizational context",
+				shape=box];
+			"Organizational context_Many factors influence how security is operationalized in organizations. These contexts are critical when \
+designing a curriculum and should inform the entire process"	[label="Many factors influence how security is operationalized in organizations. These contexts are critical when designing a curriculum \
+and should inform the entire process"];
+			"cluster_Organizational context" -> "Organizational context_Many factors influence how security is operationalized in organizations. These contexts are critical when \
+designing a curriculum and should inform the entire process"	[minlen=1];
+			"Organizational context_This topic covers how internal versus external contextual differences have a major impact on the coverage \
+of policy, regulation, and statute (or jurisdiction). Also, location- or country-specific issues and concerns should be evaluated. \
+Applicable standards and guidelines for compliance to industry/sector should also be evaluated"	[label="This topic covers how internal versus external contextual differences have a major impact on the coverage of policy, regulation, \
+and statute (or jurisdiction). Also, location- or country-specific issues and concerns should be evaluated. Applicable standards \
+and guidelines for compliance to industry/sector should also be evaluated"];
+			"cluster_Organizational context" -> "Organizational context_This topic covers how internal versus external contextual differences have a major impact on the coverage \
+of policy, regulation, and statute (or jurisdiction). Also, location- or country-specific issues and concerns should be evaluated. \
+Applicable standards and guidelines for compliance to industry/sector should also be evaluated"	[minlen=2];
+			"Organizational context_The variance between governments versus private organizations is a factor as is the need to include international \
+aspects including but not limited to import/export restrictions. Further, there is significant difference between organizations \
+in various business vertical industry segments such as energy versus agriculture"	[label="The variance between governments versus private organizations is a factor as is the need to include international aspects including \
+but not limited to import/export restrictions. Further, there is significant difference between organizations in various business \
+vertical industry segments such as energy versus agriculture"];
+			"cluster_Organizational context" -> "Organizational context_The variance between governments versus private organizations is a factor as is the need to include international \
+aspects including but not limited to import/export restrictions. Further, there is significant difference between organizations \
+in various business vertical industry segments such as energy versus agriculture"	[minlen=3];
+		}
+		subgraph cluster_Privacy {
+			cluster_Privacy	[label=Privacy,
+				shape=box];
+			"Privacy_Privacy is a concept with cultural and national variations in its definition. At its core, privacy is based on the right \
+to be forgotten, and various levels of choice and consent for the collection, use, and distribution of an individual’s information"	[label="Privacy is a concept with cultural and national variations in its definition. At its core, privacy is based on the right to be forgotten, \
+and various levels of choice and consent for the collection, use, and distribution of an individual’s information"];
+			cluster_Privacy -> "Privacy_Privacy is a concept with cultural and national variations in its definition. At its core, privacy is based on the right \
+to be forgotten, and various levels of choice and consent for the collection, use, and distribution of an individual’s information"	[minlen=1];
+			"Privacy_This topic addresses social and localized variances in privacy. Jurisdictional variance in privacy definitions should be \
+explored. The relationships between individuals, organizations, or governmental privacy requirements should also be addressed. The \
+impact of privacy settings in new tools/software, identifying a need for tools and techniques to be covered in most areas"	[label="This topic addresses social and localized variances in privacy. Jurisdictional variance in privacy definitions should be explored. \
+The relationships between individuals, organizations, or governmental privacy requirements should also be addressed. The impact \
+of privacy settings in new tools/software, identifying a need for tools and techniques to be covered in most areas"];
+			cluster_Privacy -> "Privacy_This topic addresses social and localized variances in privacy. Jurisdictional variance in privacy definitions should be \
+explored. The relationships between individuals, organizations, or governmental privacy requirements should also be addressed. The \
+impact of privacy settings in new tools/software, identifying a need for tools and techniques to be covered in most areas"	[minlen=2];
+			"Privacy_Additional consideration should be given to privacy in the context of consumer protection and health care regulations"	[label="Additional consideration should be given to privacy in the context of consumer protection and health care regulations"];
+			cluster_Privacy -> "Privacy_Additional consideration should be given to privacy in the context of consumer protection and health care regulations"	[minlen=3];
+			"Privacy_Organizations with international engagement must consider variances in privacy laws, regulations, and standards across the \
+jurisdictions in which they operate"	[label="Organizations with international engagement must consider variances in privacy laws, regulations, and standards across the jurisdictions \
+in which they operate"];
+			cluster_Privacy -> "Privacy_Organizations with international engagement must consider variances in privacy laws, regulations, and standards across the \
+jurisdictions in which they operate"	[minlen=4];
+		}
+		subgraph "cluster_Laws, ethics, and compliance" {
+			"cluster_Laws, ethics, and compliance"	[label="Laws, ethics, and compliance",
+				shape=box];
+			"Laws, ethics, and compliance_Laws, regulations, standards as well as ethical values are derived from the social context and how \
+organizations meet requirements to comply with them"	[label="Laws, regulations, standards as well as ethical values are derived from the social context and how organizations meet requirements \
+to comply with them"];
+			"cluster_Laws, ethics, and compliance" -> "Laws, ethics, and compliance_Laws, regulations, standards as well as ethical values are derived from the social context and how \
+organizations meet requirements to comply with them"	[minlen=1];
+			"Laws, ethics, and compliance_This topic includes how laws and technology intersect in the context of the judicial structures that \
+are presentinternational, national and local - as organizations safeguard information systems from cyberattacks"	[label="This topic includes how laws and technology intersect in the context of the judicial structures that are presentinternational, national \
+and local - as organizations safeguard information systems from cyberattacks"];
+			"cluster_Laws, ethics, and compliance" -> "Laws, ethics, and compliance_This topic includes how laws and technology intersect in the context of the judicial structures that \
+are presentinternational, national and local - as organizations safeguard information systems from cyberattacks"	[minlen=2];
+			"Laws, ethics, and compliance_Ethical instruction should also be an element"	[label="Ethical instruction should also be an element"];
+			"cluster_Laws, ethics, and compliance" -> "Laws, ethics, and compliance_Ethical instruction should also be an element"	[minlen=3];
+			"Laws, ethics, and compliance_Professional codes of conduct and ethical standards should be addressed. Compliance efforts should \
+include those efforts to conform to laws, regulations, and standards, and to include breach notification requirements by state, \
+national, and international governing authorities. Examples of international laws and standards include GDPR and ISO/IEC 27000 et \
+al. National laws of importance for U.S. organizations include HIPAA, Sarbanes-Oxley, GLBA, etc"	[label="Professional codes of conduct and ethical standards should be addressed. Compliance efforts should include those efforts to conform \
+to laws, regulations, and standards, and to include breach notification requirements by state, national, and international governing \
+authorities. Examples of international laws and standards include GDPR and ISO/IEC 27000 et al. National laws of importance for \
+U.S. organizations include HIPAA, Sarbanes-Oxley, GLBA, etc"];
+			"cluster_Laws, ethics, and compliance" -> "Laws, ethics, and compliance_Professional codes of conduct and ethical standards should be addressed. Compliance efforts should \
+include those efforts to conform to laws, regulations, and standards, and to include breach notification requirements by state, \
+national, and international governing authorities. Examples of international laws and standards include GDPR and ISO/IEC 27000 et \
+al. National laws of importance for U.S. organizations include HIPAA, Sarbanes-Oxley, GLBA, etc"	[minlen=4];
+		}
+		subgraph "cluster_Security governance" {
+			"cluster_Security governance"	[label="Security governance",
+				shape=box];
+			"Security governance_The principles of corporate governance are applicable to the information security function. Governance is the \
+responsibility of the senior management of an organization to assure the effective implementation of strategic planning, risk management, \
+and regulatory compliance usually by means of comprehensive managerial policy, plans, programs, and budgetary controls to secure \
+the information of the organization"	[label="The principles of corporate governance are applicable to the information security function. Governance is the responsibility of \
+the senior management of an organization to assure the effective implementation of strategic planning, risk management, and regulatory \
+compliance usually by means of comprehensive managerial policy, plans, programs, and budgetary controls to secure the information \
+of the organization"];
+			"cluster_Security governance" -> "Security governance_The principles of corporate governance are applicable to the information security function. Governance is the \
+responsibility of the senior management of an organization to assure the effective implementation of strategic planning, risk management, \
+and regulatory compliance usually by means of comprehensive managerial policy, plans, programs, and budgetary controls to secure \
+the information of the organization"	[minlen=1];
+			"Security governance_This topic should frame the implementation of security governance and policy within global, national, and local \
+laws, regulations and standards, and programs of instruction should seek to convey the concepts with clarity and sound examples"	[label="This topic should frame the implementation of security governance and policy within global, national, and local laws, regulations \
+and standards, and programs of instruction should seek to convey the concepts with clarity and sound examples"];
+			"cluster_Security governance" -> "Security governance_This topic should frame the implementation of security governance and policy within global, national, and local \
+laws, regulations and standards, and programs of instruction should seek to convey the concepts with clarity and sound examples"	[minlen=2];
+		}
+		subgraph "cluster_Executive and board level communication" {
+			"cluster_Executive and board level communication"	[label="Executive and board level communication",
+				shape=box];
+			"Executive and board level communication_Delivering information to executives and external decision makers is a critical skill for \
+information security leaders"	[label="Delivering information to executives and external decision makers is a critical skill for information security leaders"];
+			"cluster_Executive and board level communication" -> "Executive and board level communication_Delivering information to executives and external decision makers is a critical skill for \
+information security leaders"	[minlen=1];
+			"Executive and board level communication_This topic includes communication skills that are taught and practiced with rehearsals that \
+include critical analysis and meaningful feedback"	[label="This topic includes communication skills that are taught and practiced with rehearsals that include critical analysis and meaningful \
+feedback"];
+			"cluster_Executive and board level communication" -> "Executive and board level communication_This topic includes communication skills that are taught and practiced with rehearsals that \
+include critical analysis and meaningful feedback"	[minlen=2];
+		}
+		subgraph "cluster_Managerial policy" {
+			"cluster_Managerial policy"	[label="Managerial policy",
+				shape=box];
+			"Managerial policy_Organizational guidelines that dictate certain behavior within an organization"	[label="Organizational guidelines that dictate certain behavior within an organization"];
+			"cluster_Managerial policy" -> "Managerial policy_Organizational guidelines that dictate certain behavior within an organization"	[minlen=1];
+			"Managerial policy_This topic content should seeks to convey the concepts with clarity and sound examples including security program \
+policy, issue-specific policy and systemspecific policy as per NIST SP 800-12 Rev 1. This should also cover an understanding of \
+the security policy development cycle, from initial research to implementation and maintenance, as well as giving exposure to real-world \
+examples of security policies and practices"	[label="This topic content should seeks to convey the concepts with clarity and sound examples including security program policy, issue-specific \
+policy and systemspecific policy as per NIST SP 800-12 Rev 1. This should also cover an understanding of the security policy development \
+cycle, from initial research to implementation and maintenance, as well as giving exposure to real-world examples of security policies \
+and practices"];
+			"cluster_Managerial policy" -> "Managerial policy_This topic content should seeks to convey the concepts with clarity and sound examples including security program \
+policy, issue-specific policy and systemspecific policy as per NIST SP 800-12 Rev 1. This should also cover an understanding of \
+the security policy development cycle, from initial research to implementation and maintenance, as well as giving exposure to real-world \
+examples of security policies and practices"	[minlen=2];
+		}
+		subgraph "cluster_Performance measurements (metrics)" {
+			"cluster_Performance measurements (metrics)"	[label="Performance measurements (metrics)",
+				shape=box];
+			"Performance measurements (metrics)_A process of designing, implementing, and managing the use of specific measurements to determine \
+the effectiveness of the overall security program. Built on metrics, a term used to describe any detailed statistical analysis technique \
+on performance, but now commonly synonymous with performance measurement"	[label="A process of designing, implementing, and managing the use of specific measurements to determine the effectiveness of the overall \
+security program. Built on metrics, a term used to describe any detailed statistical analysis technique on performance, but now \
+commonly synonymous with performance measurement"];
+			"cluster_Performance measurements (metrics)" -> "Performance measurements (metrics)_A process of designing, implementing, and managing the use of specific measurements to determine \
+the effectiveness of the overall security program. Built on metrics, a term used to describe any detailed statistical analysis technique \
+on performance, but now commonly synonymous with performance measurement"	[minlen=1];
+			"Performance measurements (metrics)_Curricular content should include approaches and techniques to define and evaluate the utility \
+of performance measurements should be explained to students"	[label="Curricular content should include approaches and techniques to define and evaluate the utility of performance measurements should \
+be explained to students"];
+			"cluster_Performance measurements (metrics)" -> "Performance measurements (metrics)_Curricular content should include approaches and techniques to define and evaluate the utility \
+of performance measurements should be explained to students"	[minlen=2];
+		}
+		subgraph "cluster_Data analytics" {
+			"cluster_Data analytics"	[label="Data analytics",
+				shape=box];
+			"Data analytics_Data analytics is a set of techniques used to manipulate (often) large volumes of data to recognize, block, divert, \
+and respond to cyberattacks. Monitoring real-time network activities enables agile decision making, detection of suspected malicious \
+activities, utilization of a real-time visualization dashboard, and employment of a set of hardware and software to manage such \
+detected suspicious activities"	[label="Data analytics is a set of techniques used to manipulate (often) large volumes of data to recognize, block, divert, and respond \
+to cyberattacks. Monitoring real-time network activities enables agile decision making, detection of suspected malicious activities, \
+utilization of a real-time visualization dashboard, and employment of a set of hardware and software to manage such detected suspicious \
+activities"];
+			"cluster_Data analytics" -> "Data analytics_Data analytics is a set of techniques used to manipulate (often) large volumes of data to recognize, block, divert, \
+and respond to cyberattacks. Monitoring real-time network activities enables agile decision making, detection of suspected malicious \
+activities, utilization of a real-time visualization dashboard, and employment of a set of hardware and software to manage such \
+detected suspicious activities"	[minlen=1];
+			"Data analytics_This topic includes definitions; the differences between security control and security analytic software and tools; \
+the type and classifications of analytic tools and techniques (with examples such as OpenSOC); collect, filter, integrate and link \
+diverse types of security event information; how security analytics tools work; the relationship between analytic software and tools \
+and forensics; differences between forensic tools and analytic tool; network forensics (to include packet analysis, tools, Windows, \
+Linux, UNIX, Mobile); differences between cyber forensics (social media for example) and network forensics"	[label="This topic includes definitions; the differences between security control and security analytic software and tools; the type and \
+classifications of analytic tools and techniques (with examples such as OpenSOC); collect, filter, integrate and link diverse types \
+of security event information; how security analytics tools work; the relationship between analytic software and tools and forensics; \
+differences between forensic tools and analytic tool; network forensics (to include packet analysis, tools, Windows, Linux, UNIX, \
+Mobile); differences between cyber forensics (social media for example) and network forensics"];
+			"cluster_Data analytics" -> "Data analytics_This topic includes definitions; the differences between security control and security analytic software and tools; \
+the type and classifications of analytic tools and techniques (with examples such as OpenSOC); collect, filter, integrate and link \
+diverse types of security event information; how security analytics tools work; the relationship between analytic software and tools \
+and forensics; differences between forensic tools and analytic tool; network forensics (to include packet analysis, tools, Windows, \
+Linux, UNIX, Mobile); differences between cyber forensics (social media for example) and network forensics"	[minlen=2];
+		}
+		subgraph "cluster_Security intelligence" {
+			"cluster_Security intelligence"	[label="Security intelligence",
+				shape=box];
+			"Security intelligence_Collection, analysis, and dissemination of security information including but not limited to threats and adversary \
+capabilities"	[label="Collection, analysis, and dissemination of security information including but not limited to threats and adversary capabilities"];
+			"cluster_Security intelligence" -> "Security intelligence_Collection, analysis, and dissemination of security information including but not limited to threats and adversary \
+capabilities"	[minlen=1];
+			"Security intelligence_In this topic, tools and techniques should be explored to include data collection and aggregation, data mining, \
+data analytics, statistical analysis. Examples of sources for security intelligence include SIEM for internal data, and public and \
+private intelligence services for external data. Dissemination includes an understanding of the Information Sharing and Analysis \
+Center approach as well organizations like InfraGard"	[label="In this topic, tools and techniques should be explored to include data collection and aggregation, data mining, data analytics, \
+statistical analysis. Examples of sources for security intelligence include SIEM for internal data, and public and private intelligence \
+services for external data. Dissemination includes an understanding of the Information Sharing and Analysis Center approach as well \
+organizations like InfraGard"];
+			"cluster_Security intelligence" -> "Security intelligence_In this topic, tools and techniques should be explored to include data collection and aggregation, data mining, \
+data analytics, statistical analysis. Examples of sources for security intelligence include SIEM for internal data, and public and \
+private intelligence services for external data. Dissemination includes an understanding of the Information Sharing and Analysis \
+Center approach as well organizations like InfraGard"	[minlen=2];
+		}
+		subgraph "cluster_Systems Administration" {
+			"cluster_Systems Administration"	[label="Systems Administration",
+				shape=box];
+			"Systems Administration_System administration works behind the scenes to configure, operate, maintain, and troubleshoot the technical \
+system infrastructure that supports much of modern life"	[label="System administration works behind the scenes to configure, operate, maintain, and troubleshoot the technical system infrastructure \
+that supports much of modern life"];
+			"cluster_Systems Administration" -> "Systems Administration_System administration works behind the scenes to configure, operate, maintain, and troubleshoot the technical \
+system infrastructure that supports much of modern life"	[minlen=1];
+			"Systems Administration_Prerequisite knowledge- Basic understanding of computer systems (Windows/Linux), networks (OSI Model), software, \
+and database (Oracle/SQL)"	[label="Prerequisite knowledge- Basic understanding of computer systems (Windows/Linux), networks (OSI Model), software, and database (Oracle/\
+SQL)"];
+			"cluster_Systems Administration" -> "Systems Administration_Prerequisite knowledge- Basic understanding of computer systems (Windows/Linux), networks (OSI Model), software, \
+and database (Oracle/SQL)"	[minlen=2];
+		}
+		subgraph "cluster_Operating system administration" {
+			"cluster_Operating system administration"	[label="Operating system administration",
+				shape=box];
+			"Operating system administration_This topic covers the upkeep, reliable operation, configuration, and troubleshooting of technical \
+systems, especially multi-user systems and servers"	[label="This topic covers the upkeep, reliable operation, configuration, and troubleshooting of technical systems, especially multi-user \
+systems and servers"];
+			"cluster_Operating system administration" -> "Operating system administration_This topic covers the upkeep, reliable operation, configuration, and troubleshooting of technical \
+systems, especially multi-user systems and servers"	[minlen=1];
+			"Operating system administration_This topic includes but not be limited to account management, disk administrations, system process \
+administration, system task automation, performance monitoring, optimization, administration of tools for security and backup of \
+disks and process"	[label="This topic includes but not be limited to account management, disk administrations, system process administration, system task automation, \
+performance monitoring, optimization, administration of tools for security and backup of disks and process"];
+			"cluster_Operating system administration" -> "Operating system administration_This topic includes but not be limited to account management, disk administrations, system process \
+administration, system task automation, performance monitoring, optimization, administration of tools for security and backup of \
+disks and process"	[minlen=2];
+		}
+		subgraph "cluster_Database system administration" {
+			"cluster_Database system administration"	[label="Database system administration",
+				shape=box];
+			"Database system administration_This topic covers managing and maintaining databases by utilizing available and applicable management \
+system software"	[label="This topic covers managing and maintaining databases by utilizing available and applicable management system software"];
+			"cluster_Database system administration" -> "Database system administration_This topic covers managing and maintaining databases by utilizing available and applicable management \
+system software"	[minlen=1];
+			"Database system administration_This topic includes but not be limited to installation and configuration of database servers, creation \
+and manipulation of schemas, tables, indexes, views, constraints, stored procedures, functions, user account creation and administration, \
+and tools for database backup and recovery. Coverage should include the data storage technologies in wide use as well as emerging \
+data management technologies"	[label="This topic includes but not be limited to installation and configuration of database servers, creation and manipulation of schemas, \
+tables, indexes, views, constraints, stored procedures, functions, user account creation and administration, and tools for database \
+backup and recovery. Coverage should include the data storage technologies in wide use as well as emerging data management technologies"];
+			"cluster_Database system administration" -> "Database system administration_This topic includes but not be limited to installation and configuration of database servers, creation \
+and manipulation of schemas, tables, indexes, views, constraints, stored procedures, functions, user account creation and administration, \
+and tools for database backup and recovery. Coverage should include the data storage technologies in wide use as well as emerging \
+data management technologies"	[minlen=2];
+		}
+		subgraph "cluster_Network administration" {
+			"cluster_Network administration"	[label="Network administration",
+				shape=box];
+			"Network administration_Network administration relates to installation, and supporting various network system architectures (LANs, \
+WANs, MANs, intranets, extranets, perimeter networks"	[label="Network administration relates to installation, and supporting various network system architectures (LANs, WANs, MANs, intranets, \
+extranets, perimeter networks"];
+			"cluster_Network administration" -> "Network administration_Network administration relates to installation, and supporting various network system architectures (LANs, \
+WANs, MANs, intranets, extranets, perimeter networks"	[minlen=1];
+			"Network administration_This topic includes but is not limited to the OSI Model, securing of network traffic, and tools for configuration \
+of services"	[label="This topic includes but is not limited to the OSI Model, securing of network traffic, and tools for configuration of services"];
+			"cluster_Network administration" -> "Network administration_This topic includes but is not limited to the OSI Model, securing of network traffic, and tools for configuration \
+of services"	[minlen=2];
+		}
+		subgraph "cluster_Cloud administration" {
+			"cluster_Cloud administration"	[label="Cloud administration",
+				shape=box];
+			"Cloud administration_Cloud administration refers to the upkeep and reliable access to a dynamic pool of configurable remote resources (\
+e.g., networks, servers, storage, applications and services) that can be rapidly configured, provisioned and released with minimal \
+oversight"	[label="Cloud administration refers to the upkeep and reliable access to a dynamic pool of configurable remote resources (e.g., networks, \
+servers, storage, applications and services) that can be rapidly configured, provisioned and released with minimal oversight"];
+			"cluster_Cloud administration" -> "Cloud administration_Cloud administration refers to the upkeep and reliable access to a dynamic pool of configurable remote resources (\
+e.g., networks, servers, storage, applications and services) that can be rapidly configured, provisioned and released with minimal \
+oversight"	[minlen=1];
+			"Cloud administration_This topic includes but is not limited to configuring and deploying applications and users in cloud infrastructures, \
+analyzing performance, resource scaling, availability of cloud platforms, identifying security and privacy issues and mitigating \
+risks"	[label="This topic includes but is not limited to configuring and deploying applications and users in cloud infrastructures, analyzing performance, \
+resource scaling, availability of cloud platforms, identifying security and privacy issues and mitigating risks"];
+			"cluster_Cloud administration" -> "Cloud administration_This topic includes but is not limited to configuring and deploying applications and users in cloud infrastructures, \
+analyzing performance, resource scaling, availability of cloud platforms, identifying security and privacy issues and mitigating \
+risks"	[minlen=2];
+		}
+		subgraph "cluster_Cyber-physical system administration" {
+			"cluster_Cyber-physical system administration"	[label="Cyber-physical system administration",
+				shape=box];
+			"Cyber-physical system administration_Cyber-physical systems (CPS) are engineered systems that are built from, and depend upon, the \
+seamless integration of computational algorithms and physical components. CPS administration refers to installation and upkeep by \
+ensuring safety, capability, adaptability, scalability, resiliency, security, and usability"	[label="Cyber-physical systems (CPS) are engineered systems that are built from, and depend upon, the seamless integration of computational \
+algorithms and physical components. CPS administration refers to installation and upkeep by ensuring safety, capability, adaptability, \
+scalability, resiliency, security, and usability"];
+			"cluster_Cyber-physical system administration" -> "Cyber-physical system administration_Cyber-physical systems (CPS) are engineered systems that are built from, and depend upon, the \
+seamless integration of computational algorithms and physical components. CPS administration refers to installation and upkeep by \
+ensuring safety, capability, adaptability, scalability, resiliency, security, and usability"	[minlen=1];
+			"Cyber-physical system administration_This topic includes but is not limited to the architecture of cyber-physical systems, underlying \
+communication standards (Zigbee), middleware, service-oriented architecture, tools supporting real-time control and application \
+of real-world examples (power grid, nuclear facility, IoT, SCADA)"	[label="This topic includes but is not limited to the architecture of cyber-physical systems, underlying communication standards (Zigbee), \
+middleware, service-oriented architecture, tools supporting real-time control and application of real-world examples (power grid, \
+nuclear facility, IoT, SCADA)"];
+			"cluster_Cyber-physical system administration" -> "Cyber-physical system administration_This topic includes but is not limited to the architecture of cyber-physical systems, underlying \
+communication standards (Zigbee), middleware, service-oriented architecture, tools supporting real-time control and application \
+of real-world examples (power grid, nuclear facility, IoT, SCADA)"	[minlen=2];
+		}
+		subgraph "cluster_System hardening" {
+			"cluster_System hardening"	[label="System hardening",
+				shape=box];
+			"System hardening_This topic covers securing a system by finding and remediating risks. This may include hardening or securing configuration, \
+system software, firmware, and application"	[label="This topic covers securing a system by finding and remediating risks. This may include hardening or securing configuration, system \
+software, firmware, and application"];
+			"cluster_System hardening" -> "System hardening_This topic covers securing a system by finding and remediating risks. This may include hardening or securing configuration, \
+system software, firmware, and application"	[minlen=1];
+			"System hardening_This topic includes but is not limited to identifying risks, threats, and vulnerabilities in commonly used systems (\
+operating systems, database systems, networks); defining and administering procedures and practices to safeguard against threats; \
+hardening through suitable tools (firewall, anti-virus, IDS, honeypot)"	[label="This topic includes but is not limited to identifying risks, threats, and vulnerabilities in commonly used systems (operating systems, \
+database systems, networks); defining and administering procedures and practices to safeguard against threats; hardening through \
+suitable tools (firewall, anti-virus, IDS, honeypot)"];
+			"cluster_System hardening" -> "System hardening_This topic includes but is not limited to identifying risks, threats, and vulnerabilities in commonly used systems (\
+operating systems, database systems, networks); defining and administering procedures and practices to safeguard against threats; \
+hardening through suitable tools (firewall, anti-virus, IDS, honeypot)"	[minlen=2];
+		}
+		subgraph cluster_Availability {
+			cluster_Availability	[label=Availability,
+				shape=box];
+			"Availability_Sound system operation requires all systems sustain targeted levels of availability by having their current state recoverable \
+from failure through redundancy and backup and recovery"	[label="Sound system operation requires all systems sustain targeted levels of availability by having their current state recoverable from \
+failure through redundancy and backup and recovery"];
+			cluster_Availability -> "Availability_Sound system operation requires all systems sustain targeted levels of availability by having their current state recoverable \
+from failure through redundancy and backup and recovery"	[minlen=1];
+			"Availability_This topic includes but is not limited to identifying key assets and administering tools to have validated system backup \
+and recovery"	[label="This topic includes but is not limited to identifying key assets and administering tools to have validated system backup and recovery"];
+			cluster_Availability -> "Availability_This topic includes but is not limited to identifying key assets and administering tools to have validated system backup \
+and recovery"	[minlen=2];
+		}
+		subgraph "cluster_Strategic planning" {
+			"cluster_Strategic planning"	[label="Strategic planning",
+				shape=box];
+			"Strategic planning_The process of defining an organization’s cybersecurity strategy - or direction - and determining the actions \
+needed and resources to be allocated in order to implement such a strategy"	[label="The process of defining an organization’s cybersecurity strategy - or direction - and determining the actions needed and resources \
+to be allocated in order to implement such a strategy"];
+			"cluster_Strategic planning" -> "Strategic planning_The process of defining an organization’s cybersecurity strategy - or direction - and determining the actions \
+needed and resources to be allocated in order to implement such a strategy"	[minlen=1];
+			"Strategic planning_This topic covers concepts such as determining the current organization’s position; performing Strengths, Weaknesses, \
+Opportunities, and Threats (SWOT) analysis; developing a strategy that fulfills the mission, values, and vision of the organization; \
+determining longterm objectives; selecting key performance indicators (KPIs) to track progress; allocating the necessary budget; \
+rolling out the strategy to the organization; and updating and adapting yearly"	[label="This topic covers concepts such as determining the current organization’s position; performing Strengths, Weaknesses, Opportunities, \
+and Threats (SWOT) analysis; developing a strategy that fulfills the mission, values, and vision of the organization; determining \
+longterm objectives; selecting key performance indicators (KPIs) to track progress; allocating the necessary budget; rolling out \
+the strategy to the organization; and updating and adapting yearly"];
+			"cluster_Strategic planning" -> "Strategic planning_This topic covers concepts such as determining the current organization’s position; performing Strengths, Weaknesses, \
+Opportunities, and Threats (SWOT) analysis; developing a strategy that fulfills the mission, values, and vision of the organization; \
+determining longterm objectives; selecting key performance indicators (KPIs) to track progress; allocating the necessary budget; \
+rolling out the strategy to the organization; and updating and adapting yearly"	[minlen=2];
+		}
+		subgraph "cluster_Operational and tactical management" {
+			"cluster_Operational and tactical management"	[label="Operational and tactical management",
+				shape=box];
+			"Operational and tactical management_The organization ability to securely operate organizational technical infrastructure"	[label="The organization ability to securely operate organizational technical infrastructure"];
+			"cluster_Operational and tactical management" -> "Operational and tactical management_The organization ability to securely operate organizational technical infrastructure"	[minlen=1];
+			"Operational and tactical management_This topic includes a discussion of data protection and privacy by default and design, and cover \
+basic concepts, issues, and techniques for efficient and effective operations. Special emphasis is placed on process improvement \
+and supply chain management. Topics include operations strategy; tactical strategy; product and service design; process design and \
+analysis; capacity planning; lean production systems; materials and inventory management; quality management and six sigma; project \
+management; and supply chain management"	[label="This topic includes a discussion of data protection and privacy by default and design, and cover basic concepts, issues, and techniques \
+for efficient and effective operations. Special emphasis is placed on process improvement and supply chain management. Topics include \
+operations strategy; tactical strategy; product and service design; process design and analysis; capacity planning; lean production \
+systems; materials and inventory management; quality management and six sigma; project management; and supply chain management"];
+			"cluster_Operational and tactical management" -> "Operational and tactical management_This topic includes a discussion of data protection and privacy by default and design, and cover \
+basic concepts, issues, and techniques for efficient and effective operations. Special emphasis is placed on process improvement \
+and supply chain management. Topics include operations strategy; tactical strategy; product and service design; process design and \
+analysis; capacity planning; lean production systems; materials and inventory management; quality management and six sigma; project \
+management; and supply chain management"	[minlen=2];
+		}
+		subgraph "cluster_Business Continuity, Disaster Recovery, and Incident Management" {
+			"cluster_Business Continuity, Disaster Recovery, and Incident Management"	[label="Business Continuity, Disaster Recovery, and Incident Management",
+				shape=box];
+			"Business Continuity, Disaster Recovery, and Incident Management_Description of the role disaster recovery (DR) plays within business \
+continuity (BC). BC planning includes contingency planning, incident response, emergency response, and backup and recovery efforts \
+of an organization to ensure the availability of critical resources during an emergency situation while the disaster recovery refers \
+to the recovery of the systems in the event of a disaster. Continuity of organizations in the wake of major events is also a component"	[label="Description of the role disaster recovery (DR) plays within business continuity (BC). BC planning includes contingency planning, \
+incident response, emergency response, and backup and recovery efforts of an organization to ensure the availability of critical \
+resources during an emergency situation while the disaster recovery refers to the recovery of the systems in the event of a disaster. \
+Continuity of organizations in the wake of major events is also a component"];
+			"cluster_Business Continuity, Disaster Recovery, and Incident Management" -> "Business Continuity, Disaster Recovery, and Incident Management_Description of the role disaster recovery (DR) plays within business \
+continuity (BC). BC planning includes contingency planning, incident response, emergency response, and backup and recovery efforts \
+of an organization to ensure the availability of critical resources during an emergency situation while the disaster recovery refers \
+to the recovery of the systems in the event of a disaster. Continuity of organizations in the wake of major events is also a component"	[minlen=1];
+			"Business Continuity, Disaster Recovery, and Incident Management_This topic includes creation and use of the IR/DR/BP BC plans, organization \
+of the plans, occasions to review/rewrite plans, examination of sanitized plans, opportunities should be given for students to write \
+casebased or actual plans to gain some experience"	[label="This topic includes creation and use of the IR/DR/BP BC plans, organization of the plans, occasions to review/rewrite plans, examination \
+of sanitized plans, opportunities should be given for students to write casebased or actual plans to gain some experience"];
+			"cluster_Business Continuity, Disaster Recovery, and Incident Management" -> "Business Continuity, Disaster Recovery, and Incident Management_This topic includes creation and use of the IR/DR/BP BC plans, organization \
+of the plans, occasions to review/rewrite plans, examination of sanitized plans, opportunities should be given for students to write \
+casebased or actual plans to gain some experience"	[minlen=2];
+		}
+		subgraph "cluster_Incident response" {
+			"cluster_Incident response"	[label="Incident response",
+				shape=box];
+			"Incident response_Incident response (IR) refers to the actions taken by senior management to specify the organization’s processes \
+and procedures to anticipate, detect, and mitigate the effects of an incident"	[label="Incident response (IR) refers to the actions taken by senior management to specify the organization’s processes and procedures \
+to anticipate, detect, and mitigate the effects of an incident"];
+			"cluster_Incident response" -> "Incident response_Incident response (IR) refers to the actions taken by senior management to specify the organization’s processes \
+and procedures to anticipate, detect, and mitigate the effects of an incident"	[minlen=1];
+			"Incident response_This topic includes the creation and use of the IR plans, organization of the plans, occasions to review/rewrite \
+plans, and examination of sanitized plans. Opportunities should be given for students to write case-based or actual plans to gain \
+some experience"	[label="This topic includes the creation and use of the IR plans, organization of the plans, occasions to review/rewrite plans, and examination \
+of sanitized plans. Opportunities should be given for students to write case-based or actual plans to gain some experience"];
+			"cluster_Incident response" -> "Incident response_This topic includes the creation and use of the IR plans, organization of the plans, occasions to review/rewrite \
+plans, and examination of sanitized plans. Opportunities should be given for students to write case-based or actual plans to gain \
+some experience"	[minlen=2];
+		}
+		subgraph "cluster_Disaster recovery" {
+			"cluster_Disaster recovery"	[label="Disaster recovery",
+				shape=box];
+			"Disaster recovery_Disaster recovery (DR) refers to the actions taken by senior management to specify the organization’s efforts \
+in preparation for and recovery from a disaster. Specifically, DR refers to the recovery of the systems in the event of a disaster"	[label="Disaster recovery (DR) refers to the actions taken by senior management to specify the organization’s efforts in preparation for \
+and recovery from a disaster. Specifically, DR refers to the recovery of the systems in the event of a disaster"];
+			"cluster_Disaster recovery" -> "Disaster recovery_Disaster recovery (DR) refers to the actions taken by senior management to specify the organization’s efforts \
+in preparation for and recovery from a disaster. Specifically, DR refers to the recovery of the systems in the event of a disaster"	[minlen=1];
+			"Disaster recovery_This topic includes the creation and use of the DR plans, organization of the plans, occasions to review/rewrite \
+plans, and examination of sanitized plans. Opportunities should be given for students to write case-based or actual plans to gain \
+some experience"	[label="This topic includes the creation and use of the DR plans, organization of the plans, occasions to review/rewrite plans, and examination \
+of sanitized plans. Opportunities should be given for students to write case-based or actual plans to gain some experience"];
+			"cluster_Disaster recovery" -> "Disaster recovery_This topic includes the creation and use of the DR plans, organization of the plans, occasions to review/rewrite \
+plans, and examination of sanitized plans. Opportunities should be given for students to write case-based or actual plans to gain \
+some experience"	[minlen=2];
+		}
+		subgraph "cluster_Business continuity" {
+			"cluster_Business continuity"	[label="Business continuity",
+				shape=box];
+			"Business continuity_Business continuity refers to the actions taken by senior management to specify the organization’s efforts \
+if a disaster renders the organization’s primary operating location unusable. Business continuity (BC) planning includes contingency \
+planning, incident response, emergency response, and backup and recovery efforts of an organization to ensure the availability of \
+critical resources during an emergency situation. Continuity of organizations in the wake of major events is also a component"	[label="Business continuity refers to the actions taken by senior management to specify the organization’s efforts if a disaster renders \
+the organization’s primary operating location unusable. Business continuity (BC) planning includes contingency planning, incident \
+response, emergency response, and backup and recovery efforts of an organization to ensure the availability of critical resources \
+during an emergency situation. Continuity of organizations in the wake of major events is also a component"];
+			"cluster_Business continuity" -> "Business continuity_Business continuity refers to the actions taken by senior management to specify the organization’s efforts \
+if a disaster renders the organization’s primary operating location unusable. Business continuity (BC) planning includes contingency \
+planning, incident response, emergency response, and backup and recovery efforts of an organization to ensure the availability of \
+critical resources during an emergency situation. Continuity of organizations in the wake of major events is also a component"	[minlen=1];
+			"Business continuity_Curricular content should include the creation and use of the BC plans, organization of the plans, occasions \
+to review/rewrite plans, and examination of sanitized plans. Opportunities should be given for students to write casebased or actual \
+plans to gain some experience"	[label="Curricular content should include the creation and use of the BC plans, organization of the plans, occasions to review/rewrite plans, \
+and examination of sanitized plans. Opportunities should be given for students to write casebased or actual plans to gain some experience"];
+			"cluster_Business continuity" -> "Business continuity_Curricular content should include the creation and use of the BC plans, organization of the plans, occasions \
+to review/rewrite plans, and examination of sanitized plans. Opportunities should be given for students to write casebased or actual \
+plans to gain some experience"	[minlen=2];
+		}
+		subgraph "cluster_Project management" {
+			"cluster_Project management"	[label="Project management",
+				shape=box];
+			"Project management_Project management is the application of knowledge, skills, tools, and techniques to project activities to meet \
+the project requirements"	[label="Project management is the application of knowledge, skills, tools, and techniques to project activities to meet the project requirements"];
+			"cluster_Project management" -> "Project management_Project management is the application of knowledge, skills, tools, and techniques to project activities to meet \
+the project requirements"	[minlen=1];
+			"Project management_This topic includes project integration; project scope management; project time and cost management; quality \
+management; human resource considerations; communications; risk management; and procurement management"	[label="This topic includes project integration; project scope management; project time and cost management; quality management; human resource \
+considerations; communications; risk management; and procurement management"];
+			"cluster_Project management" -> "Project management_This topic includes project integration; project scope management; project time and cost management; quality \
+management; human resource considerations; communications; risk management; and procurement management"	[minlen=2];
+		}
+		subgraph "cluster_Resource management" {
+			"cluster_Resource management"	[label="Resource management",
+				shape=box];
+			"Resource management_Resource management is the efficient and effective deployment and allocation of an organization’s resources \
+when and where they are needed. Such resources may include financial resources, inventory, human skills, production resources, or \
+information technology"	[label="Resource management is the efficient and effective deployment and allocation of an organization’s resources when and where they \
+are needed. Such resources may include financial resources, inventory, human skills, production resources, or information technology"];
+			"cluster_Resource management" -> "Resource management_Resource management is the efficient and effective deployment and allocation of an organization’s resources \
+when and where they are needed. Such resources may include financial resources, inventory, human skills, production resources, or \
+information technology"	[minlen=1];
+			"Resource management_This topic explains and develops current practices in resource management, specifically in the context of projects \
+typical of cybersecurity"	[label="This topic explains and develops current practices in resource management, specifically in the context of projects typical of cybersecurity"];
+			"cluster_Resource management" -> "Resource management_This topic explains and develops current practices in resource management, specifically in the context of projects \
+typical of cybersecurity"	[minlen=2];
+		}
+		subgraph "cluster_Security metrics" {
+			"cluster_Security metrics"	[label="Security metrics",
+				shape=box];
+			"Security metrics_Metrics, often described as measures, are effective tools to discern the effectiveness of the components of their \
+security programs and drive actions taken to improve a security program"	[label="Metrics, often described as measures, are effective tools to discern the effectiveness of the components of their security programs \
+and drive actions taken to improve a security program"];
+			"cluster_Security metrics" -> "Security metrics_Metrics, often described as measures, are effective tools to discern the effectiveness of the components of their \
+security programs and drive actions taken to improve a security program"	[minlen=1];
+			"Security metrics_This topic includes the elements of security metrics, and how to design, develop, validate and organize them. The \
+use of metrics in various contexts should be included such as-"	[label="This topic includes the elements of security metrics, and how to design, develop, validate and organize them. The use of metrics \
+in various contexts should be included such as-"];
+			"cluster_Security metrics" -> "Security metrics_This topic includes the elements of security metrics, and how to design, develop, validate and organize them. The \
+use of metrics in various contexts should be included such as-"	[minlen=2];
+			"Security metrics_Use of security metrics in decision making"	[label="Use of security metrics in decision making"];
+			"cluster_Security metrics" -> "Security metrics_Use of security metrics in decision making"	[minlen=3];
+			"Security metrics_Use of security metrics in strategic, tactical and operational planning"	[label="Use of security metrics in strategic, tactical and operational planning"];
+			"cluster_Security metrics" -> "Security metrics_Use of security metrics in strategic, tactical and operational planning"	[minlen=4];
+			"Security metrics_Use of security metrics in security program evaluation, audition, and performance"	[label="Use of security metrics in security program evaluation, audition, and performance"];
+			"cluster_Security metrics" -> "Security metrics_Use of security metrics in security program evaluation, audition, and performance"	[minlen=5];
+		}
+		subgraph "cluster_Quality assurance and quality control" {
+			"cluster_Quality assurance and quality control"	[label="Quality assurance and quality control",
+				shape=box];
+			"Quality assurance and quality control_Quality assurance (QA) and quality control (QC) are methods used to prevent mistakes which \
+might impact the character of a deliverable such as a software system; control specifically refers to methods used to increase the \
+quality of these systems"	[label="Quality assurance (QA) and quality control (QC) are methods used to prevent mistakes which might impact the character of a deliverable \
+such as a software system; control specifically refers to methods used to increase the quality of these systems"];
+			"cluster_Quality assurance and quality control" -> "Quality assurance and quality control_Quality assurance (QA) and quality control (QC) are methods used to prevent mistakes which \
+might impact the character of a deliverable such as a software system; control specifically refers to methods used to increase the \
+quality of these systems"	[minlen=1];
+			"Quality assurance and quality control_This topic explains and develop current practices in QA/QC, specifically in the context of \
+projects typical of cybersecurity"	[label="This topic explains and develop current practices in QA/QC, specifically in the context of projects typical of cybersecurity"];
+			"cluster_Quality assurance and quality control" -> "Quality assurance and quality control_This topic explains and develop current practices in QA/QC, specifically in the context of \
+projects typical of cybersecurity"	[minlen=2];
+		}
+		subgraph "cluster_This topic covers the avoidance and/or proper use of Fear Uncertainty, and Doubt (FUD) as a tool for awareness" {
+			"cluster_This topic covers the avoidance and/or proper use of Fear Uncertainty, and Doubt (FUD) as a tool for awareness"	[label="This topic covers the avoidance and/or proper use of Fear Uncertainty, and Doubt (FUD) as a tool for awareness",
+				shape=box];
+		}
+		subgraph "cluster_This topic includes physical security; desktop security; password security; wireless networks; security phishing; file sharing \
+and copyright; browsing; encryption; insider threat; international travel; social networking and social engineering" {
+			"cluster_This topic includes physical security; desktop security; password security; wireless networks; security phishing; file sharing \
+and copyright; browsing; encryption; insider threat; international travel; social networking and social engineering"	[label="This topic includes physical security; desktop security; password security; wireless networks; security phishing; file sharing and \
+copyright; browsing; encryption; insider threat; international travel; social networking and social engineering",
+				shape=box];
+		}
+		subgraph "cluster_Security hiring practices" {
+			"cluster_Security hiring practices"	[label="Security hiring practices",
+				shape=box];
+			"Security hiring practices_The practices, governed by policies, used by organizations to recruit, hire and train employees across \
+the organization"	[label="The practices, governed by policies, used by organizations to recruit, hire and train employees across the organization"];
+			"cluster_Security hiring practices" -> "Security hiring practices_The practices, governed by policies, used by organizations to recruit, hire and train employees across \
+the organization"	[minlen=1];
+			"Security hiring practices_This topic includes the principles of this topic, and students should gain experience with a review of \
+fictional resumes, fictional background checks, fictional acted-out interview techniques, fingerprint analysis results, and financial \
+review"	[label="This topic includes the principles of this topic, and students should gain experience with a review of fictional resumes, fictional \
+background checks, fictional acted-out interview techniques, fingerprint analysis results, and financial review"];
+			"cluster_Security hiring practices" -> "Security hiring practices_This topic includes the principles of this topic, and students should gain experience with a review of \
+fictional resumes, fictional background checks, fictional acted-out interview techniques, fingerprint analysis results, and financial \
+review"	[minlen=2];
+		}
+		subgraph "cluster_Security termination practices" {
+			"cluster_Security termination practices"	[label="Security termination practices",
+				shape=box];
+			"Security termination practices_The practices, governed by policies, used by organizations to terminate employees across the organization \
+including assigned asset recovery, removal of credentials and proactive prevention of data exfiltration"	[label="The practices, governed by policies, used by organizations to terminate employees across the organization including assigned asset \
+recovery, removal of credentials and proactive prevention of data exfiltration"];
+			"cluster_Security termination practices" -> "Security termination practices_The practices, governed by policies, used by organizations to terminate employees across the organization \
+including assigned asset recovery, removal of credentials and proactive prevention of data exfiltration"	[minlen=1];
+			"Security termination practices_Students should gain experience with practice sets and simulations"	[label="Students should gain experience with practice sets and simulations"];
+			"cluster_Security termination practices" -> "Security termination practices_Students should gain experience with practice sets and simulations"	[minlen=2];
+		}
+		subgraph "cluster_Third-party security" {
+			"cluster_Third-party security"	[label="Third-party security",
+				shape=box];
+			"Third-party security_Those practices of firms to manage the risks from contractors, consultants and the staff of key business partners"	[label="Those practices of firms to manage the risks from contractors, consultants and the staff of key business partners"];
+			"cluster_Third-party security" -> "Third-party security_Those practices of firms to manage the risks from contractors, consultants and the staff of key business partners"	[minlen=1];
+			"Third-party security_This topic includes the principles of this topic, and students should gain experience with practice sets and \
+simulations"	[label="This topic includes the principles of this topic, and students should gain experience with practice sets and simulations"];
+			"cluster_Third-party security" -> "Third-party security_This topic includes the principles of this topic, and students should gain experience with practice sets and \
+simulations"	[minlen=2];
+		}
+		subgraph "cluster_Security in review processes" {
+			"cluster_Security in review processes"	[label="Security in review processes",
+				shape=box];
+			"Security in review processes_Those practices of firms to manage the periodic review of staff members"	[label="Those practices of firms to manage the periodic review of staff members"];
+			"cluster_Security in review processes" -> "Security in review processes_Those practices of firms to manage the periodic review of staff members"	[minlen=1];
+			"Security in review processes_This topic includes the principles of this topic, and students should gain experience with practice \
+sets and simulations"	[label="This topic includes the principles of this topic, and students should gain experience with practice sets and simulations"];
+			"cluster_Security in review processes" -> "Security in review processes_This topic includes the principles of this topic, and students should gain experience with practice \
+sets and simulations"	[minlen=2];
+		}
+		subgraph "cluster_Special issue in privacy of employee personal information" {
+			"cluster_Special issue in privacy of employee personal information"	[label="Special issue in privacy of employee personal information",
+				shape=box];
+			"Special issue in privacy of employee personal information_Those practices of firms to secure the personal information of employees \
+and other stakeholders"	[label="Those practices of firms to secure the personal information of employees and other stakeholders"];
+			"cluster_Special issue in privacy of employee personal information" -> "Special issue in privacy of employee personal information_Those practices of firms to secure the personal information of employees \
+and other stakeholders"	[minlen=1];
+			"Special issue in privacy of employee personal information_This topic includes the principles of this topic, and students should \
+gain experience with practice sets and simulations"	[label="This topic includes the principles of this topic, and students should gain experience with practice sets and simulations"];
+			"cluster_Special issue in privacy of employee personal information" -> "Special issue in privacy of employee personal information_This topic includes the principles of this topic, and students should \
+gain experience with practice sets and simulations"	[minlen=2];
+		}
+		"cluster_Risk Management"	[label="Risk Management",
+			shape=diamond];
+		"cluster_Risk Management" -> "cluster_Risk identification";
+		"cluster_Risk Management" -> "cluster_Risk assessment and analysis";
+		"cluster_Risk Management" -> "cluster_Insider threats";
+		"cluster_Risk Management" -> "cluster_Risk measurement and evaluation models and methodologies";
+		"cluster_Risk Management" -> "cluster_Risk control";
+		"cluster_Security Governance and Policy"	[label="Security Governance and Policy",
+			shape=diamond];
+		"cluster_Security Governance and Policy" -> "cluster_Organizational context";
+		"cluster_Security Governance and Policy" -> cluster_Privacy;
+		"cluster_Security Governance and Policy" -> "cluster_Laws, ethics, and compliance";
+		"cluster_Security Governance and Policy" -> "cluster_Security governance";
+		"cluster_Security Governance and Policy" -> "cluster_Executive and board level communication";
+		"cluster_Security Governance and Policy" -> "cluster_Managerial policy";
+		"cluster_Analytical Tools"	[label="Analytical Tools",
+			shape=diamond];
+		"cluster_Analytical Tools" -> "cluster_Performance measurements (metrics)";
+		"cluster_Analytical Tools" -> "cluster_Data analytics";
+		"cluster_Analytical Tools" -> "cluster_Security intelligence";
+		"cluster_Analytical Tools" -> "cluster_Systems Administration";
+		"cluster_Analytical Tools" -> "cluster_Operating system administration";
+		"cluster_Analytical Tools" -> "cluster_Database system administration";
+		"cluster_Analytical Tools" -> "cluster_Network administration";
+		"cluster_Analytical Tools" -> "cluster_Cloud administration";
+		"cluster_Analytical Tools" -> "cluster_Cyber-physical system administration";
+		"cluster_Analytical Tools" -> "cluster_System hardening";
+		"cluster_Analytical Tools" -> cluster_Availability;
+		"cluster_Cybersecurity Planning"	[label="Cybersecurity Planning",
+			shape=diamond];
+		"cluster_Cybersecurity Planning" -> "cluster_Strategic planning";
+		"cluster_Cybersecurity Planning" -> "cluster_Operational and tactical management";
+		"cluster_Cybersecurity Planning" -> "cluster_Business Continuity, Disaster Recovery, and Incident Management";
+		"cluster_Cybersecurity Planning" -> "cluster_Incident response";
+		"cluster_Cybersecurity Planning" -> "cluster_Disaster recovery";
+		"cluster_Cybersecurity Planning" -> "cluster_Business continuity";
+		"cluster_Security Program Management"	[label="Security Program Management",
+			shape=diamond];
+		"cluster_Security Program Management" -> "cluster_Project management";
+		"cluster_Security Program Management" -> "cluster_Resource management";
+		"cluster_Security Program Management" -> "cluster_Security metrics";
+		"cluster_Security Program Management" -> "cluster_Quality assurance and quality control";
+		"cluster_Personnel Security"	[label="Personnel Security",
+			shape=diamond];
+		"cluster_Personnel Security" -> "cluster_This topic covers the avoidance and/or proper use of Fear Uncertainty, and Doubt (FUD) as a tool for awareness"	[minlen=1];
+		"cluster_Personnel Security" -> "cluster_This topic includes physical security; desktop security; password security; wireless networks; security phishing; file sharing \
+and copyright; browsing; encryption; insider threat; international travel; social networking and social engineering"	[minlen=2];
+		"cluster_Personnel Security" -> "cluster_Security hiring practices";
+		"cluster_Personnel Security" -> "cluster_Security termination practices";
+		"cluster_Personnel Security" -> "cluster_Third-party security";
+		"cluster_Personnel Security" -> "cluster_Security in review processes";
+		"cluster_Personnel Security" -> "cluster_Special issue in privacy of employee personal information";
+	}
+	"Organizational Security"	[label="Organizational Security",
+		shape=square];
+	"Organizational Security" -> "cluster_Risk Management";
+	"Organizational Security" -> "cluster_Security Governance and Policy";
+	"Organizational Security" -> "cluster_Analytical Tools";
+	"Organizational Security" -> "cluster_Cybersecurity Planning";
+	"Organizational Security" -> "cluster_Security Program Management";
+	"Organizational Security" -> "cluster_Personnel Security";
+}

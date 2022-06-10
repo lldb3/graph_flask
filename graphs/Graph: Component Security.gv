@@ -1,0 +1,127 @@
+digraph {
+	graph [compound=true];
+	node [fillcolor=blue];
+	subgraph "cluster_Component Security" {
+		subgraph "cluster_Component design security" {
+			"cluster_Component design security"	[label="Component design security",
+				shape=box];
+			"Component design security_This topic covers threats to the security of component design artifacts (e.g., schematics, netlists, and \
+masks) such as hardware Trojans, intellectual property piracy, reverse engineering, tampering, side-channel analysis and counterfeiting. \
+It also introduces techniques for protecting components from unauthorized access and use"	[label="This topic covers threats to the security of component design artifacts (e.g., schematics, netlists, and masks) such as hardware \
+Trojans, intellectual property piracy, reverse engineering, tampering, side-channel analysis and counterfeiting. It also introduces \
+techniques for protecting components from unauthorized access and use"];
+			"cluster_Component design security" -> "Component design security_This topic covers threats to the security of component design artifacts (e.g., schematics, netlists, and \
+masks) such as hardware Trojans, intellectual property piracy, reverse engineering, tampering, side-channel analysis and counterfeiting. \
+It also introduces techniques for protecting components from unauthorized access and use"	[minlen=1];
+		}
+		subgraph "cluster_Principles of secure component design" {
+			"cluster_Principles of secure component design"	[label="Principles of secure component design",
+				shape=box];
+			"Principles of secure component design_This topic covers principles such as establishing a sound security policy, treating security \
+as an integral part of system design, trusted computing platforms, chain of trust, reducing risk, layered security, simplicity of \
+design, minimizing system elements to be trusted, and avoiding unnecessary security mechanisms"	[label="This topic covers principles such as establishing a sound security policy, treating security as an integral part of system design, \
+trusted computing platforms, chain of trust, reducing risk, layered security, simplicity of design, minimizing system elements to \
+be trusted, and avoiding unnecessary security mechanisms"];
+			"cluster_Principles of secure component design" -> "Principles of secure component design_This topic covers principles such as establishing a sound security policy, treating security \
+as an integral part of system design, trusted computing platforms, chain of trust, reducing risk, layered security, simplicity of \
+design, minimizing system elements to be trusted, and avoiding unnecessary security mechanisms"	[minlen=1];
+		}
+		subgraph "cluster_Component identification" {
+			"cluster_Component identification"	[label="Component identification",
+				shape=box];
+			"Component identification_This topic covers techniques such as watermarking, fingerprinting, metering, encrypted IDs, and physical \
+unclonable functions for protecting components against intellectual property theft and ensuring component authenticity"	[label="This topic covers techniques such as watermarking, fingerprinting, metering, encrypted IDs, and physical unclonable functions for \
+protecting components against intellectual property theft and ensuring component authenticity"];
+			"cluster_Component identification" -> "Component identification_This topic covers techniques such as watermarking, fingerprinting, metering, encrypted IDs, and physical \
+unclonable functions for protecting components against intellectual property theft and ensuring component authenticity"	[minlen=1];
+		}
+		subgraph "cluster_Anti-reverse engineering techniques" {
+			"cluster_Anti-reverse engineering techniques"	[label="Anti-reverse engineering techniques",
+				shape=box];
+			"Anti-reverse engineering techniques_This topic covers techniques such as design obfuscation and camouflaging for making component \
+designs and implementations difficult to reverse engineer"	[label="This topic covers techniques such as design obfuscation and camouflaging for making component designs and implementations difficult \
+to reverse engineer"];
+			"cluster_Anti-reverse engineering techniques" -> "Anti-reverse engineering techniques_This topic covers techniques such as design obfuscation and camouflaging for making component \
+designs and implementations difficult to reverse engineer"	[minlen=1];
+		}
+		subgraph "cluster_Side-channel attack mitigation" {
+			"cluster_Side-channel attack mitigation"	[label="Side-channel attack mitigation",
+				shape=box];
+			"Side-channel attack mitigation_This topic covers techniques for defending against side-channel attacks primarily targeted at cryptographic \
+algorithms. Defensive techniques include leakage reduction, noise injection, frequent key updates, physical random functions, and \
+secure scan chains"	[label="This topic covers techniques for defending against side-channel attacks primarily targeted at cryptographic algorithms. Defensive \
+techniques include leakage reduction, noise injection, frequent key updates, physical random functions, and secure scan chains"];
+			"cluster_Side-channel attack mitigation" -> "Side-channel attack mitigation_This topic covers techniques for defending against side-channel attacks primarily targeted at cryptographic \
+algorithms. Defensive techniques include leakage reduction, noise injection, frequent key updates, physical random functions, and \
+secure scan chains"	[minlen=1];
+		}
+		subgraph "cluster_Anti-tamper technologies" {
+			"cluster_Anti-tamper technologies"	[label="Anti-tamper technologies",
+				shape=box];
+			"Anti-tamper technologies_This topic covers techniques for making components resistant to physical and electronic attacks including \
+physical protection techniques, tamper evident systems and tamper responding systems"	[label="This topic covers techniques for making components resistant to physical and electronic attacks including physical protection techniques, \
+tamper evident systems and tamper responding systems"];
+			"cluster_Anti-tamper technologies" -> "Anti-tamper technologies_This topic covers techniques for making components resistant to physical and electronic attacks including \
+physical protection techniques, tamper evident systems and tamper responding systems"	[minlen=1];
+		}
+		subgraph "cluster_Supply chain risks" {
+			"cluster_Supply chain risks"	[label="Supply chain risks",
+				shape=box];
+			"Supply chain risks_Security threats and risks to both hardware and software in component procurement"	[label="Security threats and risks to both hardware and software in component procurement"];
+			"cluster_Supply chain risks" -> "Supply chain risks_Security threats and risks to both hardware and software in component procurement"	[minlen=1];
+		}
+		subgraph "cluster_Supply chain security" {
+			"cluster_Supply chain security"	[label="Supply chain security",
+				shape=box];
+			"Supply chain security_Strategies such as physical security, split manufacturing, traceability, cargo screening and validation, and \
+inspections to detect and prevent compromises of component security during the procurement process"	[label="Strategies such as physical security, split manufacturing, traceability, cargo screening and validation, and inspections to detect \
+and prevent compromises of component security during the procurement process"];
+			"cluster_Supply chain security" -> "Supply chain security_Strategies such as physical security, split manufacturing, traceability, cargo screening and validation, and \
+inspections to detect and prevent compromises of component security during the procurement process"	[minlen=1];
+		}
+		subgraph "cluster_Supplier vetting" {
+			"cluster_Supplier vetting"	[label="Supplier vetting",
+				shape=box];
+			"Supplier vetting_This topic includes strategies such as supplier credentialing to establish trusted suppliers and transporters of \
+components"	[label="This topic includes strategies such as supplier credentialing to establish trusted suppliers and transporters of components"];
+			"cluster_Supplier vetting" -> "Supplier vetting_This topic includes strategies such as supplier credentialing to establish trusted suppliers and transporters of \
+components"	[minlen=1];
+		}
+		subgraph "cluster_Principles of unit testing" {
+			"cluster_Principles of unit testing"	[label="Principles of unit testing",
+				shape=box];
+			"Principles of unit testing_Unit testing tools and techniques as distinguished from system-level testing"	[label="Unit testing tools and techniques as distinguished from system-level testing"];
+			"cluster_Principles of unit testing" -> "Principles of unit testing_Unit testing tools and techniques as distinguished from system-level testing"	[minlen=1];
+		}
+		subgraph "cluster_Security testing" {
+			"cluster_Security testing"	[label="Security testing",
+				shape=box];
+			"Security testing_Tools and techniques such as fuzz testing for testing the security properties of a component beyond its functional \
+correctness"	[label="Tools and techniques such as fuzz testing for testing the security properties of a component beyond its functional correctness"];
+			"cluster_Security testing" -> "Security testing_Tools and techniques such as fuzz testing for testing the security properties of a component beyond its functional \
+correctness"	[minlen=1];
+		}
+		"cluster_Component Design"	[label="Component Design",
+			shape=diamond];
+		"cluster_Component Design" -> "cluster_Component design security";
+		"cluster_Component Design" -> "cluster_Principles of secure component design";
+		"cluster_Component Design" -> "cluster_Component identification";
+		"cluster_Component Design" -> "cluster_Anti-reverse engineering techniques";
+		"cluster_Component Design" -> "cluster_Side-channel attack mitigation";
+		"cluster_Component Design" -> "cluster_Anti-tamper technologies";
+		"cluster_Component Procurement"	[label="Component Procurement",
+			shape=diamond];
+		"cluster_Component Procurement" -> "cluster_Supply chain risks";
+		"cluster_Component Procurement" -> "cluster_Supply chain security";
+		"cluster_Component Procurement" -> "cluster_Supplier vetting";
+		"cluster_Component Testing"	[label="Component Testing",
+			shape=diamond];
+		"cluster_Component Testing" -> "cluster_Principles of unit testing";
+		"cluster_Component Testing" -> "cluster_Security testing";
+	}
+	"Component Security"	[label="Component Security",
+		shape=square];
+	"Component Security" -> "cluster_Component Design";
+	"Component Security" -> "cluster_Component Procurement";
+	"Component Security" -> "cluster_Component Testing";
+}

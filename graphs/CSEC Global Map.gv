@@ -1,0 +1,368 @@
+digraph {
+	graph [compound=true];
+	node [fillcolor=blue];
+	subgraph "cluster_Data Security" {
+		subgraph "cluster_Basic concepts" {
+			"cluster_Basic concepts"	[label="Basic concepts",
+				shape=box];
+		}
+		subgraph cluster_Introduction {
+			cluster_Introduction	[label=Introduction,
+				shape=box];
+		}
+		subgraph "cluster_Authentication strength" {
+			"cluster_Authentication strength"	[label="Authentication strength",
+				shape=box];
+		}
+		subgraph "cluster_Physical data security" {
+			"cluster_Physical data security"	[label="Physical data security",
+				shape=box];
+		}
+		subgraph "cluster_Application and transport layer protocols" {
+			"cluster_Application and transport layer protocols"	[label="Application and transport layer protocols",
+				shape=box];
+		}
+		subgraph cluster_Overview {
+			cluster_Overview	[label=Overview,
+				shape=box];
+		}
+		cluster_Cryptography	[label=Cryptography,
+			shape=diamond];
+		cluster_Cryptography -> "cluster_Basic concepts"	[minlen=1];
+		"cluster_Digital Forensics"	[label="Digital Forensics",
+			shape=diamond];
+		"cluster_Digital Forensics" -> cluster_Introduction	[minlen=1];
+		"cluster_Data Integrity and Authentication"	[label="Data Integrity and Authentication",
+			shape=diamond];
+		"cluster_Data Integrity and Authentication" -> "cluster_Authentication strength"	[minlen=1];
+		"cluster_Access Control"	[label="Access Control",
+			shape=diamond];
+		"cluster_Access Control" -> "cluster_Physical data security"	[minlen=1];
+		"cluster_Secure Communication Protocols"	[label="Secure Communication Protocols",
+			shape=diamond];
+		"cluster_Secure Communication Protocols" -> "cluster_Application and transport layer protocols"	[minlen=1];
+		"cluster_Data Privacy"	[label="Data Privacy",
+			shape=diamond];
+		"cluster_Data Privacy" -> cluster_Overview	[minlen=1];
+	}
+	subgraph "cluster_Software Security" {
+		subgraph "cluster_Least privilege" {
+			"cluster_Least privilege"	[label="Least privilege",
+				shape=box];
+		}
+		subgraph "cluster_Derivation of security requirements" {
+			"cluster_Derivation of security requirements"	[label="Derivation of security requirements",
+				shape=box];
+		}
+		subgraph "cluster_Validating input and checking its representation" {
+			"cluster_Validating input and checking its representation"	[label="Validating input and checking its representation",
+				shape=box];
+		}
+		subgraph "cluster_Static and dynamic analysis" {
+			"cluster_Static and dynamic analysis"	[label="Static and dynamic analysis",
+				shape=box];
+		}
+		subgraph cluster_Configuring {
+			cluster_Configuring	[label=Configuring,
+				shape=box];
+		}
+		subgraph "cluster_Installation documents" {
+			"cluster_Installation documents"	[label="Installation documents",
+				shape=box];
+		}
+		"cluster_Fundamental Principles"	[label="Fundamental Principles",
+			shape=diamond];
+		"cluster_Fundamental Principles" -> "cluster_Least privilege"	[minlen=1];
+		cluster_Design	[label=Design,
+			shape=diamond];
+		cluster_Design -> "cluster_Derivation of security requirements"	[minlen=1];
+		cluster_Implementation	[label=Implementation,
+			shape=diamond];
+		cluster_Implementation -> "cluster_Validating input and checking its representation"	[minlen=1];
+		"cluster_Analysis and Testing"	[label="Analysis and Testing",
+			shape=diamond];
+		"cluster_Analysis and Testing" -> "cluster_Static and dynamic analysis"	[minlen=1];
+		"cluster_Deployment and Maintenance"	[label="Deployment and Maintenance",
+			shape=diamond];
+		"cluster_Deployment and Maintenance" -> cluster_Configuring	[minlen=1];
+		cluster_Documentation	[label=Documentation,
+			shape=diamond];
+		cluster_Documentation -> "cluster_Installation documents"	[minlen=1];
+	}
+	subgraph "cluster_Component Security" {
+		subgraph "cluster_Component design security" {
+			"cluster_Component design security"	[label="Component design security",
+				shape=box];
+		}
+		subgraph "cluster_Supply chain risks" {
+			"cluster_Supply chain risks"	[label="Supply chain risks",
+				shape=box];
+		}
+		subgraph "cluster_Principles of unit testing" {
+			"cluster_Principles of unit testing"	[label="Principles of unit testing",
+				shape=box];
+		}
+		"cluster_Component Design"	[label="Component Design",
+			shape=diamond];
+		"cluster_Component Design" -> "cluster_Component design security"	[minlen=1];
+		"cluster_Component Procurement"	[label="Component Procurement",
+			shape=diamond];
+		"cluster_Component Procurement" -> "cluster_Supply chain risks"	[minlen=1];
+		"cluster_Component Testing"	[label="Component Testing",
+			shape=diamond];
+		"cluster_Component Testing" -> "cluster_Principles of unit testing"	[minlen=1];
+	}
+	subgraph "cluster_Connection Security" {
+		subgraph "cluster_Transmission in a medium" {
+			"cluster_Transmission in a medium"	[label="Transmission in a medium",
+				shape=box];
+		}
+		subgraph "cluster_Hardware characteristics and materials" {
+			"cluster_Hardware characteristics and materials"	[label="Hardware characteristics and materials",
+				shape=box];
+		}
+		subgraph "cluster_Standard architectures" {
+			"cluster_Standard architectures"	[label="Standard architectures",
+				shape=box];
+		}
+		subgraph "cluster_General concepts" {
+			"cluster_General concepts"	[label="General concepts",
+				shape=box];
+		}
+		subgraph "cluster_IEEE 802/ISO networks" {
+			"cluster_IEEE 802/ISO networks"	[label="IEEE 802/ISO networks",
+				shape=box];
+		}
+		subgraph "cluster_Concept of a service" {
+			"cluster_Concept of a service"	[label="Concept of a service",
+				shape=box];
+		}
+		"cluster_Physical Media"	[label="Physical Media",
+			shape=diamond];
+		"cluster_Physical Media" -> "cluster_Transmission in a medium"	[minlen=1];
+		"cluster_Physical Interfaces and Connectors"	[label="Physical Interfaces and Connectors",
+			shape=diamond];
+		"cluster_Physical Interfaces and Connectors" -> "cluster_Hardware characteristics and materials"	[minlen=1];
+		"cluster_Hardware Architecture"	[label="Hardware Architecture",
+			shape=diamond];
+		"cluster_Hardware Architecture" -> "cluster_Standard architectures"	[minlen=1];
+		"cluster_Distributed Systems Architecture interconnection"	[label="Distributed Systems Architecture interconnection",
+			shape=diamond];
+		"cluster_Distributed Systems Architecture interconnection" -> "cluster_General concepts";
+		"cluster_Network Architecture"	[label="Network Architecture",
+			shape=diamond];
+		"cluster_Network Architecture" -> "cluster_General concepts";
+		"cluster_Network Implementations"	[label="Network Implementations",
+			shape=diamond];
+		"cluster_Network Implementations" -> "cluster_IEEE 802/ISO networks"	[minlen=1];
+		"cluster_Network Services"	[label="Network Services",
+			shape=diamond];
+		"cluster_Network Services" -> "cluster_Concept of a service"	[minlen=1];
+	}
+	subgraph "cluster_System Security" {
+		subgraph "cluster_What is a system?" {
+			"cluster_What is a system?"	[label="What is a system?",
+				shape=box];
+		}
+		subgraph "cluster_Policy models" {
+			"cluster_Policy models"	[label="Policy models",
+				shape=box];
+		}
+		subgraph "cluster_Authentication methods" {
+			"cluster_Authentication methods"	[label="Authentication methods",
+				shape=box];
+		}
+		subgraph cluster_Decommissioning {
+			cluster_Decommissioning	[label=Decommissioning,
+				shape=box];
+		}
+		subgraph "cluster_Validating requirements" {
+			"cluster_Validating requirements"	[label="Validating requirements",
+				shape=box];
+		}
+		"cluster_System Thinking"	[label="System Thinking",
+			shape=diamond];
+		"cluster_System Thinking" -> "cluster_What is a system?"	[minlen=1];
+		"cluster_System Management"	[label="System Management",
+			shape=diamond];
+		"cluster_System Management" -> "cluster_Policy models"	[minlen=1];
+		"cluster_System Access"	[label="System Access",
+			shape=diamond];
+		"cluster_System Access" -> "cluster_Authentication methods"	[minlen=1];
+		"cluster_System Retirement"	[label="System Retirement",
+			shape=diamond];
+		"cluster_System Retirement" -> cluster_Decommissioning	[minlen=1];
+		"cluster_System Testing"	[label="System Testing",
+			shape=diamond];
+		"cluster_System Testing" -> "cluster_Validating requirements"	[minlen=1];
+	}
+	subgraph "cluster_Human Security" {
+		subgraph "cluster_Identification and authentication of people and devices" {
+			"cluster_Identification and authentication of people and devices"	[label="Identification and authentication of people and devices",
+				shape=box];
+		}
+		subgraph "cluster_Types of social engineering attacks" {
+			"cluster_Types of social engineering attacks"	[label="Types of social engineering attacks",
+				shape=box];
+		}
+		subgraph "cluster_System misuse and user misbehavior" {
+			"cluster_System misuse and user misbehavior"	[label="System misuse and user misbehavior",
+				shape=box];
+		}
+		subgraph "cluster_Risk perception and communication" {
+			"cluster_Risk perception and communication"	[label="Risk perception and communication",
+				shape=box];
+		}
+		subgraph "cluster_Social theories of privacy" {
+			"cluster_Social theories of privacy"	[label="Social theories of privacy",
+				shape=box];
+		}
+		subgraph "cluster_Sensitive personal data (SPD)" {
+			"cluster_Sensitive personal data (SPD)"	[label="Sensitive personal data (SPD)",
+				shape=box];
+		}
+		"cluster_Identity Management"	[label="Identity Management",
+			shape=diamond];
+		"cluster_Identity Management" -> "cluster_Identification and authentication of people and devices"	[minlen=1];
+		"cluster_Social Engineering"	[label="Social Engineering",
+			shape=diamond];
+		"cluster_Social Engineering" -> "cluster_Types of social engineering attacks"	[minlen=1];
+		"cluster_Personal Compliance with Cybersecurity Rules/Policy/ Ethical Norms"	[label="Personal Compliance with Cybersecurity Rules/Policy/ Ethical Norms",
+			shape=diamond];
+		"cluster_Personal Compliance with Cybersecurity Rules/Policy/ Ethical Norms" -> "cluster_System misuse and user misbehavior"	[minlen=1];
+		"cluster_Awareness and Understanding"	[label="Awareness and Understanding",
+			shape=diamond];
+		"cluster_Awareness and Understanding" -> "cluster_Risk perception and communication"	[minlen=1];
+		"cluster_Social and Behavioral Privacy"	[label="Social and Behavioral Privacy",
+			shape=diamond];
+		"cluster_Social and Behavioral Privacy" -> "cluster_Social theories of privacy"	[minlen=1];
+		"cluster_Personal Data Privacy and Security"	[label="Personal Data Privacy and Security",
+			shape=diamond];
+		"cluster_Personal Data Privacy and Security" -> "cluster_Sensitive personal data (SPD)"	[minlen=1];
+	}
+	subgraph "cluster_Organizational Security" {
+		subgraph "cluster_Risk identification" {
+			"cluster_Risk identification"	[label="Risk identification",
+				shape=box];
+		}
+		subgraph "cluster_Organizational context" {
+			"cluster_Organizational context"	[label="Organizational context",
+				shape=box];
+		}
+		subgraph "cluster_Performance measurements (metrics)" {
+			"cluster_Performance measurements (metrics)"	[label="Performance measurements (metrics)",
+				shape=box];
+		}
+		subgraph "cluster_Strategic planning" {
+			"cluster_Strategic planning"	[label="Strategic planning",
+				shape=box];
+		}
+		subgraph "cluster_Project management" {
+			"cluster_Project management"	[label="Project management",
+				shape=box];
+		}
+		subgraph "cluster_This topic covers the avoidance and/or proper use of Fear Uncertainty, and Doubt (FUD) as a tool for awareness" {
+			"cluster_This topic covers the avoidance and/or proper use of Fear Uncertainty, and Doubt (FUD) as a tool for awareness"	[label="This topic covers the avoidance and/or proper use of Fear Uncertainty, and Doubt (FUD) as a tool for awareness",
+				shape=box];
+		}
+		"cluster_Risk Management"	[label="Risk Management",
+			shape=diamond];
+		"cluster_Risk Management" -> "cluster_Risk identification"	[minlen=1];
+		"cluster_Security Governance and Policy"	[label="Security Governance and Policy",
+			shape=diamond];
+		"cluster_Security Governance and Policy" -> "cluster_Organizational context"	[minlen=1];
+		"cluster_Analytical Tools"	[label="Analytical Tools",
+			shape=diamond];
+		"cluster_Analytical Tools" -> "cluster_Performance measurements (metrics)"	[minlen=1];
+		"cluster_Cybersecurity Planning"	[label="Cybersecurity Planning",
+			shape=diamond];
+		"cluster_Cybersecurity Planning" -> "cluster_Strategic planning"	[minlen=1];
+		"cluster_Security Program Management"	[label="Security Program Management",
+			shape=diamond];
+		"cluster_Security Program Management" -> "cluster_Project management"	[minlen=1];
+		"cluster_Personnel Security"	[label="Personnel Security",
+			shape=diamond];
+		"cluster_Personnel Security" -> "cluster_This topic covers the avoidance and/or proper use of Fear Uncertainty, and Doubt (FUD) as a tool for awareness"	[minlen=1];
+	}
+	subgraph "cluster_Societal Security" {
+		subgraph "cluster_Cybercriminal behavior" {
+			"cluster_Cybercriminal behavior"	[label="Cybercriminal behavior",
+				shape=box];
+		}
+		subgraph "cluster_Constitutional foundations of cyber law" {
+			"cluster_Constitutional foundations of cyber law"	[label="Constitutional foundations of cyber law",
+				shape=box];
+		}
+		subgraph "cluster_International Cyber Policy" {
+			"cluster_International Cyber Policy"	[label="International Cyber Policy",
+				shape=box];
+		}
+		cluster_Cybercrime	[label=Cybercrime,
+			shape=diamond];
+		cluster_Cybercrime -> "cluster_Cybercriminal behavior"	[minlen=1];
+		"cluster_Cyber Law"	[label="Cyber Law",
+			shape=diamond];
+		"cluster_Cyber Law" -> "cluster_Constitutional foundations of cyber law"	[minlen=1];
+		"cluster_Cyber Policy"	[label="Cyber Policy",
+			shape=diamond];
+		"cluster_Cyber Policy" -> "cluster_International Cyber Policy"	[minlen=1];
+	}
+	"cluster_Data Security"	[label="Data Security",
+		shape=square];
+	"cluster_Data Security" -> cluster_Cryptography;
+	"cluster_Data Security" -> "cluster_Digital Forensics";
+	"cluster_Data Security" -> "cluster_Data Integrity and Authentication";
+	"cluster_Data Security" -> "cluster_Access Control";
+	"cluster_Data Security" -> "cluster_Secure Communication Protocols";
+	"cluster_Data Security" -> "cluster_Data Privacy";
+	"cluster_Software Security"	[label="Software Security",
+		shape=square];
+	"cluster_Software Security" -> "cluster_Fundamental Principles";
+	"cluster_Software Security" -> cluster_Design;
+	"cluster_Software Security" -> cluster_Implementation;
+	"cluster_Software Security" -> "cluster_Analysis and Testing";
+	"cluster_Software Security" -> "cluster_Deployment and Maintenance";
+	"cluster_Software Security" -> cluster_Documentation;
+	"cluster_Component Security"	[label="Component Security",
+		shape=square];
+	"cluster_Component Security" -> "cluster_Component Design";
+	"cluster_Component Security" -> "cluster_Component Procurement";
+	"cluster_Component Security" -> "cluster_Component Testing";
+	"cluster_Connection Security"	[label="Connection Security",
+		shape=square];
+	"cluster_Connection Security" -> "cluster_Physical Media";
+	"cluster_Connection Security" -> "cluster_Physical Interfaces and Connectors";
+	"cluster_Connection Security" -> "cluster_Hardware Architecture";
+	"cluster_Connection Security" -> "cluster_Distributed Systems Architecture interconnection";
+	"cluster_Connection Security" -> "cluster_Network Architecture";
+	"cluster_Connection Security" -> "cluster_Network Implementations";
+	"cluster_Connection Security" -> "cluster_Network Services";
+	"cluster_System Security"	[label="System Security",
+		shape=square];
+	"cluster_System Security" -> "cluster_System Thinking";
+	"cluster_System Security" -> "cluster_System Management";
+	"cluster_System Security" -> "cluster_System Access";
+	"cluster_System Security" -> "cluster_System Retirement";
+	"cluster_System Security" -> "cluster_System Testing";
+	"cluster_Human Security"	[label="Human Security",
+		shape=square];
+	"cluster_Human Security" -> "cluster_Identity Management";
+	"cluster_Human Security" -> "cluster_Social Engineering";
+	"cluster_Human Security" -> "cluster_Personal Compliance with Cybersecurity Rules/Policy/ Ethical Norms";
+	"cluster_Human Security" -> "cluster_Awareness and Understanding";
+	"cluster_Human Security" -> "cluster_Social and Behavioral Privacy";
+	"cluster_Human Security" -> "cluster_Personal Data Privacy and Security";
+	"cluster_Organizational Security"	[label="Organizational Security",
+		shape=square];
+	"cluster_Organizational Security" -> "cluster_Risk Management";
+	"cluster_Organizational Security" -> "cluster_Security Governance and Policy";
+	"cluster_Organizational Security" -> "cluster_Analytical Tools";
+	"cluster_Organizational Security" -> "cluster_Cybersecurity Planning";
+	"cluster_Organizational Security" -> "cluster_Security Program Management";
+	"cluster_Organizational Security" -> "cluster_Personnel Security";
+	"cluster_Societal Security"	[label="Societal Security",
+		shape=square];
+	"cluster_Societal Security" -> cluster_Cybercrime;
+	"cluster_Societal Security" -> "cluster_Cyber Law";
+	"cluster_Societal Security" -> "cluster_Cyber Policy";
+}

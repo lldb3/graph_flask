@@ -1,0 +1,551 @@
+digraph {
+	graph [compound=true];
+	node [fillcolor=blue];
+	subgraph "cluster_Data Security" {
+		subgraph "cluster_Basic concepts" {
+			"cluster_Basic concepts"	[label="Basic concepts",
+				shape=box];
+			"Basic concepts_Encryption/decryption, sender authentication, data integrity, non-repudiation"	[label="Encryption/decryption, sender authentication, data integrity, non-repudiation"];
+			"cluster_Basic concepts" -> "Basic concepts_Encryption/decryption, sender authentication, data integrity, non-repudiation"	[minlen=1];
+			"Basic concepts_Attack classification (ciphertext-only, known plaintext, chosen plaintext, chosen ciphertext)"	[label="Attack classification (ciphertext-only, known plaintext, chosen plaintext, chosen ciphertext)"];
+			"cluster_Basic concepts" -> "Basic concepts_Attack classification (ciphertext-only, known plaintext, chosen plaintext, chosen ciphertext)"	[minlen=2];
+			"Basic concepts_Secret key (symmetric), cryptography and publickey (asymmetric) cryptography, Information-theoretic security (one-time \
+pad, Shannon Theorem)"	[label="Secret key (symmetric), cryptography and publickey (asymmetric) cryptography, Information-theoretic security (one-time pad, Shannon \
+Theorem)"];
+			"cluster_Basic concepts" -> "Basic concepts_Secret key (symmetric), cryptography and publickey (asymmetric) cryptography, Information-theoretic security (one-time \
+pad, Shannon Theorem)"	[minlen=3];
+			"Basic concepts_Computational security"	[label="Computational security"];
+			"cluster_Basic concepts" -> "Basic concepts_Computational security"	[minlen=4];
+		}
+		subgraph "cluster_Advanced concepts" {
+			"cluster_Advanced concepts"	[label="Advanced concepts",
+				shape=box];
+			"Advanced concepts_Advanced protocols- Zero-knowledge proofs, and protocols, Secret sharing, Commitment, Oblivious transfer, Secure \
+multiparty computation"	[label="Advanced protocols- Zero-knowledge proofs, and protocols, Secret sharing, Commitment, Oblivious transfer, Secure multiparty computation"];
+			"cluster_Advanced concepts" -> "Advanced concepts_Advanced protocols- Zero-knowledge proofs, and protocols, Secret sharing, Commitment, Oblivious transfer, Secure \
+multiparty computation"	[minlen=1];
+			"Advanced concepts_Advanced recent developments- fully homomorphic encryption, obfuscation, quantum cryptography, and KLJN scheme"	[label="Advanced recent developments- fully homomorphic encryption, obfuscation, quantum cryptography, and KLJN scheme"];
+			"cluster_Advanced concepts" -> "Advanced concepts_Advanced recent developments- fully homomorphic encryption, obfuscation, quantum cryptography, and KLJN scheme"	[minlen=2];
+		}
+		subgraph "cluster_Mathematical background" {
+			"cluster_Mathematical background"	[label="Mathematical background",
+				shape=box];
+			"Mathematical background_Modular arithmetic"	[label="Modular arithmetic"];
+			"cluster_Mathematical background" -> "Mathematical background_Modular arithmetic"	[minlen=1];
+			"Mathematical background_Fermat, Euler theorems"	[label="Fermat, Euler theorems"];
+			"cluster_Mathematical background" -> "Mathematical background_Fermat, Euler theorems"	[minlen=2];
+			"Mathematical background_Primitive roots, discrete log problem"	[label="Primitive roots, discrete log problem"];
+			"cluster_Mathematical background" -> "Mathematical background_Primitive roots, discrete log problem"	[minlen=3];
+			"Mathematical background_Primality testing, factoring large integers"	[label="Primality testing, factoring large integers"];
+			"cluster_Mathematical background" -> "Mathematical background_Primality testing, factoring large integers"	[minlen=4];
+			"Mathematical background_Elliptic curves, lattices and hard lattice problems"	[label="Elliptic curves, lattices and hard lattice problems"];
+			"cluster_Mathematical background" -> "Mathematical background_Elliptic curves, lattices and hard lattice problems"	[minlen=5];
+			"Mathematical background_Abstract algebra, finite fields"	[label="Abstract algebra, finite fields"];
+			"cluster_Mathematical background" -> "Mathematical background_Abstract algebra, finite fields"	[minlen=6];
+			"Mathematical background_Information theory"	[label="Information theory"];
+			"cluster_Mathematical background" -> "Mathematical background_Information theory"	[minlen=7];
+		}
+		subgraph "cluster_Historical ciphers" {
+			"cluster_Historical ciphers"	[label="Historical ciphers",
+				shape=box];
+			"Historical ciphers_Shift cipher, affine cipher, substitution cipher, Vigenere cipher, ROT-13"	[label="Shift cipher, affine cipher, substitution cipher, Vigenere cipher, ROT-13"];
+			"cluster_Historical ciphers" -> "Historical ciphers_Shift cipher, affine cipher, substitution cipher, Vigenere cipher, ROT-13"	[minlen=1];
+			"Historical ciphers_Hill cipher, Enigma machine, and others"	[label="Hill cipher, Enigma machine, and others"];
+			"cluster_Historical ciphers" -> "Historical ciphers_Hill cipher, Enigma machine, and others"	[minlen=2];
+		}
+		subgraph "cluster_Symmetric (private key) ciphers" {
+			"cluster_Symmetric (private key) ciphers"	[label="Symmetric (private key) ciphers",
+				shape=box];
+			"Symmetric (private key) ciphers_B block ciphers and stream ciphers (pseudorandom permutations, pseudo-random generators)"	[label="B block ciphers and stream ciphers (pseudorandom permutations, pseudo-random generators)"];
+			"cluster_Symmetric (private key) ciphers" -> "Symmetric (private key) ciphers_B block ciphers and stream ciphers (pseudorandom permutations, pseudo-random generators)"	[minlen=1];
+			"Symmetric (private key) ciphers_Feistel networks, Data Encryption Standard (DES)"	[label="Feistel networks, Data Encryption Standard (DES)"];
+			"cluster_Symmetric (private key) ciphers" -> "Symmetric (private key) ciphers_Feistel networks, Data Encryption Standard (DES)"	[minlen=2];
+			"Symmetric (private key) ciphers_Advanced Encryption Standard (AES)"	[label="Advanced Encryption Standard (AES)"];
+			"cluster_Symmetric (private key) ciphers" -> "Symmetric (private key) ciphers_Advanced Encryption Standard (AES)"	[minlen=3];
+			"Symmetric (private key) ciphers_Modes of operation for block ciphers"	[label="Modes of operation for block ciphers"];
+			"cluster_Symmetric (private key) ciphers" -> "Symmetric (private key) ciphers_Modes of operation for block ciphers"	[minlen=4];
+			"Symmetric (private key) ciphers_Differential attack, linear attack"	[label="Differential attack, linear attack"];
+			"cluster_Symmetric (private key) ciphers" -> "Symmetric (private key) ciphers_Differential attack, linear attack"	[minlen=5];
+			"Symmetric (private key) ciphers_Stream ciphers, linear feedback shift registers, RC4"	[label="Stream ciphers, linear feedback shift registers, RC4"];
+			"cluster_Symmetric (private key) ciphers" -> "Symmetric (private key) ciphers_Stream ciphers, linear feedback shift registers, RC4"	[minlen=6];
+		}
+		subgraph "cluster_Asymmetric (public-key) ciphers" {
+			"cluster_Asymmetric (public-key) ciphers"	[label="Asymmetric (public-key) ciphers",
+				shape=box];
+			"Asymmetric (public-key) ciphers_Theoretical concepts (Computational complexity, one-way trapdoor functions)"	[label="Theoretical concepts (Computational complexity, one-way trapdoor functions)"];
+			"cluster_Asymmetric (public-key) ciphers" -> "Asymmetric (public-key) ciphers_Theoretical concepts (Computational complexity, one-way trapdoor functions)"	[minlen=1];
+			"Asymmetric (public-key) ciphers_Naive RSA"	[label="Naive RSA"];
+			"cluster_Asymmetric (public-key) ciphers" -> "Asymmetric (public-key) ciphers_Naive RSA"	[minlen=2];
+			"Asymmetric (public-key) ciphers_Weakness of Naive RSA, padded RSA"	[label="Weakness of Naive RSA, padded RSA"];
+			"cluster_Asymmetric (public-key) ciphers" -> "Asymmetric (public-key) ciphers_Weakness of Naive RSA, padded RSA"	[minlen=3];
+			"Asymmetric (public-key) ciphers_Diffie-Hellman protocol"	[label="Diffie-Hellman protocol"];
+			"cluster_Asymmetric (public-key) ciphers" -> "Asymmetric (public-key) ciphers_Diffie-Hellman protocol"	[minlen=4];
+			"Asymmetric (public-key) ciphers_El Gamal cipher"	[label="El Gamal cipher"];
+			"cluster_Asymmetric (public-key) ciphers" -> "Asymmetric (public-key) ciphers_El Gamal cipher"	[minlen=5];
+			"Asymmetric (public-key) ciphers_Other public-key ciphers, including GoldwasserMicali, Rabin, Paillier, McEliece"	[label="Other public-key ciphers, including GoldwasserMicali, Rabin, Paillier, McEliece"];
+			"cluster_Asymmetric (public-key) ciphers" -> "Asymmetric (public-key) ciphers_Other public-key ciphers, including GoldwasserMicali, Rabin, Paillier, McEliece"	[minlen=6];
+			"Asymmetric (public-key) ciphers_Elliptic curves ciphers"	[label="Elliptic curves ciphers"];
+			"cluster_Asymmetric (public-key) ciphers" -> "Asymmetric (public-key) ciphers_Elliptic curves ciphers"	[minlen=7];
+		}
+		subgraph cluster_Introduction {
+			cluster_Introduction	[label=Introduction,
+				shape=box];
+			Introduction_Definition	[label=Definition];
+			cluster_Introduction -> Introduction_Definition	[minlen=1];
+			"Introduction_Limits and types of tools (open source versus closed source)"	[label="Limits and types of tools (open source versus closed source)"];
+			cluster_Introduction -> "Introduction_Limits and types of tools (open source versus closed source)"	[minlen=2];
+		}
+		subgraph "cluster_Legal Issues" {
+			"cluster_Legal Issues"	[label="Legal Issues",
+				shape=box];
+			"Legal Issues_Right to privacy"	[label="Right to privacy"];
+			"cluster_Legal Issues" -> "Legal Issues_Right to privacy"	[minlen=1];
+			"Legal Issues_Fourth and Fifth Amendments"	[label="Fourth and Fifth Amendments"];
+			"cluster_Legal Issues" -> "Legal Issues_Fourth and Fifth Amendments"	[minlen=2];
+			"Legal Issues_Protection of encryption keys under the Fifth Amendment"	[label="Protection of encryption keys under the Fifth Amendment"];
+			"cluster_Legal Issues" -> "Legal Issues_Protection of encryption keys under the Fifth Amendment"	[minlen=3];
+			"Legal Issues_Types of legal authority (owner consent, search warrant, FISA, Title III (wiretap), abandonment, exigent circumstances, \
+plain sight, etc.)"	[label="Types of legal authority (owner consent, search warrant, FISA, Title III (wiretap), abandonment, exigent circumstances, plain sight, \
+etc.)"];
+			"cluster_Legal Issues" -> "Legal Issues_Types of legal authority (owner consent, search warrant, FISA, Title III (wiretap), abandonment, exigent circumstances, \
+plain sight, etc.)"	[minlen=4];
+			"Legal Issues_Protection from legal processes (e.g., ISP subscriber information via subpoena, e-mail server transactional data from \
+2703(d) court order, full content via search warrant, etc.)"	[label="Protection from legal processes (e.g., ISP subscriber information via subpoena, e-mail server transactional data from 2703(d) court \
+order, full content via search warrant, etc.)"];
+			"cluster_Legal Issues" -> "Legal Issues_Protection from legal processes (e.g., ISP subscriber information via subpoena, e-mail server transactional data from \
+2703(d) court order, full content via search warrant, etc.)"	[minlen=5];
+			"Legal Issues_Legal request for preservation of digital evidence (e.g., via 2703(f) preservation letter)"	[label="Legal request for preservation of digital evidence (e.g., via 2703(f) preservation letter)"];
+			"cluster_Legal Issues" -> "Legal Issues_Legal request for preservation of digital evidence (e.g., via 2703(f) preservation letter)"	[minlen=6];
+			"Legal Issues_Affidavits, testimony and testifying"	[label="Affidavits, testimony and testifying"];
+			"cluster_Legal Issues" -> "Legal Issues_Affidavits, testimony and testifying"	[minlen=7];
+		}
+		subgraph "cluster_Digital forensic tools" {
+			"cluster_Digital forensic tools"	[label="Digital forensic tools",
+				shape=box];
+			"Digital forensic tools_Types"	[label=Types];
+			"cluster_Digital forensic tools" -> "Digital forensic tools_Types"	[minlen=1];
+			"Digital forensic tools_Artifact-focused versus all-in-one tools"	[label="Artifact-focused versus all-in-one tools"];
+			"cluster_Digital forensic tools" -> "Digital forensic tools_Artifact-focused versus all-in-one tools"	[minlen=2];
+			"Digital forensic tools_Requirements"	[label=Requirements];
+			"cluster_Digital forensic tools" -> "Digital forensic tools_Requirements"	[minlen=3];
+			"Digital forensic tools_Limitations"	[label=Limitations];
+			"cluster_Digital forensic tools" -> "Digital forensic tools_Limitations"	[minlen=4];
+		}
+		subgraph "cluster_Investigatory process" {
+			"cluster_Investigatory process"	[label="Investigatory process",
+				shape=box];
+			"Investigatory process_Alerts"	[label=Alerts];
+			"cluster_Investigatory process" -> "Investigatory process_Alerts"	[minlen=1];
+			"Investigatory process_Identification of evidence"	[label="Identification of evidence"];
+			"cluster_Investigatory process" -> "Investigatory process_Identification of evidence"	[minlen=2];
+			"Investigatory process_Collection and preservation of evidence"	[label="Collection and preservation of evidence"];
+			"cluster_Investigatory process" -> "Investigatory process_Collection and preservation of evidence"	[minlen=3];
+			"Investigatory process_Timelines, reporting, chain of custody"	[label="Timelines, reporting, chain of custody"];
+			"cluster_Investigatory process" -> "Investigatory process_Timelines, reporting, chain of custody"	[minlen=4];
+			"Investigatory process_Authentication of evidence"	[label="Authentication of evidence"];
+			"cluster_Investigatory process" -> "Investigatory process_Authentication of evidence"	[minlen=5];
+		}
+		subgraph "cluster_Acquisition and preservation of evidence" {
+			"cluster_Acquisition and preservation of evidence"	[label="Acquisition and preservation of evidence",
+				shape=box];
+			"Acquisition and preservation of evidence_Pull-the-plug versus triage"	[label="Pull-the-plug versus triage"];
+			"cluster_Acquisition and preservation of evidence" -> "Acquisition and preservation of evidence_Pull-the-plug versus triage"	[minlen=1];
+			"Acquisition and preservation of evidence_Write-blocking"	[label="Write-blocking"];
+			"cluster_Acquisition and preservation of evidence" -> "Acquisition and preservation of evidence_Write-blocking"	[minlen=2];
+			"Acquisition and preservation of evidence_Forensically-prepared destination media"	[label="Forensically-prepared destination media"];
+			"cluster_Acquisition and preservation of evidence" -> "Acquisition and preservation of evidence_Forensically-prepared destination media"	[minlen=3];
+			"Acquisition and preservation of evidence_Imaging procedures"	[label="Imaging procedures"];
+			"cluster_Acquisition and preservation of evidence" -> "Acquisition and preservation of evidence_Imaging procedures"	[minlen=4];
+			"Acquisition and preservation of evidence_Acquisition of volatile evidence"	[label="Acquisition of volatile evidence"];
+			"cluster_Acquisition and preservation of evidence" -> "Acquisition and preservation of evidence_Acquisition of volatile evidence"	[minlen=5];
+			"Acquisition and preservation of evidence_Live forensics analysis"	[label="Live forensics analysis"];
+			"cluster_Acquisition and preservation of evidence" -> "Acquisition and preservation of evidence_Live forensics analysis"	[minlen=6];
+			"Acquisition and preservation of evidence_Chain of custody"	[label="Chain of custody"];
+			"cluster_Acquisition and preservation of evidence" -> "Acquisition and preservation of evidence_Chain of custody"	[minlen=7];
+		}
+		subgraph "cluster_Analysis of evidence" {
+			"cluster_Analysis of evidence"	[label="Analysis of evidence",
+				shape=box];
+			"Analysis of evidence_This topic focuses on knowledge (awareness the artifact exists), attributes (components and possible variations \
+of the artifact), origin/cause (emphasis on why the artifact exists), discoverability (how the artifact is located/viewed with tools), \
+relevance (significance in the context of the specific investigation)"	[label="This topic focuses on knowledge (awareness the artifact exists), attributes (components and possible variations of the artifact), \
+origin/cause (emphasis on why the artifact exists), discoverability (how the artifact is located/viewed with tools), relevance (\
+significance in the context of the specific investigation)"];
+			"cluster_Analysis of evidence" -> "Analysis of evidence_This topic focuses on knowledge (awareness the artifact exists), attributes (components and possible variations \
+of the artifact), origin/cause (emphasis on why the artifact exists), discoverability (how the artifact is located/viewed with tools), \
+relevance (significance in the context of the specific investigation)"	[minlen=1];
+			"Analysis of evidence_Includes-"	[label="Includes-"];
+			"cluster_Analysis of evidence" -> "Analysis of evidence_Includes-"	[minlen=2];
+			"Analysis of evidence_Sources of digital evidence"	[label="Sources of digital evidence"];
+			"cluster_Analysis of evidence" -> "Analysis of evidence_Sources of digital evidence"	[minlen=3];
+			"Analysis of evidence_Deleted and undeleted files, temporary files"	[label="Deleted and undeleted files, temporary files"];
+			"cluster_Analysis of evidence" -> "Analysis of evidence_Deleted and undeleted files, temporary files"	[minlen=4];
+			"Analysis of evidence_Metadata"	[label=Metadata];
+			"cluster_Analysis of evidence" -> "Analysis of evidence_Metadata"	[minlen=5];
+			"Analysis of evidence_Print spool files"	[label="Print spool files"];
+			"cluster_Analysis of evidence" -> "Analysis of evidence_Print spool files"	[minlen=6];
+			"Analysis of evidence_Slack space"	[label="Slack space"];
+			"cluster_Analysis of evidence" -> "Analysis of evidence_Slack space"	[minlen=7];
+			"Analysis of evidence_Hibernation files"	[label="Hibernation files"];
+			"cluster_Analysis of evidence" -> "Analysis of evidence_Hibernation files"	[minlen=8];
+			"Analysis of evidence_Windows registry"	[label="Windows registry"];
+			"cluster_Analysis of evidence" -> "Analysis of evidence_Windows registry"	[minlen=9];
+			"Analysis of evidence_Browser history"	[label="Browser history"];
+			"cluster_Analysis of evidence" -> "Analysis of evidence_Browser history"	[minlen=10];
+			"Analysis of evidence_Log files"	[label="Log files"];
+			"cluster_Analysis of evidence" -> "Analysis of evidence_Log files"	[minlen=11];
+			"Analysis of evidence_File systems"	[label="File systems"];
+			"cluster_Analysis of evidence" -> "Analysis of evidence_File systems"	[minlen=12];
+			"Analysis of evidence_File recovery"	[label="File recovery"];
+			"cluster_Analysis of evidence" -> "Analysis of evidence_File recovery"	[minlen=13];
+			"Analysis of evidence_File carving"	[label="File carving"];
+			"cluster_Analysis of evidence" -> "Analysis of evidence_File carving"	[minlen=14];
+		}
+		subgraph "cluster_Presentation of results" {
+			"cluster_Presentation of results"	[label="Presentation of results",
+				shape=box];
+			"Presentation of results_Timeline analysis"	[label="Timeline analysis"];
+			"cluster_Presentation of results" -> "Presentation of results_Timeline analysis"	[minlen=1];
+			"Presentation of results_Attribution"	[label=Attribution];
+			"cluster_Presentation of results" -> "Presentation of results_Attribution"	[minlen=2];
+			"Presentation of results_Lay versus technical explanations"	[label="Lay versus technical explanations"];
+			"cluster_Presentation of results" -> "Presentation of results_Lay versus technical explanations"	[minlen=3];
+			"Presentation of results_Executive summaries"	[label="Executive summaries"];
+			"cluster_Presentation of results" -> "Presentation of results_Executive summaries"	[minlen=4];
+			"Presentation of results_Detailed reports"	[label="Detailed reports"];
+			"cluster_Presentation of results" -> "Presentation of results_Detailed reports"	[minlen=5];
+			"Presentation of results_Limitations"	[label=Limitations];
+			"cluster_Presentation of results" -> "Presentation of results_Limitations"	[minlen=6];
+		}
+		subgraph "cluster_Authentication of evidence" {
+			"cluster_Authentication of evidence"	[label="Authentication of evidence",
+				shape=box];
+			"Authentication of evidence_Hashing algorithms (MD5, SHA-1, etc.)"	[label="Hashing algorithms (MD5, SHA-1, etc.)"];
+			"cluster_Authentication of evidence" -> "Authentication of evidence_Hashing algorithms (MD5, SHA-1, etc.)"	[minlen=1];
+			"Authentication of evidence_Hashing entire media vs individual files"	[label="Hashing entire media vs individual files"];
+			"cluster_Authentication of evidence" -> "Authentication of evidence_Hashing entire media vs individual files"	[minlen=2];
+			"Authentication of evidence_Pre-exam and post-exam verification hashing"	[label="Pre-exam and post-exam verification hashing"];
+			"cluster_Authentication of evidence" -> "Authentication of evidence_Pre-exam and post-exam verification hashing"	[minlen=3];
+		}
+		subgraph "cluster_Reporting, incident response and handling" {
+			"cluster_Reporting, incident response and handling"	[label="Reporting, incident response and handling",
+				shape=box];
+			"Reporting, incident response and handling_Report structures"	[label="Report structures"];
+			"cluster_Reporting, incident response and handling" -> "Reporting, incident response and handling_Report structures"	[minlen=1];
+			"Reporting, incident response and handling_Incident detection and analysis"	[label="Incident detection and analysis"];
+			"cluster_Reporting, incident response and handling" -> "Reporting, incident response and handling_Incident detection and analysis"	[minlen=2];
+			"Reporting, incident response and handling_Containment, eradication and recovery"	[label="Containment, eradication and recovery"];
+			"cluster_Reporting, incident response and handling" -> "Reporting, incident response and handling_Containment, eradication and recovery"	[minlen=3];
+			"Reporting, incident response and handling_Post-incident activities"	[label="Post-incident activities"];
+			"cluster_Reporting, incident response and handling" -> "Reporting, incident response and handling_Post-incident activities"	[minlen=4];
+			"Reporting, incident response and handling_Information sharing"	[label="Information sharing"];
+			"cluster_Reporting, incident response and handling" -> "Reporting, incident response and handling_Information sharing"	[minlen=5];
+		}
+		subgraph "cluster_Mobile forensics" {
+			"cluster_Mobile forensics"	[label="Mobile forensics",
+				shape=box];
+			"Mobile forensics_Wireless technologies"	[label="Wireless technologies"];
+			"cluster_Mobile forensics" -> "Mobile forensics_Wireless technologies"	[minlen=1];
+			"Mobile forensics_Mobile device technology"	[label="Mobile device technology"];
+			"cluster_Mobile forensics" -> "Mobile forensics_Mobile device technology"	[minlen=2];
+			"Mobile forensics_Collection/Isolation of mobile device"	[label="Collection/Isolation of mobile device"];
+			"cluster_Mobile forensics" -> "Mobile forensics_Collection/Isolation of mobile device"	[minlen=3];
+			"Mobile forensics_Mobile operating systems (OS) and Apps"	[label="Mobile operating systems (OS) and Apps"];
+			"cluster_Mobile forensics" -> "Mobile forensics_Mobile operating systems (OS) and Apps"	[minlen=4];
+			"Mobile forensics_Mobile artifacts"	[label="Mobile artifacts"];
+			"cluster_Mobile forensics" -> "Mobile forensics_Mobile artifacts"	[minlen=5];
+		}
+		subgraph "cluster_Data leak prevention techniques" {
+			"cluster_Data leak prevention techniques"	[label="Data leak prevention techniques",
+				shape=box];
+			"Data leak prevention techniques_Controlling authorized boundaries"	[label="Controlling authorized boundaries"];
+			"cluster_Data leak prevention techniques" -> "Data leak prevention techniques_Controlling authorized boundaries"	[minlen=1];
+			"Data leak prevention techniques_Channels"	[label=Channels];
+			"cluster_Data leak prevention techniques" -> "Data leak prevention techniques_Channels"	[minlen=2];
+			"Data leak prevention techniques_Destinations"	[label=Destinations];
+			"cluster_Data leak prevention techniques" -> "Data leak prevention techniques_Destinations"	[minlen=3];
+			"Data leak prevention techniques_Methods of data sharing"	[label="Methods of data sharing"];
+			"cluster_Data leak prevention techniques" -> "Data leak prevention techniques_Methods of data sharing"	[minlen=4];
+		}
+		subgraph "cluster_Application and transport layer protocols" {
+			"cluster_Application and transport layer protocols"	[label="Application and transport layer protocols",
+				shape=box];
+			"Application and transport layer protocols_HTTP"	[label=HTTP];
+			"cluster_Application and transport layer protocols" -> "Application and transport layer protocols_HTTP"	[minlen=1];
+			"Application and transport layer protocols_HTTPS"	[label=HTTPS];
+			"cluster_Application and transport layer protocols" -> "Application and transport layer protocols_HTTPS"	[minlen=2];
+			"Application and transport layer protocols_SSH"	[label=SSH];
+			"cluster_Application and transport layer protocols" -> "Application and transport layer protocols_SSH"	[minlen=3];
+			"Application and transport layer protocols_SSL/TLS"	[label="SSL/TLS"];
+			"cluster_Application and transport layer protocols" -> "Application and transport layer protocols_SSL/TLS"	[minlen=4];
+		}
+		subgraph "cluster_Attacks on TLS" {
+			"cluster_Attacks on TLS"	[label="Attacks on TLS",
+				shape=box];
+			"Attacks on TLS_Downgrade attacks"	[label="Downgrade attacks"];
+			"cluster_Attacks on TLS" -> "Attacks on TLS_Downgrade attacks"	[minlen=1];
+			"Attacks on TLS_Certificate forgery"	[label="Certificate forgery"];
+			"cluster_Attacks on TLS" -> "Attacks on TLS_Certificate forgery"	[minlen=2];
+			"Attacks on TLS_Implications of stolen root certificates"	[label="Implications of stolen root certificates"];
+			"cluster_Attacks on TLS" -> "Attacks on TLS_Implications of stolen root certificates"	[minlen=3];
+			"Attacks on TLS_Certificate transparency"	[label="Certificate transparency"];
+			"cluster_Attacks on TLS" -> "Attacks on TLS_Certificate transparency"	[minlen=4];
+		}
+		subgraph "cluster_Internet/Network layer" {
+			"cluster_Internet/Network layer"	[label="Internet/Network layer",
+				shape=box];
+			"Internet/Network layer_IPsec and VPN"	[label="IPsec and VPN"];
+			"cluster_Internet/Network layer" -> "Internet/Network layer_IPsec and VPN"	[minlen=1];
+		}
+		subgraph "cluster_Privacy preserving protocols" {
+			"cluster_Privacy preserving protocols"	[label="Privacy preserving protocols",
+				shape=box];
+			"Privacy preserving protocols_Mixnet, Tor, Off-the-record message, and Signal"	[label="Mixnet, Tor, Off-the-record message, and Signal"];
+			"cluster_Privacy preserving protocols" -> "Privacy preserving protocols_Mixnet, Tor, Off-the-record message, and Signal"	[minlen=1];
+		}
+		subgraph "cluster_Data link layer" {
+			"cluster_Data link layer"	[label="Data link layer",
+				shape=box];
+			"Data link layer_L2TP, PPP and RADIUS"	[label="L2TP, PPP and RADIUS"];
+			"cluster_Data link layer" -> "Data link layer_L2TP, PPP and RADIUS"	[minlen=1];
+		}
+		subgraph cluster_Cryptanalysis {
+			cluster_Cryptanalysis	[label=Cryptanalysis,
+				shape=box];
+			"Cryptanalysis_Brute-force attack"	[label="Brute-force attack"];
+			cluster_Cryptanalysis -> "Cryptanalysis_Brute-force attack"	[minlen=1];
+			"Cryptanalysis_Frequency-based attacks"	[label="Frequency-based attacks"];
+			cluster_Cryptanalysis -> "Cryptanalysis_Frequency-based attacks"	[minlen=2];
+			"Cryptanalysis_Attacks on the Enigma machine"	[label="Attacks on the Enigma machine"];
+			cluster_Cryptanalysis -> "Cryptanalysis_Attacks on the Enigma machine"	[minlen=3];
+			"Cryptanalysis_Birthday-paradox attack"	[label="Birthday-paradox attack"];
+			cluster_Cryptanalysis -> "Cryptanalysis_Birthday-paradox attack"	[minlen=4];
+		}
+		subgraph "cluster_Classical attacks" {
+			"cluster_Classical attacks"	[label="Classical attacks",
+				shape=box];
+			"Classical attacks_Timing attacks"	[label="Timing attacks"];
+			"cluster_Classical attacks" -> "Classical attacks_Timing attacks"	[minlen=1];
+			"Classical attacks_Power-consumption attacks"	[label="Power-consumption attacks"];
+			"cluster_Classical attacks" -> "Classical attacks_Power-consumption attacks"	[minlen=2];
+			"Classical attacks_Differential fault analysis"	[label="Differential fault analysis"];
+			"cluster_Classical attacks" -> "Classical attacks_Differential fault analysis"	[minlen=3];
+		}
+		subgraph "cluster_Side-channel attacks" {
+			"cluster_Side-channel attacks"	[label="Side-channel attacks",
+				shape=box];
+			"Side-channel attacks_Differential attack"	[label="Differential attack"];
+			"cluster_Side-channel attacks" -> "Side-channel attacks_Differential attack"	[minlen=1];
+			"Side-channel attacks_Linear attack"	[label="Linear attack"];
+			"cluster_Side-channel attacks" -> "Side-channel attacks_Linear attack"	[minlen=2];
+			"Side-channel attacks_Meet-in-the-middle attack"	[label="Meet-in-the-middle attack"];
+			"cluster_Side-channel attacks" -> "Side-channel attacks_Meet-in-the-middle attack"	[minlen=3];
+		}
+		subgraph "cluster_Attacks against privatekey ciphers Attacks against publickey ciphers" {
+			"cluster_Attacks against privatekey ciphers Attacks against publickey ciphers"	[label="Attacks against privatekey ciphers Attacks against publickey ciphers",
+				shape=box];
+			"Attacks against privatekey ciphers Attacks against publickey ciphers_Factoring algorithms (Pollard’s p-1 and rho methods, quadratic \
+sieve, and number field sieve)"	[label="Factoring algorithms (Pollard’s p-1 and rho methods, quadratic sieve, and number field sieve)"];
+			"cluster_Attacks against privatekey ciphers Attacks against publickey ciphers" -> "Attacks against privatekey ciphers Attacks against publickey ciphers_Factoring algorithms (Pollard’s p-1 and rho methods, quadratic \
+sieve, and number field sieve)"	[minlen=1];
+		}
+		subgraph "cluster_Algorithms for solving the Discrete Log Problem" {
+			"cluster_Algorithms for solving the Discrete Log Problem"	[label="Algorithms for solving the Discrete Log Problem",
+				shape=box];
+			"Algorithms for solving the Discrete Log Problem_Pohlig-Hellman"	[label="Pohlig-Hellman"];
+			"cluster_Algorithms for solving the Discrete Log Problem" -> "Algorithms for solving the Discrete Log Problem_Pohlig-Hellman"	[minlen=1];
+			"Algorithms for solving the Discrete Log Problem_Baby Step/Giant Step"	[label="Baby Step/Giant Step"];
+			"cluster_Algorithms for solving the Discrete Log Problem" -> "Algorithms for solving the Discrete Log Problem_Baby Step/Giant Step"	[minlen=2];
+			"Algorithms for solving the Discrete Log Problem_Pollard’s rho method"	[label="Pollard’s rho method"];
+			"cluster_Algorithms for solving the Discrete Log Problem" -> "Algorithms for solving the Discrete Log Problem_Pollard’s rho method"	[minlen=3];
+		}
+		subgraph "cluster_Attacks on RSA" {
+			"cluster_Attacks on RSA"	[label="Attacks on RSA",
+				shape=box];
+			"Attacks on RSA_Shared modulus"	[label="Shared modulus"];
+			"cluster_Attacks on RSA" -> "Attacks on RSA_Shared modulus"	[minlen=1];
+			"Attacks on RSA_Small public exponent"	[label="Small public exponent"];
+			"cluster_Attacks on RSA" -> "Attacks on RSA_Small public exponent"	[minlen=2];
+			"Attacks on RSA_Partially exposed prime factors"	[label="Partially exposed prime factors"];
+			"cluster_Attacks on RSA" -> "Attacks on RSA_Partially exposed prime factors"	[minlen=3];
+		}
+		subgraph cluster_Overview {
+			cluster_Overview	[label=Overview,
+				shape=box];
+			"Overview_Definitions (Brandeis, Solove)"	[label="Definitions (Brandeis, Solove)"];
+			cluster_Overview -> "Overview_Definitions (Brandeis, Solove)"	[minlen=1];
+			"Overview_Legal (HIPAA, FERPA, GLBA)"	[label="Legal (HIPAA, FERPA, GLBA)"];
+			cluster_Overview -> "Overview_Legal (HIPAA, FERPA, GLBA)"	[minlen=2];
+			"Overview_Data collection"	[label="Data collection"];
+			cluster_Overview -> "Overview_Data collection"	[minlen=3];
+			"Overview_Data aggregation"	[label="Data aggregation"];
+			cluster_Overview -> "Overview_Data aggregation"	[minlen=4];
+			"Overview_Data dissemination"	[label="Data dissemination"];
+			cluster_Overview -> "Overview_Data dissemination"	[minlen=5];
+			"Overview_Privacy invasions"	[label="Privacy invasions"];
+			cluster_Overview -> "Overview_Privacy invasions"	[minlen=6];
+			"Overview_Social engineering"	[label="Social engineering"];
+			cluster_Overview -> "Overview_Social engineering"	[minlen=7];
+			"Overview_Social media"	[label="Social media"];
+			cluster_Overview -> "Overview_Social media"	[minlen=8];
+		}
+		subgraph "cluster_Authentication strength" {
+			"cluster_Authentication strength"	[label="Authentication strength",
+				shape=box];
+			"Authentication strength_Multifactor authentication"	[label="Multifactor authentication"];
+			"cluster_Authentication strength" -> "Authentication strength_Multifactor authentication"	[minlen=1];
+			"Authentication strength_Cryptographic tokens"	[label="Cryptographic tokens"];
+			"cluster_Authentication strength" -> "Authentication strength_Cryptographic tokens"	[minlen=2];
+			"Authentication strength_Cryptographic devices"	[label="Cryptographic devices"];
+			"cluster_Authentication strength" -> "Authentication strength_Cryptographic devices"	[minlen=3];
+			"Authentication strength_Biometric authentication"	[label="Biometric authentication"];
+			"cluster_Authentication strength" -> "Authentication strength_Biometric authentication"	[minlen=4];
+			"Authentication strength_One-time passwords"	[label="One-time passwords"];
+			"cluster_Authentication strength" -> "Authentication strength_One-time passwords"	[minlen=5];
+			"Authentication strength_Knowledge-based authentication"	[label="Knowledge-based authentication"];
+			"cluster_Authentication strength" -> "Authentication strength_Knowledge-based authentication"	[minlen=6];
+		}
+		subgraph "cluster_Password attack techniques" {
+			"cluster_Password attack techniques"	[label="Password attack techniques",
+				shape=box];
+			"Password attack techniques_Dictionary attack"	[label="Dictionary attack"];
+			"cluster_Password attack techniques" -> "Password attack techniques_Dictionary attack"	[minlen=1];
+			"Password attack techniques_Brute force attack"	[label="Brute force attack"];
+			"cluster_Password attack techniques" -> "Password attack techniques_Brute force attack"	[minlen=2];
+			"Password attack techniques_Rainbow table attack"	[label="Rainbow table attack"];
+			"cluster_Password attack techniques" -> "Password attack techniques_Rainbow table attack"	[minlen=3];
+			"Password attack techniques_Phishing and social engineering"	[label="Phishing and social engineering"];
+			"cluster_Password attack techniques" -> "Password attack techniques_Phishing and social engineering"	[minlen=4];
+			"Password attack techniques_Malware-based attack"	[label="Malware-based attack"];
+			"cluster_Password attack techniques" -> "Password attack techniques_Malware-based attack"	[minlen=5];
+			"Password attack techniques_Spidering"	[label=Spidering];
+			"cluster_Password attack techniques" -> "Password attack techniques_Spidering"	[minlen=6];
+			"Password attack techniques_Off-line analysis"	[label="Off-line analysis"];
+			"cluster_Password attack techniques" -> "Password attack techniques_Off-line analysis"	[minlen=7];
+			"Password attack techniques_Password cracking tools"	[label="Password cracking tools"];
+			"cluster_Password attack techniques" -> "Password attack techniques_Password cracking tools"	[minlen=8];
+		}
+		subgraph "cluster_Password storage techniques" {
+			"cluster_Password storage techniques"	[label="Password storage techniques",
+				shape=box];
+			"Password storage techniques_Cryptographic hash functions (SHA-256, SHA-3, collision resistance)"	[label="Cryptographic hash functions (SHA-256, SHA-3, collision resistance)"];
+			"cluster_Password storage techniques" -> "Password storage techniques_Cryptographic hash functions (SHA-256, SHA-3, collision resistance)"	[minlen=1];
+			"Password storage techniques_Salting"	[label=Salting];
+			"cluster_Password storage techniques" -> "Password storage techniques_Salting"	[minlen=2];
+			"Password storage techniques_Iteration count"	[label="Iteration count"];
+			"cluster_Password storage techniques" -> "Password storage techniques_Iteration count"	[minlen=3];
+			"Password storage techniques_Password-based key derivation"	[label="Password-based key derivation"];
+			"cluster_Password storage techniques" -> "Password storage techniques_Password-based key derivation"	[minlen=4];
+		}
+		subgraph "cluster_Data integrity" {
+			"cluster_Data integrity"	[label="Data integrity",
+				shape=box];
+			"Data integrity_Message authentication codes (HMAC, CBC-MAC)"	[label="Message authentication codes (HMAC, CBC-MAC)"];
+			"cluster_Data integrity" -> "Data integrity_Message authentication codes (HMAC, CBC-MAC)"	[minlen=1];
+			"Data integrity_Digital signatures"	[label="Digital signatures"];
+			"cluster_Data integrity" -> "Data integrity_Digital signatures"	[minlen=2];
+			"Data integrity_Authenticated encryption"	[label="Authenticated encryption"];
+			"cluster_Data integrity" -> "Data integrity_Authenticated encryption"	[minlen=3];
+			"Data integrity_Hash trees"	[label="Hash trees"];
+			"cluster_Data integrity" -> "Data integrity_Hash trees"	[minlen=4];
+		}
+		subgraph "cluster_Physical data security" {
+			"cluster_Physical data security"	[label="Physical data security",
+				shape=box];
+			"Physical data security_Data center security, including keyed access, man trips, key cards and video surveillance"	[label="Data center security, including keyed access, man trips, key cards and video surveillance"];
+			"cluster_Physical data security" -> "Physical data security_Data center security, including keyed access, man trips, key cards and video surveillance"	[minlen=1];
+			"Physical data security_Rack-level security"	[label="Rack-level security"];
+			"cluster_Physical data security" -> "Physical data security_Rack-level security"	[minlen=2];
+			"Physical data security_Data destruction"	[label="Data destruction"];
+			"cluster_Physical data security" -> "Physical data security_Data destruction"	[minlen=3];
+		}
+		subgraph "cluster_Logical data access control" {
+			"cluster_Logical data access control"	[label="Logical data access control",
+				shape=box];
+			"Logical data access control_Access control lists, group policies, passwords"	[label="Access control lists, group policies, passwords"];
+			"cluster_Logical data access control" -> "Logical data access control_Access control lists, group policies, passwords"	[minlen=1];
+			"Logical data access control_Discretionary Access Control (DAC)"	[label="Discretionary Access Control (DAC)"];
+			"cluster_Logical data access control" -> "Logical data access control_Discretionary Access Control (DAC)"	[minlen=2];
+			"Logical data access control_Mandatory Access Control (MAC)"	[label="Mandatory Access Control (MAC)"];
+			"cluster_Logical data access control" -> "Logical data access control_Mandatory Access Control (MAC)"	[minlen=3];
+			"Logical data access control_Role-based Access Control (RBAC)"	[label="Role-based Access Control (RBAC)"];
+			"cluster_Logical data access control" -> "Logical data access control_Role-based Access Control (RBAC)"	[minlen=4];
+			"Logical data access control_Attribute-based Access Control (ABAC)"	[label="Attribute-based Access Control (ABAC)"];
+			"cluster_Logical data access control" -> "Logical data access control_Attribute-based Access Control (ABAC)"	[minlen=5];
+			"Logical data access control_Rule-based Access Control (RAC)"	[label="Rule-based Access Control (RAC)"];
+			"cluster_Logical data access control" -> "Logical data access control_Rule-based Access Control (RAC)"	[minlen=6];
+			"Logical data access control_History-based Access Control (HBAC)"	[label="History-based Access Control (HBAC)"];
+			"cluster_Logical data access control" -> "Logical data access control_History-based Access Control (HBAC)"	[minlen=7];
+			"Logical data access control_Identity-based Access Control (IBAC)"	[label="Identity-based Access Control (IBAC)"];
+			"cluster_Logical data access control" -> "Logical data access control_Identity-based Access Control (IBAC)"	[minlen=8];
+			"Logical data access control_Organization-based Access Control (OrBAC)"	[label="Organization-based Access Control (OrBAC)"];
+			"cluster_Logical data access control" -> "Logical data access control_Organization-based Access Control (OrBAC)"	[minlen=9];
+			"Logical data access control_Federated identities and access control"	[label="Federated identities and access control"];
+			"cluster_Logical data access control" -> "Logical data access control_Federated identities and access control"	[minlen=10];
+		}
+		subgraph "cluster_Secure architecture design" {
+			"cluster_Secure architecture design"	[label="Secure architecture design",
+				shape=box];
+			"Secure architecture design_Principles of a security architecture"	[label="Principles of a security architecture"];
+			"cluster_Secure architecture design" -> "Secure architecture design_Principles of a security architecture"	[minlen=1];
+			"Secure architecture design_Protection of information in computer systems"	[label="Protection of information in computer systems"];
+			"cluster_Secure architecture design" -> "Secure architecture design_Protection of information in computer systems"	[minlen=2];
+		}
+		cluster_Cryptography	[label=Cryptography,
+			shape=diamond];
+		cluster_Cryptography -> "cluster_Basic concepts";
+		cluster_Cryptography -> "cluster_Advanced concepts";
+		cluster_Cryptography -> "cluster_Mathematical background";
+		cluster_Cryptography -> "cluster_Historical ciphers";
+		cluster_Cryptography -> "cluster_Symmetric (private key) ciphers";
+		cluster_Cryptography -> "cluster_Asymmetric (public-key) ciphers";
+		"cluster_Digital Forensics"	[label="Digital Forensics",
+			shape=diamond];
+		"cluster_Digital Forensics" -> cluster_Introduction;
+		"cluster_Digital Forensics" -> "cluster_Legal Issues";
+		"cluster_Digital Forensics" -> "cluster_Digital forensic tools";
+		"cluster_Digital Forensics" -> "cluster_Investigatory process";
+		"cluster_Digital Forensics" -> "cluster_Acquisition and preservation of evidence";
+		"cluster_Digital Forensics" -> "cluster_Analysis of evidence";
+		"cluster_Digital Forensics" -> "cluster_Presentation of results";
+		"cluster_Digital Forensics" -> "cluster_Authentication of evidence";
+		"cluster_Digital Forensics" -> "cluster_Reporting, incident response and handling";
+		"cluster_Digital Forensics" -> "cluster_Mobile forensics";
+		"cluster_Data Integrity and Authentication"	[label="Data Integrity and Authentication",
+			shape=diamond];
+		"cluster_Data Integrity and Authentication" -> "cluster_Authentication strength";
+		"cluster_Data Integrity and Authentication" -> "cluster_Password attack techniques";
+		"cluster_Data Integrity and Authentication" -> "cluster_Password storage techniques";
+		"cluster_Data Integrity and Authentication" -> "cluster_Data integrity";
+		"cluster_Access Control"	[label="Access Control",
+			shape=diamond];
+		"cluster_Access Control" -> "cluster_Physical data security";
+		"cluster_Access Control" -> "cluster_Logical data access control";
+		"cluster_Access Control" -> "cluster_Secure architecture design";
+		"cluster_Access Control" -> "cluster_Data leak prevention techniques";
+		"cluster_Secure Communication Protocols"	[label="Secure Communication Protocols",
+			shape=diamond];
+		"cluster_Secure Communication Protocols" -> "cluster_Application and transport layer protocols";
+		"cluster_Secure Communication Protocols" -> "cluster_Attacks on TLS";
+		"cluster_Secure Communication Protocols" -> "cluster_Internet/Network layer";
+		"cluster_Secure Communication Protocols" -> "cluster_Privacy preserving protocols";
+		"cluster_Secure Communication Protocols" -> "cluster_Data link layer";
+		"cluster_Secure Communication Protocols" -> cluster_Cryptanalysis;
+		"cluster_Secure Communication Protocols" -> "cluster_Classical attacks";
+		"cluster_Secure Communication Protocols" -> "cluster_Side-channel attacks";
+		"cluster_Secure Communication Protocols" -> "cluster_Attacks against privatekey ciphers Attacks against publickey ciphers";
+		"cluster_Secure Communication Protocols" -> "cluster_Algorithms for solving the Discrete Log Problem";
+		"cluster_Secure Communication Protocols" -> "cluster_Attacks on RSA";
+		"cluster_Data Privacy"	[label="Data Privacy",
+			shape=diamond];
+		"cluster_Data Privacy" -> cluster_Overview;
+	}
+	"Data Security"	[label="Data Security",
+		shape=square];
+	"Data Security" -> cluster_Cryptography;
+	"Data Security" -> "cluster_Digital Forensics";
+	"Data Security" -> "cluster_Data Integrity and Authentication";
+	"Data Security" -> "cluster_Access Control";
+	"Data Security" -> "cluster_Secure Communication Protocols";
+	"Data Security" -> "cluster_Data Privacy";
+}

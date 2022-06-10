@@ -1,0 +1,353 @@
+digraph {
+	graph [compound=true];
+	node [fillcolor=blue];
+	subgraph "cluster_Societal Security" {
+		subgraph "cluster_Cybercriminal behavior" {
+			"cluster_Cybercriminal behavior"	[label="Cybercriminal behavior",
+				shape=box];
+			"Cybercriminal behavior_Behavior that attacks individual / companies compute device or computer infrastructure to perform malicious \
+activities, such as spreading viruses, data theft, and identity theft"	[label="Behavior that attacks individual / companies compute device or computer infrastructure to perform malicious activities, such as \
+spreading viruses, data theft, and identity theft"];
+			"cluster_Cybercriminal behavior" -> "Cybercriminal behavior_Behavior that attacks individual / companies compute device or computer infrastructure to perform malicious \
+activities, such as spreading viruses, data theft, and identity theft"	[minlen=1];
+		}
+		subgraph "cluster_Cyber terrorism" {
+			"cluster_Cyber terrorism"	[label="Cyber terrorism",
+				shape=box];
+			"Cyber terrorism_Activities in cyberspace geared to generate societal fear and uncertainty"	[label="Activities in cyberspace geared to generate societal fear and uncertainty"];
+			"cluster_Cyber terrorism" -> "Cyber terrorism_Activities in cyberspace geared to generate societal fear and uncertainty"	[minlen=1];
+		}
+		subgraph "cluster_Cybercriminal investigations" {
+			"cluster_Cybercriminal investigations"	[label="Cybercriminal investigations",
+				shape=box];
+			"Cybercriminal investigations_Methods for investigating cyberattacks by criminals, cybercriminal organizations, overseas adversaries, \
+and terrorists"	[label="Methods for investigating cyberattacks by criminals, cybercriminal organizations, overseas adversaries, and terrorists"];
+			"cluster_Cybercriminal investigations" -> "Cybercriminal investigations_Methods for investigating cyberattacks by criminals, cybercriminal organizations, overseas adversaries, \
+and terrorists"	[minlen=1];
+		}
+		subgraph "cluster_Economics of cybercrime" {
+			"cluster_Economics of cybercrime"	[label="Economics of cybercrime",
+				shape=box];
+			"Economics of cybercrime_Risks of cybercrime are too low, while the rewards are too high"	[label="Risks of cybercrime are too low, while the rewards are too high"];
+			"cluster_Economics of cybercrime" -> "Economics of cybercrime_Risks of cybercrime are too low, while the rewards are too high"	[minlen=1];
+			"Economics of cybercrime_The use of (untraceable) cryptocurrencies in committing cybercrimes online and in the Dark Web (bitcoin)"	[label="The use of (untraceable) cryptocurrencies in committing cybercrimes online and in the Dark Web (bitcoin)"];
+			"cluster_Economics of cybercrime" -> "Economics of cybercrime_The use of (untraceable) cryptocurrencies in committing cybercrimes online and in the Dark Web (bitcoin)"	[minlen=2];
+		}
+		subgraph "cluster_Constitutional foundations of cyber law" {
+			"cluster_Constitutional foundations of cyber law"	[label="Constitutional foundations of cyber law",
+				shape=box];
+			"Constitutional foundations of cyber law_Executive power"	[label="Executive power"];
+			"cluster_Constitutional foundations of cyber law" -> "Constitutional foundations of cyber law_Executive power"	[minlen=1];
+			"Constitutional foundations of cyber law_Legislative power"	[label="Legislative power"];
+			"cluster_Constitutional foundations of cyber law" -> "Constitutional foundations of cyber law_Legislative power"	[minlen=2];
+			"Constitutional foundations of cyber law_First amendment"	[label="First amendment"];
+			"cluster_Constitutional foundations of cyber law" -> "Constitutional foundations of cyber law_First amendment"	[minlen=3];
+			"Constitutional foundations of cyber law_Fourth amendment"	[label="Fourth amendment"];
+			"cluster_Constitutional foundations of cyber law" -> "Constitutional foundations of cyber law_Fourth amendment"	[minlen=4];
+			"Constitutional foundations of cyber law_Tenth amendment"	[label="Tenth amendment"];
+			"cluster_Constitutional foundations of cyber law" -> "Constitutional foundations of cyber law_Tenth amendment"	[minlen=5];
+		}
+		subgraph "cluster_Intellectual property related to cybersecurity" {
+			"cluster_Intellectual property related to cybersecurity"	[label="Intellectual property related to cybersecurity",
+				shape=box];
+			"Intellectual property related to cybersecurity_The scope, cost and legal environment relating to cyberbased intellectual property \
+theft"	[label="The scope, cost and legal environment relating to cyberbased intellectual property theft"];
+			"cluster_Intellectual property related to cybersecurity" -> "Intellectual property related to cybersecurity_The scope, cost and legal environment relating to cyberbased intellectual property \
+theft"	[minlen=1];
+			"Intellectual property related to cybersecurity_The specific content will be driven by the country of focus"	[label="The specific content will be driven by the country of focus"];
+			"cluster_Intellectual property related to cybersecurity" -> "Intellectual property related to cybersecurity_The specific content will be driven by the country of focus"	[minlen=2];
+			"Intellectual property related to cybersecurity_In the U.S., cover Section 1201 of the Digital Millennium Copyright Act"	[label="In the U.S., cover Section 1201 of the Digital Millennium Copyright Act"];
+			"cluster_Intellectual property related to cybersecurity" -> "Intellectual property related to cybersecurity_In the U.S., cover Section 1201 of the Digital Millennium Copyright Act"	[minlen=3];
+			"Intellectual property related to cybersecurity_Anti-circumvention - Digital Millennium Copyright Act (DMCA 1201)"	[label="Anti-circumvention - Digital Millennium Copyright Act (DMCA 1201)"];
+			"cluster_Intellectual property related to cybersecurity" -> "Intellectual property related to cybersecurity_Anti-circumvention - Digital Millennium Copyright Act (DMCA 1201)"	[minlen=4];
+		}
+		subgraph "cluster_Privacy laws" {
+			"cluster_Privacy laws"	[label="Privacy laws",
+				shape=box];
+			"Privacy laws_Laws governing Internet privacy"	[label="Laws governing Internet privacy"];
+			"cluster_Privacy laws" -> "Privacy laws_Laws governing Internet privacy"	[minlen=1];
+			"Privacy laws_Laws governing social media privacy"	[label="Laws governing social media privacy"];
+			"cluster_Privacy laws" -> "Privacy laws_Laws governing social media privacy"	[minlen=2];
+			"Privacy laws_Electronic surveillance laws, such as Wiretap Act, Stored Communications Act, and Pen Register Act"	[label="Electronic surveillance laws, such as Wiretap Act, Stored Communications Act, and Pen Register Act"];
+			"cluster_Privacy laws" -> "Privacy laws_Electronic surveillance laws, such as Wiretap Act, Stored Communications Act, and Pen Register Act"	[minlen=3];
+		}
+		subgraph "cluster_Data security law" {
+			"cluster_Data security law"	[label="Data security law",
+				shape=box];
+			"Data security law_Section 5 of the U.S. Federal Trade Commission"	[label="Section 5 of the U.S. Federal Trade Commission"];
+			"cluster_Data security law" -> "Data security law_Section 5 of the U.S. Federal Trade Commission"	[minlen=1];
+			"Data security law_State data security laws"	[label="State data security laws"];
+			"cluster_Data security law" -> "Data security law_State data security laws"	[minlen=2];
+			"Data security law_State data-breach notification laws"	[label="State data-breach notification laws"];
+			"cluster_Data security law" -> "Data security law_State data-breach notification laws"	[minlen=3];
+			"Data security law_Health Insurance Portability Accountability Act (HIPAA)"	[label="Health Insurance Portability Accountability Act (HIPAA)"];
+			"cluster_Data security law" -> "Data security law_Health Insurance Portability Accountability Act (HIPAA)"	[minlen=4];
+			"Data security law_Gramm Leach Bliley Act (GLBA)"	[label="Gramm Leach Bliley Act (GLBA)"];
+			"cluster_Data security law" -> "Data security law_Gramm Leach Bliley Act (GLBA)"	[minlen=5];
+			"Data security law_Information sharing through US-CERT, Cybersecurity Act of 2015"	[label="Information sharing through US-CERT, Cybersecurity Act of 2015"];
+			"cluster_Data security law" -> "Data security law_Information sharing through US-CERT, Cybersecurity Act of 2015"	[minlen=6];
+		}
+		subgraph "cluster_Computer hacking laws" {
+			"cluster_Computer hacking laws"	[label="Computer hacking laws",
+				shape=box];
+			"Computer hacking laws_U.S. Federal computer crime laws, such as Computer Fraud and Abuse Act. Most computer hacking offenses are \
+prosecuted under the Computer Fraud and Abuse Act in the U.S"	[label="U.S. Federal computer crime laws, such as Computer Fraud and Abuse Act. Most computer hacking offenses are prosecuted under the \
+Computer Fraud and Abuse Act in the U.S"];
+			"cluster_Computer hacking laws" -> "Computer hacking laws_U.S. Federal computer crime laws, such as Computer Fraud and Abuse Act. Most computer hacking offenses are \
+prosecuted under the Computer Fraud and Abuse Act in the U.S"	[minlen=1];
+			"Computer hacking laws_International framework and cooperation needed to prosecute overseas hackers"	[label="International framework and cooperation needed to prosecute overseas hackers"];
+			"cluster_Computer hacking laws" -> "Computer hacking laws_International framework and cooperation needed to prosecute overseas hackers"	[minlen=2];
+		}
+		subgraph "cluster_Digital evidence" {
+			"cluster_Digital evidence"	[label="Digital evidence",
+				shape=box];
+			"Digital evidence_Forensically-sound collection of digital evidence"	[label="Forensically-sound collection of digital evidence"];
+			"cluster_Digital evidence" -> "Digital evidence_Forensically-sound collection of digital evidence"	[minlen=1];
+			"Digital evidence_Preserving the chain of custody"	[label="Preserving the chain of custody"];
+			"cluster_Digital evidence" -> "Digital evidence_Preserving the chain of custody"	[minlen=2];
+		}
+		subgraph "cluster_Digital contracts" {
+			"cluster_Digital contracts"	[label="Digital contracts",
+				shape=box];
+			"Digital contracts_Distinction among browse-wrap, click-wrap, and shrink wrap agreements"	[label="Distinction among browse-wrap, click-wrap, and shrink wrap agreements"];
+			"cluster_Digital contracts" -> "Digital contracts_Distinction among browse-wrap, click-wrap, and shrink wrap agreements"	[minlen=1];
+			"Digital contracts_The Electronic Signatures in Global and International Commerce Act (ESGICA) of 2000; digital contracts and electronic \
+signatures are just as legal and enforceable as traditional paper contracts signed in ink"	[label="The Electronic Signatures in Global and International Commerce Act (ESGICA) of 2000; digital contracts and electronic signatures \
+are just as legal and enforceable as traditional paper contracts signed in ink"];
+			"cluster_Digital contracts" -> "Digital contracts_The Electronic Signatures in Global and International Commerce Act (ESGICA) of 2000; digital contracts and electronic \
+signatures are just as legal and enforceable as traditional paper contracts signed in ink"	[minlen=2];
+		}
+		subgraph "cluster_Multinational conventions (accords)" {
+			"cluster_Multinational conventions (accords)"	[label="Multinational conventions (accords)",
+				shape=box];
+			"Multinational conventions (accords)_This topic covers jurisdictional limitations of multinational accords"	[label="This topic covers jurisdictional limitations of multinational accords"];
+			"cluster_Multinational conventions (accords)" -> "Multinational conventions (accords)_This topic covers jurisdictional limitations of multinational accords"	[minlen=1];
+			"Multinational conventions (accords)_Examples- Budapest Convention on cybercrime and the G-7 Cybersecurity Accord on financial institutions"	[label="Examples- Budapest Convention on cybercrime and the G-7 Cybersecurity Accord on financial institutions"];
+			"cluster_Multinational conventions (accords)" -> "Multinational conventions (accords)_Examples- Budapest Convention on cybercrime and the G-7 Cybersecurity Accord on financial institutions"	[minlen=2];
+		}
+		subgraph "cluster_Cross-border privacy and data security laws" {
+			"cluster_Cross-border privacy and data security laws"	[label="Cross-border privacy and data security laws",
+				shape=box];
+			"Cross-border privacy and data security laws_Requirements of the General Data Protection Regulation (GDPR). Privacy Shield agreement \
+between countries, such as the United States and the United Kingdom, allowing the transfer of personal data"	[label="Requirements of the General Data Protection Regulation (GDPR). Privacy Shield agreement between countries, such as the United States \
+and the United Kingdom, allowing the transfer of personal data"];
+			"cluster_Cross-border privacy and data security laws" -> "Cross-border privacy and data security laws_Requirements of the General Data Protection Regulation (GDPR). Privacy Shield agreement \
+between countries, such as the United States and the United Kingdom, allowing the transfer of personal data"	[minlen=1];
+		}
+		subgraph "cluster_Cyber Ethics" {
+			"cluster_Cyber Ethics"	[label="Cyber Ethics",
+				shape=box];
+			"Cyber Ethics_This knowledge unit aims to give students a foundation for both understanding and applying moral reasoning models to \
+addressing current and emerging ethical dilemmas on an individual and group (professional) level. It also sensitizes students to \
+debates about whether ethics in computing is a unique problem or part of a larger phenomenon, and helps students to think through \
+how their nation&#x27;s culture and legal framework impact their understanding and implementation of ethics in their society"	[label="This knowledge unit aims to give students a foundation for both understanding and applying moral reasoning models to addressing \
+current and emerging ethical dilemmas on an individual and group (professional) level. It also sensitizes students to debates about \
+whether ethics in computing is a unique problem or part of a larger phenomenon, and helps students to think through how their nation&#\
+x27;s culture and legal framework impact their understanding and implementation of ethics in their society"];
+			"cluster_Cyber Ethics" -> "Cyber Ethics_This knowledge unit aims to give students a foundation for both understanding and applying moral reasoning models to \
+addressing current and emerging ethical dilemmas on an individual and group (professional) level. It also sensitizes students to \
+debates about whether ethics in computing is a unique problem or part of a larger phenomenon, and helps students to think through \
+how their nation&#x27;s culture and legal framework impact their understanding and implementation of ethics in their society"	[minlen=1];
+		}
+		subgraph "cluster_Defining ethics" {
+			"cluster_Defining ethics"	[label="Defining ethics",
+				shape=box];
+			"Defining ethics_Compare and contrast major ethical stances, including virtue ethics, utilitarian ethics and deontological ethics"	[label="Compare and contrast major ethical stances, including virtue ethics, utilitarian ethics and deontological ethics"];
+			"cluster_Defining ethics" -> "Defining ethics_Compare and contrast major ethical stances, including virtue ethics, utilitarian ethics and deontological ethics"	[minlen=1];
+			"Defining ethics_Apply the three different ethical stances in thinking through the ethical consequences of a particular problem or \
+action"	[label="Apply the three different ethical stances in thinking through the ethical consequences of a particular problem or action"];
+			"cluster_Defining ethics" -> "Defining ethics_Apply the three different ethical stances in thinking through the ethical consequences of a particular problem or \
+action"	[minlen=2];
+		}
+		subgraph "cluster_Professional ethics and codes of conduct" {
+			"cluster_Professional ethics and codes of conduct"	[label="Professional ethics and codes of conduct",
+				shape=box];
+			"Professional ethics and codes of conduct_Major professional societies, such as ACM, IEEE-CS, AIS, and (ISC) 2"	[label="Major professional societies, such as ACM, IEEE-CS, AIS, and (ISC) 2"];
+			"cluster_Professional ethics and codes of conduct" -> "Professional ethics and codes of conduct_Major professional societies, such as ACM, IEEE-CS, AIS, and (ISC) 2"	[minlen=1];
+			"Professional ethics and codes of conduct_Professional responsibility"	[label="Professional responsibility"];
+			"cluster_Professional ethics and codes of conduct" -> "Professional ethics and codes of conduct_Professional responsibility"	[minlen=2];
+			"Professional ethics and codes of conduct_Ethical responsibility in relation to surveillance"	[label="Ethical responsibility in relation to surveillance"];
+			"cluster_Professional ethics and codes of conduct" -> "Professional ethics and codes of conduct_Ethical responsibility in relation to surveillance"	[minlen=3];
+		}
+		subgraph "cluster_Ethics and equity/diversity" {
+			"cluster_Ethics and equity/diversity"	[label="Ethics and equity/diversity",
+				shape=box];
+			"Ethics and equity/diversity_Describe the ways in which decision-making algorithms may over-represent or underrepresent majority \
+and minority groups in society"	[label="Describe the ways in which decision-making algorithms may over-represent or underrepresent majority and minority groups in society"];
+			"cluster_Ethics and equity/diversity" -> "Ethics and equity/diversity_Describe the ways in which decision-making algorithms may over-represent or underrepresent majority \
+and minority groups in society"	[minlen=1];
+			"Ethics and equity/diversity_Analyze the ways in which algorithms may implicitly include social, gender and class biases"	[label="Analyze the ways in which algorithms may implicitly include social, gender and class biases"];
+			"cluster_Ethics and equity/diversity" -> "Ethics and equity/diversity_Analyze the ways in which algorithms may implicitly include social, gender and class biases"	[minlen=2];
+		}
+		subgraph "cluster_Ethics and law" {
+			"cluster_Ethics and law"	[label="Ethics and law",
+				shape=box];
+			"Ethics and law_Understand that ethical practices and legal codes may not always align exactly"	[label="Understand that ethical practices and legal codes may not always align exactly"];
+			"cluster_Ethics and law" -> "Ethics and law_Understand that ethical practices and legal codes may not always align exactly"	[minlen=1];
+			"Ethics and law_Ethical practices can be seen as universal while laws may be nation- or region-specific (e.g., European Union)"	[label="Ethical practices can be seen as universal while laws may be nation- or region-specific (e.g., European Union)"];
+			"cluster_Ethics and law" -> "Ethics and law_Ethical practices can be seen as universal while laws may be nation- or region-specific (e.g., European Union)"	[minlen=2];
+			"Ethics and law_Laws may evolve but ethical values can be described as unchanging"	[label="Laws may evolve but ethical values can be described as unchanging"];
+			"cluster_Ethics and law" -> "Ethics and law_Laws may evolve but ethical values can be described as unchanging"	[minlen=3];
+		}
+		subgraph "cluster_Autonomy/robot ethics" {
+			"cluster_Autonomy/robot ethics"	[label="Autonomy/robot ethics",
+				shape=box];
+			"Autonomy/robot ethics_Define autonomous decision-making"	[label="Define autonomous decision-making"];
+			"cluster_Autonomy/robot ethics" -> "Autonomy/robot ethics_Define autonomous decision-making"	[minlen=1];
+			"Autonomy/robot ethics_Define artificial intelligence and describe ethical dilemmas presented by the use or employment of artificial \
+intelligence (AI)"	[label="Define artificial intelligence and describe ethical dilemmas presented by the use or employment of artificial intelligence (AI)"];
+			"cluster_Autonomy/robot ethics" -> "Autonomy/robot ethics_Define artificial intelligence and describe ethical dilemmas presented by the use or employment of artificial \
+intelligence (AI)"	[minlen=2];
+			"Autonomy/robot ethics_Describe legislative advances which have defined personhood and digital personhood"	[label="Describe legislative advances which have defined personhood and digital personhood"];
+			"cluster_Autonomy/robot ethics" -> "Autonomy/robot ethics_Describe legislative advances which have defined personhood and digital personhood"	[minlen=3];
+			"Autonomy/robot ethics_Describe the conflict created by legal notions of responsibility and the use of unmanned or autonomous decision-making \
+programs"	[label="Describe the conflict created by legal notions of responsibility and the use of unmanned or autonomous decision-making programs"];
+			"cluster_Autonomy/robot ethics" -> "Autonomy/robot ethics_Describe the conflict created by legal notions of responsibility and the use of unmanned or autonomous decision-making \
+programs"	[minlen=4];
+		}
+		subgraph "cluster_Ethics and conflict" {
+			"cluster_Ethics and conflict"	[label="Ethics and conflict",
+				shape=box];
+			"Ethics and conflict_Just War Principles to cyberspace in relation to conflict initiation, behaviors in conflict, conflict cessation/\
+post conflict situation;"	[label="Just War Principles to cyberspace in relation to conflict initiation, behaviors in conflict, conflict cessation/post conflict situation;"];
+			"cluster_Ethics and conflict" -> "Ethics and conflict_Just War Principles to cyberspace in relation to conflict initiation, behaviors in conflict, conflict cessation/\
+post conflict situation;"	[minlen=1];
+			"Ethics and conflict_Ethical problems created in conduct of cyber espionage;"	[label="Ethical problems created in conduct of cyber espionage;"];
+			"cluster_Ethics and conflict" -> "Ethics and conflict_Ethical problems created in conduct of cyber espionage;"	[minlen=2];
+			"Ethics and conflict_Norm and rule violation as it relates to cyber terrorism"	[label="Norm and rule violation as it relates to cyber terrorism"];
+			"cluster_Ethics and conflict" -> "Ethics and conflict_Norm and rule violation as it relates to cyber terrorism"	[minlen=3];
+		}
+		subgraph "cluster_Ethical hacking" {
+			"cluster_Ethical hacking"	[label="Ethical hacking",
+				shape=box];
+			"Ethical hacking_Ethical penetration testing versus unethical hacking"	[label="Ethical penetration testing versus unethical hacking"];
+			"cluster_Ethical hacking" -> "Ethical hacking_Ethical penetration testing versus unethical hacking"	[minlen=1];
+			"Ethical hacking_Ethical hacking principles and conditions"	[label="Ethical hacking principles and conditions"];
+			"cluster_Ethical hacking" -> "Ethical hacking_Ethical hacking principles and conditions"	[minlen=2];
+			"Ethical hacking_Distinguish among nuisance hacking, activist hacking, criminal hacking, and acts of war"	[label="Distinguish among nuisance hacking, activist hacking, criminal hacking, and acts of war"];
+			"cluster_Ethical hacking" -> "Ethical hacking_Distinguish among nuisance hacking, activist hacking, criminal hacking, and acts of war"	[minlen=3];
+		}
+		subgraph "cluster_Ethical frameworks and normative theories" {
+			"cluster_Ethical frameworks and normative theories"	[label="Ethical frameworks and normative theories",
+				shape=box];
+			"Ethical frameworks and normative theories_Common ethical frameworks and normative theories related to cybersecurity from individual \
+and societal perspectives"	[label="Common ethical frameworks and normative theories related to cybersecurity from individual and societal perspectives"];
+			"cluster_Ethical frameworks and normative theories" -> "Ethical frameworks and normative theories_Common ethical frameworks and normative theories related to cybersecurity from individual \
+and societal perspectives"	[minlen=1];
+		}
+		subgraph "cluster_International Cyber Policy" {
+			"cluster_International Cyber Policy"	[label="International Cyber Policy",
+				shape=box];
+			"International Cyber Policy_International cyber policy challenges"	[label="International cyber policy challenges"];
+			"cluster_International Cyber Policy" -> "International Cyber Policy_International cyber policy challenges"	[minlen=1];
+			"International Cyber Policy_Oversight Act of 2015"	[label="Oversight Act of 2015"];
+			"cluster_International Cyber Policy" -> "International Cyber Policy_Oversight Act of 2015"	[minlen=2];
+			"International Cyber Policy_Department of State international cyberspace policy International cyber policy strategy"	[label="Department of State international cyberspace policy International cyber policy strategy"];
+			"cluster_International Cyber Policy" -> "International Cyber Policy_Department of State international cyberspace policy International cyber policy strategy"	[minlen=3];
+		}
+		subgraph "cluster_U.S. federal cyber policy" {
+			"cluster_U.S. federal cyber policy"	[label="U.S. federal cyber policy",
+				shape=box];
+			"U.S. federal cyber policy_Federal Information Security Modernization Act, an update to the Federal Government's cybersecurity policies \
+and guidance;"	[label="Federal Information Security Modernization Act, an update to the Federal Government's cybersecurity policies and guidance;"];
+			"cluster_U.S. federal cyber policy" -> "U.S. federal cyber policy_Federal Information Security Modernization Act, an update to the Federal Government's cybersecurity policies \
+and guidance;"	[minlen=1];
+			"U.S. federal cyber policy_Relationship to the nation’s critical infrastructure; and"	[label="Relationship to the nation’s critical infrastructure; and"];
+			"cluster_U.S. federal cyber policy" -> "U.S. federal cyber policy_Relationship to the nation’s critical infrastructure; and"	[minlen=2];
+			"U.S. federal cyber policy_Managing risk at a national level"	[label="Managing risk at a national level"];
+			"cluster_U.S. federal cyber policy" -> "U.S. federal cyber policy_Managing risk at a national level"	[minlen=3];
+		}
+		subgraph "cluster_Global impact" {
+			"cluster_Global impact"	[label="Global impact",
+				shape=box];
+			"Global impact_Effects of cybersecurity on the international system generally and on international security specifically"	[label="Effects of cybersecurity on the international system generally and on international security specifically"];
+			"cluster_Global impact" -> "Global impact_Effects of cybersecurity on the international system generally and on international security specifically"	[minlen=1];
+			"Global impact_How cyber has become and will continue to become an instrument of power, and how this power might change the balance \
+of power between stronger and weaker countries"	[label="How cyber has become and will continue to become an instrument of power, and how this power might change the balance of power between \
+stronger and weaker countries"];
+			"cluster_Global impact" -> "Global impact_How cyber has become and will continue to become an instrument of power, and how this power might change the balance \
+of power between stronger and weaker countries"	[minlen=2];
+			"Global impact_Global governance of cyber. Also examine the possibilities of the development of normative behavior related to the \
+use of cyber"	[label="Global governance of cyber. Also examine the possibilities of the development of normative behavior related to the use of cyber"];
+			"cluster_Global impact" -> "Global impact_Global governance of cyber. Also examine the possibilities of the development of normative behavior related to the \
+use of cyber"	[minlen=3];
+			"Global impact_Effects of cyber on the global economy"	[label="Effects of cyber on the global economy"];
+			"cluster_Global impact" -> "Global impact_Effects of cyber on the global economy"	[minlen=4];
+		}
+		subgraph "cluster_Cybersecurity policy and national security" {
+			"cluster_Cybersecurity policy and national security"	[label="Cybersecurity policy and national security",
+				shape=box];
+			"Cybersecurity policy and national security_How a country defines its cybersecurity policy, doctrine and execution responsibility, \
+including national cybersecurity policy, architecture, signals and narratives, and coercion and brandishing; and"	[label="How a country defines its cybersecurity policy, doctrine and execution responsibility, including national cybersecurity policy, \
+architecture, signals and narratives, and coercion and brandishing; and"];
+			"cluster_Cybersecurity policy and national security" -> "Cybersecurity policy and national security_How a country defines its cybersecurity policy, doctrine and execution responsibility, \
+including national cybersecurity policy, architecture, signals and narratives, and coercion and brandishing; and"	[minlen=1];
+			"Cybersecurity policy and national security_A nation’s cybersecurity messaging; how it signals its intentions to gain other nation’s \
+attention and cooperation"	[label="A nation’s cybersecurity messaging; how it signals its intentions to gain other nation’s attention and cooperation"];
+			"cluster_Cybersecurity policy and national security" -> "Cybersecurity policy and national security_A nation’s cybersecurity messaging; how it signals its intentions to gain other nation’s \
+attention and cooperation"	[minlen=2];
+		}
+		subgraph "cluster_National economic implications of cybersecurity" {
+			"cluster_National economic implications of cybersecurity"	[label="National economic implications of cybersecurity",
+				shape=box];
+			"National economic implications of cybersecurity_The cost of cybersecurity to a nation"	[label="The cost of cybersecurity to a nation"];
+			"cluster_National economic implications of cybersecurity" -> "National economic implications of cybersecurity_The cost of cybersecurity to a nation"	[minlen=1];
+			"National economic implications of cybersecurity_The losses and gains of cybersecurity to a nation"	[label="The losses and gains of cybersecurity to a nation"];
+			"cluster_National economic implications of cybersecurity" -> "National economic implications of cybersecurity_The losses and gains of cybersecurity to a nation"	[minlen=2];
+			"National economic implications of cybersecurity_The investment to keep a nation protected from cyberthreats and cyberattacks"	[label="The investment to keep a nation protected from cyberthreats and cyberattacks"];
+			"cluster_National economic implications of cybersecurity" -> "National economic implications of cybersecurity_The investment to keep a nation protected from cyberthreats and cyberattacks"	[minlen=3];
+		}
+		subgraph "cluster_New adjacencies to diplomacy" {
+			"cluster_New adjacencies to diplomacy"	[label="New adjacencies to diplomacy",
+				shape=box];
+			"New adjacencies to diplomacy_The \"delicate dance\" of cyber diplomacy"	[label="The \"delicate dance\" of cyber diplomacy"];
+			"cluster_New adjacencies to diplomacy" -> "New adjacencies to diplomacy_The \"delicate dance\" of cyber diplomacy"	[minlen=1];
+			"New adjacencies to diplomacy_Aspects of cybersecurity that have become part of the relationships between countries, including the \
+covert collection of information alongside the practice of diplomacy, and the covert application of cyberforce in cyberspace and \
+physical space"	[label="Aspects of cybersecurity that have become part of the relationships between countries, including the covert collection of information \
+alongside the practice of diplomacy, and the covert application of cyberforce in cyberspace and physical space"];
+			"cluster_New adjacencies to diplomacy" -> "New adjacencies to diplomacy_Aspects of cybersecurity that have become part of the relationships between countries, including the \
+covert collection of information alongside the practice of diplomacy, and the covert application of cyberforce in cyberspace and \
+physical space"	[minlen=2];
+		}
+		cluster_Cybercrime	[label=Cybercrime,
+			shape=diamond];
+		cluster_Cybercrime -> "cluster_Cybercriminal behavior";
+		cluster_Cybercrime -> "cluster_Cyber terrorism";
+		cluster_Cybercrime -> "cluster_Cybercriminal investigations";
+		cluster_Cybercrime -> "cluster_Economics of cybercrime";
+		"cluster_Cyber Law"	[label="Cyber Law",
+			shape=diamond];
+		"cluster_Cyber Law" -> "cluster_Constitutional foundations of cyber law";
+		"cluster_Cyber Law" -> "cluster_Intellectual property related to cybersecurity";
+		"cluster_Cyber Law" -> "cluster_Privacy laws";
+		"cluster_Cyber Law" -> "cluster_Data security law";
+		"cluster_Cyber Law" -> "cluster_Computer hacking laws";
+		"cluster_Cyber Law" -> "cluster_Digital evidence";
+		"cluster_Cyber Law" -> "cluster_Digital contracts";
+		"cluster_Cyber Law" -> "cluster_Multinational conventions (accords)";
+		"cluster_Cyber Law" -> "cluster_Cross-border privacy and data security laws";
+		"cluster_Cyber Law" -> "cluster_Cyber Ethics";
+		"cluster_Cyber Law" -> "cluster_Defining ethics";
+		"cluster_Cyber Law" -> "cluster_Professional ethics and codes of conduct";
+		"cluster_Cyber Law" -> "cluster_Ethics and equity/diversity";
+		"cluster_Cyber Law" -> "cluster_Ethics and law";
+		"cluster_Cyber Law" -> "cluster_Autonomy/robot ethics";
+		"cluster_Cyber Law" -> "cluster_Ethics and conflict";
+		"cluster_Cyber Law" -> "cluster_Ethical hacking";
+		"cluster_Cyber Law" -> "cluster_Ethical frameworks and normative theories";
+		"cluster_Cyber Policy"	[label="Cyber Policy",
+			shape=diamond];
+		"cluster_Cyber Policy" -> "cluster_International Cyber Policy";
+		"cluster_Cyber Policy" -> "cluster_U.S. federal cyber policy";
+		"cluster_Cyber Policy" -> "cluster_Global impact";
+		"cluster_Cyber Policy" -> "cluster_Cybersecurity policy and national security";
+		"cluster_Cyber Policy" -> "cluster_National economic implications of cybersecurity";
+		"cluster_Cyber Policy" -> "cluster_New adjacencies to diplomacy";
+	}
+	"Societal Security"	[label="Societal Security",
+		shape=square];
+	"Societal Security" -> cluster_Cybercrime;
+	"Societal Security" -> "cluster_Cyber Law";
+	"Societal Security" -> "cluster_Cyber Policy";
+}

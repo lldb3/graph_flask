@@ -85,7 +85,6 @@ function w(n, i, o, a) {
     h.innerHTML = "<svg width=8 height=8 class='observablehq--caret'>\n    <path d='M4 7L0 1h8z' fill='currentColor' />\n  </svg>", h.appendChild(document.createTextNode(`${s}${d ? " [" : " {"}`)), h.addEventListener("mouseup", (function (e) {
         e.stopPropagation(), ae(p, k(n, null, o, a))
     })), l = l(n);
-    for (let e = 0; !(u = l.next()).done && e < 20; ++e) p.appendChild(u.value);
     if (!u.done) {
         const t = p.appendChild(document.createElement("a"));
         t.className = "observablehq--field", t.style.display = "block", t.appendChild(document.createTextNode("  … more")), t.addEventListener("mouseup", (function (t) {
@@ -94,6 +93,7 @@ function w(n, i, o, a) {
             u.done && p.removeChild(p.lastChild.previousSibling), e(p, "load")
         }))
     }
+    for (let e = 0; !(u = l.next()).done && e < 20; ++e) p.appendChild(u.value);
     return p.appendChild(document.createTextNode(d ? "]" : "}")), p
 }
 

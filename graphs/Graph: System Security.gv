@@ -1,0 +1,326 @@
+digraph {
+	graph [compound=true];
+	node [fillcolor=blue];
+	subgraph "cluster_System Security" {
+		subgraph "cluster_What is a system?" {
+			"cluster_What is a system?"	[label="What is a system?",
+				shape=box];
+			"What is a system?_This topic discusses the definition of system and how it depends on context"	[label="This topic discusses the definition of system and how it depends on context"];
+			"cluster_What is a system?" -> "What is a system?_This topic discusses the definition of system and how it depends on context"	[minlen=1];
+		}
+		subgraph "cluster_What is systems engineering?" {
+			"cluster_What is systems engineering?"	[label="What is systems engineering?",
+				shape=box];
+			"What is systems engineering?_This topic focuses on the value of having good systems engineering artifacts in order to inform security \
+risk management"	[label="This topic focuses on the value of having good systems engineering artifacts in order to inform security risk management"];
+			"cluster_What is systems engineering?" -> "What is systems engineering?_This topic focuses on the value of having good systems engineering artifacts in order to inform security \
+risk management"	[minlen=1];
+		}
+		subgraph "cluster_Holistic approaches" {
+			"cluster_Holistic approaches"	[label="Holistic approaches",
+				shape=box];
+			"Holistic approaches_This topic covers viewing the system as a whole rather than as simply a collection of interconnected components. \
+For example, viewing the human, organizational and environmental considerations of the whole as opposed to viewing each individual \
+component and connection and how they affect the view of risk"	[label="This topic covers viewing the system as a whole rather than as simply a collection of interconnected components. For example, viewing \
+the human, organizational and environmental considerations of the whole as opposed to viewing each individual component and connection \
+and how they affect the view of risk"];
+			"cluster_Holistic approaches" -> "Holistic approaches_This topic covers viewing the system as a whole rather than as simply a collection of interconnected components. \
+For example, viewing the human, organizational and environmental considerations of the whole as opposed to viewing each individual \
+component and connection and how they affect the view of risk"	[minlen=1];
+		}
+		subgraph "cluster_Security of general-purpose systems" {
+			"cluster_Security of general-purpose systems"	[label="Security of general-purpose systems",
+				shape=box];
+			"Security of general-purpose systems_This topic covers the security considerations of computing and of systems in general"	[label="This topic covers the security considerations of computing and of systems in general"];
+			"cluster_Security of general-purpose systems" -> "Security of general-purpose systems_This topic covers the security considerations of computing and of systems in general"	[minlen=1];
+		}
+		subgraph "cluster_Security of special-purposes systems" {
+			"cluster_Security of special-purposes systems"	[label="Security of special-purposes systems",
+				shape=box];
+			"Security of special-purposes systems_This topic covers security considerations derived from the purposes to which the system is \
+put"	[label="This topic covers security considerations derived from the purposes to which the system is put"];
+			"cluster_Security of special-purposes systems" -> "Security of special-purposes systems_This topic covers security considerations derived from the purposes to which the system is \
+put"	[minlen=1];
+		}
+		subgraph "cluster_Threat models" {
+			"cluster_Threat models"	[label="Threat models",
+				shape=box];
+			"Threat models_This topic covers what security problems can arise and how they might be realized, detected, and mitigated"	[label="This topic covers what security problems can arise and how they might be realized, detected, and mitigated"];
+			"cluster_Threat models" -> "Threat models_This topic covers what security problems can arise and how they might be realized, detected, and mitigated"	[minlen=1];
+		}
+		subgraph "cluster_Requirements analysis" {
+			"cluster_Requirements analysis"	[label="Requirements analysis",
+				shape=box];
+			"Requirements analysis_This topic presents requirements derivation and validation throughout the system lifecycle, including in various \
+methodologies such as the waterfall and agile development methodologies"	[label="This topic presents requirements derivation and validation throughout the system lifecycle, including in various methodologies such \
+as the waterfall and agile development methodologies"];
+			"cluster_Requirements analysis" -> "Requirements analysis_This topic presents requirements derivation and validation throughout the system lifecycle, including in various \
+methodologies such as the waterfall and agile development methodologies"	[minlen=1];
+		}
+		subgraph "cluster_Fundamental principles" {
+			"cluster_Fundamental principles"	[label="Fundamental principles",
+				shape=box];
+			"Fundamental principles_The Software Security knowledge area covers these principles in detail, but they also apply here"	[label="The Software Security knowledge area covers these principles in detail, but they also apply here"];
+			"cluster_Fundamental principles" -> "Fundamental principles_The Software Security knowledge area covers these principles in detail, but they also apply here"	[minlen=1];
+		}
+		subgraph "cluster_Development for testing" {
+			"cluster_Development for testing"	[label="Development for testing",
+				shape=box];
+			"Development for testing_This topic covers designing systems for ease and effectiveness of testing"	[label="This topic covers designing systems for ease and effectiveness of testing"];
+			"cluster_Development for testing" -> "Development for testing_This topic covers designing systems for ease and effectiveness of testing"	[minlen=1];
+		}
+		subgraph "cluster_Policy models" {
+			"cluster_Policy models"	[label="Policy models",
+				shape=box];
+			"Policy models_This topic includes examples such as BellLaPadula, Clark-Wilson, Chinese Wall, and Clinical Information Systems Security"	[label="This topic includes examples such as BellLaPadula, Clark-Wilson, Chinese Wall, and Clinical Information Systems Security"];
+			"cluster_Policy models" -> "Policy models_This topic includes examples such as BellLaPadula, Clark-Wilson, Chinese Wall, and Clinical Information Systems Security"	[minlen=1];
+		}
+		subgraph "cluster_Policy composition" {
+			"cluster_Policy composition"	[label="Policy composition",
+				shape=box];
+			"Policy composition_This topic covers restrictiveness"	[label="This topic covers restrictiveness"];
+			"cluster_Policy composition" -> "Policy composition_This topic covers restrictiveness"	[minlen=1];
+		}
+		subgraph "cluster_Use of automation" {
+			"cluster_Use of automation"	[label="Use of automation",
+				shape=box];
+			"Use of automation_This topic includes data mining, machine learning and related techniques, and their benefits and limitations"	[label="This topic includes data mining, machine learning and related techniques, and their benefits and limitations"];
+			"cluster_Use of automation" -> "Use of automation_This topic includes data mining, machine learning and related techniques, and their benefits and limitations"	[minlen=1];
+		}
+		subgraph "cluster_Patching and the vulnerability life cycle" {
+			"cluster_Patching and the vulnerability life cycle"	[label="Patching and the vulnerability life cycle",
+				shape=box];
+			"Patching and the vulnerability life cycle_This topic includes the security issues patching raises such as whether to patch a system, \
+and patching a running system, as well as how to handle vulnerability reports"	[label="This topic includes the security issues patching raises such as whether to patch a system, and patching a running system, as well \
+as how to handle vulnerability reports"];
+			"cluster_Patching and the vulnerability life cycle" -> "Patching and the vulnerability life cycle_This topic includes the security issues patching raises such as whether to patch a system, \
+and patching a running system, as well as how to handle vulnerability reports"	[minlen=1];
+		}
+		subgraph cluster_Operation {
+			cluster_Operation	[label=Operation,
+				shape=box];
+			"Operation_This topic includes security in operation, and the importance of usability considerations"	[label="This topic includes security in operation, and the importance of usability considerations"];
+			cluster_Operation -> "Operation_This topic includes security in operation, and the importance of usability considerations"	[minlen=1];
+		}
+		subgraph "cluster_Commissioning and decommissioning" {
+			"cluster_Commissioning and decommissioning"	[label="Commissioning and decommissioning",
+				shape=box];
+			"Commissioning and decommissioning_The security considerations when installing and removing a system"	[label="The security considerations when installing and removing a system"];
+			"cluster_Commissioning and decommissioning" -> "Commissioning and decommissioning_The security considerations when installing and removing a system"	[minlen=1];
+		}
+		subgraph "cluster_Insider threat" {
+			"cluster_Insider threat"	[label="Insider threat",
+				shape=box];
+			"Insider threat_This topic includes examples of insider threats such as data exfiltration and sabotage, and covers countermeasures"	[label="This topic includes examples of insider threats such as data exfiltration and sabotage, and covers countermeasures"];
+			"cluster_Insider threat" -> "Insider threat_This topic includes examples of insider threats such as data exfiltration and sabotage, and covers countermeasures"	[minlen=1];
+		}
+		subgraph cluster_Documentation {
+			cluster_Documentation	[label=Documentation,
+				shape=box];
+			"Documentation_This topic covers security and assurance documentation as well as installation and user guides focused on the system \
+itself"	[label="This topic covers security and assurance documentation as well as installation and user guides focused on the system itself"];
+			cluster_Documentation -> "Documentation_This topic covers security and assurance documentation as well as installation and user guides focused on the system \
+itself"	[minlen=1];
+		}
+		subgraph "cluster_Systems and procedures" {
+			"cluster_Systems and procedures"	[label="Systems and procedures",
+				shape=box];
+			"Systems and procedures_This topic discusses procedures that are used to manage systems"	[label="This topic discusses procedures that are used to manage systems"];
+			"cluster_Systems and procedures" -> "Systems and procedures_This topic discusses procedures that are used to manage systems"	[minlen=1];
+		}
+		subgraph "cluster_Authentication methods" {
+			"cluster_Authentication methods"	[label="Authentication methods",
+				shape=box];
+			"Authentication methods_Authentication methods refers to human-to-system or system-to-system authentication; examples include passwords, \
+biometrics, dongles, and single sign-on"	[label="Authentication methods refers to human-to-system or system-to-system authentication; examples include passwords, biometrics, dongles, \
+and single sign-on"];
+			"cluster_Authentication methods" -> "Authentication methods_Authentication methods refers to human-to-system or system-to-system authentication; examples include passwords, \
+biometrics, dongles, and single sign-on"	[minlen=1];
+		}
+		subgraph cluster_Identity {
+			cluster_Identity	[label=Identity,
+				shape=box];
+			"Identity_How is identity represented to the system? This topic includes roles as well as names, etc"	[label="How is identity represented to the system? This topic includes roles as well as names, etc"];
+			cluster_Identity -> "Identity_How is identity represented to the system? This topic includes roles as well as names, etc"	[minlen=1];
+		}
+		subgraph "cluster_System Control" {
+			"cluster_System Control"	[label="System Control",
+				shape=box];
+			"System Control_This knowledge unit examines the security considerations involved in controlling the system itself. It includes detecting, \
+compensating for, defending against, and preventing attacks"	[label="This knowledge unit examines the security considerations involved in controlling the system itself. It includes detecting, compensating \
+for, defending against, and preventing attacks"];
+			"cluster_System Control" -> "System Control_This knowledge unit examines the security considerations involved in controlling the system itself. It includes detecting, \
+compensating for, defending against, and preventing attacks"	[minlen=1];
+		}
+		subgraph "cluster_Access control" {
+			"cluster_Access control"	[label="Access control",
+				shape=box];
+			"Access control_This topic focuses on controlling access to resources, and the integrity of the controls, rather than their controlling \
+access to data, which is covered in the Data Security knowledge area"	[label="This topic focuses on controlling access to resources, and the integrity of the controls, rather than their controlling access to \
+data, which is covered in the Data Security knowledge area"];
+			"cluster_Access control" -> "Access control_This topic focuses on controlling access to resources, and the integrity of the controls, rather than their controlling \
+access to data, which is covered in the Data Security knowledge area"	[minlen=1];
+		}
+		subgraph "cluster_Authorization models" {
+			"cluster_Authorization models"	[label="Authorization models",
+				shape=box];
+			"Authorization models_This topic covers the management of authorization across many systems, and the distinction between authentication \
+and authorization"	[label="This topic covers the management of authorization across many systems, and the distinction between authentication and authorization"];
+			"cluster_Authorization models" -> "Authorization models_This topic covers the management of authorization across many systems, and the distinction between authentication \
+and authorization"	[minlen=1];
+		}
+		subgraph "cluster_Intrusion detection" {
+			"cluster_Intrusion detection"	[label="Intrusion detection",
+				shape=box];
+			"Intrusion detection_This topic covers anomaly, misuse (rule-based, signature-based) and specification-based techniques"	[label="This topic covers anomaly, misuse (rule-based, signature-based) and specification-based techniques"];
+			"cluster_Intrusion detection" -> "Intrusion detection_This topic covers anomaly, misuse (rule-based, signature-based) and specification-based techniques"	[minlen=1];
+		}
+		subgraph cluster_Attacks {
+			cluster_Attacks	[label=Attacks,
+				shape=box];
+			"Attacks_This topic covers attack models (such as attack trees and graphs) and specific attacks"	[label="This topic covers attack models (such as attack trees and graphs) and specific attacks"];
+			cluster_Attacks -> "Attacks_This topic covers attack models (such as attack trees and graphs) and specific attacks"	[minlen=1];
+		}
+		subgraph cluster_Defenses {
+			cluster_Defenses	[label=Defenses,
+				shape=box];
+			"Defenses_This topic includes examples such as ASLR, IP hopping, and intrusion tolerance"	[label="This topic includes examples such as ASLR, IP hopping, and intrusion tolerance"];
+			cluster_Defenses -> "Defenses_This topic includes examples such as ASLR, IP hopping, and intrusion tolerance"	[minlen=1];
+		}
+		subgraph cluster_Audit {
+			cluster_Audit	[label=Audit,
+				shape=box];
+			"Audit_This topic covers logging, log analysis, and relationship to intrusion detection"	[label="This topic covers logging, log analysis, and relationship to intrusion detection"];
+			cluster_Audit -> "Audit_This topic covers logging, log analysis, and relationship to intrusion detection"	[minlen=1];
+		}
+		subgraph cluster_Malware {
+			cluster_Malware	[label=Malware,
+				shape=box];
+			"Malware_This topic includes examples such as computer viruses, worms, ransomware, and other forms of malware"	[label="This topic includes examples such as computer viruses, worms, ransomware, and other forms of malware"];
+			cluster_Malware -> "Malware_This topic includes examples such as computer viruses, worms, ransomware, and other forms of malware"	[minlen=1];
+		}
+		subgraph "cluster_Vulnerabilities models" {
+			"cluster_Vulnerabilities models"	[label="Vulnerabilities models",
+				shape=box];
+			"Vulnerabilities models_This topic includes examples such as RISOS and PA; and enumerations such as CVE and CWE"	[label="This topic includes examples such as RISOS and PA; and enumerations such as CVE and CWE"];
+			"cluster_Vulnerabilities models" -> "Vulnerabilities models_This topic includes examples such as RISOS and PA; and enumerations such as CVE and CWE"	[minlen=1];
+		}
+		subgraph "cluster_Penetration testing" {
+			"cluster_Penetration testing"	[label="Penetration testing",
+				shape=box];
+			"Penetration testing_This topic covers the Flaw Hypothesis Methodology and other forms (ISSAF, OSSTMM, GISTA, PTES, etc.)"	[label="This topic covers the Flaw Hypothesis Methodology and other forms (ISSAF, OSSTMM, GISTA, PTES, etc.)"];
+			"cluster_Penetration testing" -> "Penetration testing_This topic covers the Flaw Hypothesis Methodology and other forms (ISSAF, OSSTMM, GISTA, PTES, etc.)"	[minlen=1];
+		}
+		subgraph cluster_Forensics {
+			cluster_Forensics	[label=Forensics,
+				shape=box];
+			"Forensics_This topic focuses on the system requirements for forensics"	[label="This topic focuses on the system requirements for forensics"];
+			cluster_Forensics -> "Forensics_This topic focuses on the system requirements for forensics"	[minlen=1];
+		}
+		subgraph "cluster_Recovery, resilience" {
+			"cluster_Recovery, resilience"	[label="Recovery, resilience",
+				shape=box];
+			"Recovery, resilience_This topic includes availability mechanisms"	[label="This topic includes availability mechanisms"];
+			"cluster_Recovery, resilience" -> "Recovery, resilience_This topic includes availability mechanisms"	[minlen=1];
+		}
+		subgraph cluster_Decommissioning {
+			cluster_Decommissioning	[label=Decommissioning,
+				shape=box];
+			"Decommissioning_This topic examines how retiring a system at or before its end of life may affect the security of other systems, \
+or of the organization that used the system. The student should understand the effects of removing a system, or components or connections \
+within a system, upon the security of the system as a whole"	[label="This topic examines how retiring a system at or before its end of life may affect the security of other systems, or of the organization \
+that used the system. The student should understand the effects of removing a system, or components or connections within a system, \
+upon the security of the system as a whole"];
+			cluster_Decommissioning -> "Decommissioning_This topic examines how retiring a system at or before its end of life may affect the security of other systems, \
+or of the organization that used the system. The student should understand the effects of removing a system, or components or connections \
+within a system, upon the security of the system as a whole"	[minlen=1];
+		}
+		subgraph cluster_Disposal {
+			cluster_Disposal	[label=Disposal,
+				shape=box];
+			"Disposal_This topic includes wiping media and other forms of destruction to prevent sensitive information (such as PII) from being \
+recovered"	[label="This topic includes wiping media and other forms of destruction to prevent sensitive information (such as PII) from being recovered"];
+			cluster_Disposal -> "Disposal_This topic includes wiping media and other forms of destruction to prevent sensitive information (such as PII) from being \
+recovered"	[minlen=1];
+		}
+		subgraph "cluster_Validating requirements" {
+			"cluster_Validating requirements"	[label="Validating requirements",
+				shape=box];
+			"Validating requirements_Methodologies to show that requirements meet objectives"	[label="Methodologies to show that requirements meet objectives"];
+			"cluster_Validating requirements" -> "Validating requirements_Methodologies to show that requirements meet objectives"	[minlen=1];
+		}
+		subgraph "cluster_Validating composition of components" {
+			"cluster_Validating composition of components"	[label="Validating composition of components",
+				shape=box];
+			"Validating composition of components_This topic covers how to test a system as a whole"	[label="This topic covers how to test a system as a whole"];
+			"cluster_Validating composition of components" -> "Validating composition of components_This topic covers how to test a system as a whole"	[minlen=1];
+		}
+		subgraph "cluster_Unit versus system testing" {
+			"cluster_Unit versus system testing"	[label="Unit versus system testing",
+				shape=box];
+			"Unit versus system testing_This topic covers how system testing differs from component and connection testing"	[label="This topic covers how system testing differs from component and connection testing"];
+			"cluster_Unit versus system testing" -> "Unit versus system testing_This topic covers how system testing differs from component and connection testing"	[minlen=1];
+		}
+		subgraph "cluster_Formal verification of systems" {
+			"cluster_Formal verification of systems"	[label="Formal verification of systems",
+				shape=box];
+			"Formal verification of systems_This topic covers languages, theorem provers, and hierarchical decomposition"	[label="This topic covers languages, theorem provers, and hierarchical decomposition"];
+			"cluster_Formal verification of systems" -> "Formal verification of systems_This topic covers languages, theorem provers, and hierarchical decomposition"	[minlen=1];
+		}
+		"cluster_System Thinking"	[label="System Thinking",
+			shape=diamond];
+		"cluster_System Thinking" -> "cluster_What is a system?";
+		"cluster_System Thinking" -> "cluster_What is systems engineering?";
+		"cluster_System Thinking" -> "cluster_Holistic approaches";
+		"cluster_System Thinking" -> "cluster_Security of general-purpose systems";
+		"cluster_System Thinking" -> "cluster_Security of special-purposes systems";
+		"cluster_System Thinking" -> "cluster_Threat models";
+		"cluster_System Thinking" -> "cluster_Requirements analysis";
+		"cluster_System Thinking" -> "cluster_Fundamental principles";
+		"cluster_System Thinking" -> "cluster_Development for testing";
+		"cluster_System Management"	[label="System Management",
+			shape=diamond];
+		"cluster_System Management" -> "cluster_Policy models";
+		"cluster_System Management" -> "cluster_Policy composition";
+		"cluster_System Management" -> "cluster_Use of automation";
+		"cluster_System Management" -> "cluster_Patching and the vulnerability life cycle";
+		"cluster_System Management" -> cluster_Operation;
+		"cluster_System Management" -> "cluster_Commissioning and decommissioning";
+		"cluster_System Management" -> "cluster_Insider threat";
+		"cluster_System Management" -> cluster_Documentation;
+		"cluster_System Management" -> "cluster_Systems and procedures";
+		"cluster_System Access"	[label="System Access",
+			shape=diamond];
+		"cluster_System Access" -> "cluster_Authentication methods";
+		"cluster_System Access" -> cluster_Identity;
+		"cluster_System Access" -> "cluster_System Control";
+		"cluster_System Access" -> "cluster_Access control";
+		"cluster_System Access" -> "cluster_Authorization models";
+		"cluster_System Access" -> "cluster_Intrusion detection";
+		"cluster_System Access" -> cluster_Attacks;
+		"cluster_System Access" -> cluster_Defenses;
+		"cluster_System Access" -> cluster_Audit;
+		"cluster_System Access" -> cluster_Malware;
+		"cluster_System Access" -> "cluster_Vulnerabilities models";
+		"cluster_System Access" -> "cluster_Penetration testing";
+		"cluster_System Access" -> cluster_Forensics;
+		"cluster_System Access" -> "cluster_Recovery, resilience";
+		"cluster_System Retirement"	[label="System Retirement",
+			shape=diamond];
+		"cluster_System Retirement" -> cluster_Decommissioning;
+		"cluster_System Retirement" -> cluster_Disposal;
+		"cluster_System Testing"	[label="System Testing",
+			shape=diamond];
+		"cluster_System Testing" -> "cluster_Validating requirements";
+		"cluster_System Testing" -> "cluster_Validating composition of components";
+		"cluster_System Testing" -> "cluster_Unit versus system testing";
+		"cluster_System Testing" -> "cluster_Formal verification of systems";
+	}
+	"System Security"	[label="System Security",
+		shape=square];
+	"System Security" -> "cluster_System Thinking";
+	"System Security" -> "cluster_System Management";
+	"System Security" -> "cluster_System Access";
+	"System Security" -> "cluster_System Retirement";
+	"System Security" -> "cluster_System Testing";
+}
